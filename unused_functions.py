@@ -15,7 +15,7 @@ array_y = 0
 stdata = [0,0,0,0,0,0]
 np.set_printoptions(suppress=True)
 
-def read_sonar_loop():
+def read_sonar_loop_old():
 
     #### This function reads all six SR-04 Sensors, returns results in meters, and stores all data in an array. ####
     global array_y
@@ -147,6 +147,24 @@ def readAltitude():
     array_y += 1
 
     return distance
+
+def logdata_old():
+    if os.path.isfile("/home/pi/sensorlog.txt"):
+        if os.stat("/home/pi/sensorlog.txt").st_size == 0:
+            logfile = open("sensorlog.txt","w")
+            logfile.write(timestamp())
+            logfile.write("\n" + np.array_str(SonarArray))
+
+        else:
+            logfile = open("sensorlog.txt","a")
+            logfile.write("\n" + "\n" + timestamp())
+            logfile.write("\n" + np.array_str(SonarArray))
+    else:
+        logfile = open("sensorlog.txt","w")
+        logfile.write(timestamp())
+        logfile.write("\n" + np.array_str(SonarArray))
+
+    logfile.close()
 
 def arm_and_takeoff(aTargetAltitude):
 

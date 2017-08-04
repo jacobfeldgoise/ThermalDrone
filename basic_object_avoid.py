@@ -1,23 +1,9 @@
-import RPi.GPIO as GPIO                         # Needed to read ultrasonic sensors
-import time, sys, datetime, pytz, tzlocal, os   # Needed for many basic functions and to satisfy preconditions
-import numpy as np                              # Needed to create array
-from datetime import datetime                   # Needed to generate timestamp
-from dateutil import tz                         # Needed to generate timestamp
-from dronekit import *                          # Needed for all drone-related commands
-from pymavlink import mavutil                   # Needed for command message definitions
-
-GPIO.setmode(GPIO.BOARD)
-GPIO.setwarnings(False)
-
-pulse = 0.00002
-SonarArray = np.zeros((100,6))
-array_y = 0
-stdata = [0,0,0,0,0,0]
-np.set_printoptions(suppress=True)
-
-target = sys.argv[1] if len(sys.argv) >= 2 else 'udpin:0.0.0.0:14550'
-print 'Connecting to ' + target + '...'
-vehicle = connect(target, wait_ready=True)
+import RPi.GPIO as GPIO                                                         # Needed to read ultrasonic sensors
+import time, sys, datetime, pytz, tzlocal, os, pickle, multiprocessing          # Needed for many basic functions and to satisfy preconditions
+from datetime import datetime                                                   # Needed to generate timestamp
+from dateutil import tz                                                         # Needed to generate timestamp
+from dronekit import *                                                          # Needed for all drone-related commands
+from pymavlink import mavutil                                                   # Needed for command message definitions
 
 def arm_and_takeoff_stabilize(aTargetAltitude):
 
@@ -25,9 +11,11 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
 
     # The following command disables all arming checks. Be careful, this is very dangerous: vehicle.parameters['ARMING_CHECK']=0
 
+    global stdata_q
+
     ##### CONSTANTS #####
-    DEFAULT_TAKEOFF_THRUST = 0.4
-    SMOOTH_TAKEOFF_THRUST = 0.1
+    DEFAULT_TAKEOFF_THRUST = 0.6
+    SMOOTH_TAKEOFF_THRUST = 0.6
 
     print("Basic pre-arm checks")
     # Don't let the user try to arm until autopilot is ready
@@ -57,7 +45,8 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
     set_attitude_alt(thrust = 0.6)
 
     while True:
-        current_altitude = readAltitude()
+        sensor_data = stdata_q.get()
+        current_altitude = sensor_data[5]
         print " Altitude: " + str(current_altitude)
 
         if current_altitude > 0.8: # Trigger just below target alt.
@@ -90,31 +79,12 @@ def timestamp():
     timestamp_local = local_time.strftime('%m-%d-%Y %H:%M:%S %Z')
     return timestamp_local
 
-def logdata():
-    if os.path.isfile("/home/pi/sensorlog.txt"):
-        if os.stat("/home/pi/sensorlog.txt").st_size == 0:
-            logfile = open("sensorlog.txt","w")
-            logfile.write(timestamp())
-            logfile.write("\n" + np.array_str(SonarArray))
-
-        else:
-            logfile = open("sensorlog.txt","a")
-            logfile.write("\n" + "\n" + timestamp())
-            logfile.write("\n" + np.array_str(SonarArray))
-    else:
-        logfile = open("sensorlog.txt","w")
-        logfile.write(timestamp())
-        logfile.write("\n" + np.array_str(SonarArray))
-
-    logfile.close()
-
 def land_and_close():
     print "Switching to STABILIZE mode to begin landing..."
     vehicle.mode    = VehicleMode("STABILIZE")
 
     print "Stabilizing & Ceasing all movement..."
-    send_ned_velocity(0.5,0.1,0)
-
+    send_ned_velocity(0,0,0)
 
     time.sleep(2)
 
@@ -241,43 +211,68 @@ def set_attitude_alt(roll_angle = 0.0, pitch_angle = 0.0, yaw_angle = 0.0, thrus
             time.sleep(1)
             vehicle.send_mavlink(msg)
 
-arm_and_takeoff_stabilize(1)
+if __name__ == "__main__":
+    # All code -- including calling pre-defined functions -- goes here
+    target = sys.argv[1] if len(sys.argv) >= 2 else 'udpin:0.0.0.0:14550'
+    print 'Connecting to ' + target + '...'
+    vehicle = connect(target, wait_ready=True)
 
-t = 0
+    GPIO.setmode(GPIO.BOARD)
+    GPIO.setwarnings(False)
 
-# while True:
-#     sensor_data = readSonar()
-#
-#     if sensor_data[1] < 20:
-#         print "Leaning Left..."
-#         set_attitude(0.5,-0.1,0)
-#
-#     elif sensor_data[2] < 20:
-#         print "Leaning Right..."
-#         send_ned_velocity(0.5,0.1,0)
-#
-#     elif sensor_data[1] > 30 and sensor_data[1] < sensor_data[2]:
-#         print "Leaning Right..."
-#         send_ned_velocity(0.5,0.1,0)
-#
-#     elif sensor_data[2] > 30 and sensor_data[2] < sensor_data[1]:
-#         print "Leaning Left..."
-#         send_ned_velocity(0.5,-0.1,0)
-#
-#     elif sensor_data[1] > 50 and sensor_data[2] > 50:
-#         break
-#
-#     else:
-#         send_ned_velocity(0.5,0,0)
-#     t += 1
-#
-#     if t == 4:
-#         break
+    pulse = 0.00002
+    stdata = [0,0,0,0,0,0]
+    sensor_loop = multiprocessing.Event()
 
+    print "Initializing queue to communicate between processes..."
+    stdata_q = multiprocessing.Queue()
+    print "Queue initialised!"
+    proc = multiprocessing.Process(target=read_sonar_multi_call, args=(sensor_loop, stdata_q,))
+    print "Starting sub-process to control sensor reading and writing..."
+    proc.start()
+    print "Process started!"
 
-time.sleep(1)
-land_and_close()
-print "Logging data..."
-logdata()
-print "Data logged!"
-GPIO.cleanup()
+    time.sleep(0.5)
+
+    arm_and_takeoff_stabilize(1)
+
+    t = 0
+
+    # while True:
+    #
+    #     if sensor_data[1] < 20:
+    #         print "Leaning Left..."
+    #         set_attitude(0.5,-0.1,0)
+    #
+    #     elif sensor_data[2] < 20:
+    #         print "Leaning Right..."
+    #         send_ned_velocity(0.5,0.1,0)
+    #
+    #     elif sensor_data[1] > 30 and sensor_data[1] < sensor_data[2]:
+    #         print "Leaning Right..."
+    #         send_ned_velocity(0.5,0.1,0)
+    #
+    #     elif sensor_data[2] > 30 and sensor_data[2] < sensor_data[1]:
+    #         print "Leaning Left..."
+    #         send_ned_velocity(0.5,-0.1,0)
+    #
+    #     elif sensor_data[1] > 50 and sensor_data[2] > 50:
+    #         break
+    #
+    #     else:
+    #         send_ned_velocity(0.5,0,0)
+    #     t += 1
+    #
+    #     if t == 4:
+    #         break
+
+    time.sleep(1)
+    land_and_close()
+
+    print "Triggering sensor_loop event to end sub-process..."
+    sensor_loop.set()
+    print "Cleaning up sub-process..."
+    proc.join()
+    print "Cleaning up GPIO pins..."
+    GPIO.cleanup()
+    print "Done!"

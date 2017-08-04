@@ -1,22 +1,21 @@
 import RPi.GPIO as GPIO
 import time, sys, datetime, pytz, tzlocal, os, pickle, multiprocessing
-import numpy as np
 from datetime import datetime
 from dateutil import tz
 
+def timestamp():
 
-GPIO.setmode(GPIO.BOARD)
-GPIO.setwarnings(False)
+    #### This function generates a timestemp which will be written to the log file ####
 
-pulse = 0.00002
-SonarArray = np.zeros((50,6))
-array_y = 0
-stdata = [0,0,0,0,0,0]
-np.set_printoptions(suppress=True)
+    local_timezone = tzlocal.get_localzone()
+    utc_time = datetime.utcnow()
 
-sensor_loop = multiprocessing.Event()
+    # Convert time zone
+    local_time= utc_time.replace(tzinfo=pytz.utc).astimezone(local_timezone)
+    timestamp_local = local_time.strftime('%m-%d-%Y %H:%M:%S %Z')
+    return timestamp_local
 
-def read_individual_sonar(direction, stdata):
+def read_individual_sonar(direction):
 
     #### This function reads one SR-04 Sensor, returns results in meters, and stores all data in an array. ####
     #### The argument "direction" must be an integer from 0 to 5, inclusive ####
@@ -107,43 +106,68 @@ def read_individual_sonar(direction, stdata):
         distance = (pulse_duration*17092) - 6.92
 
     distance = float(round(distance,2))                         # Rounds the distance to 2 decimal places
-    SonarArray[array_y,direction] = distance                    # Writes the distance to correct position in array "SonarArray" which will be written to the log file
-    stdata[direction] = distance                                # Writes the distance to global list "stdata"
+    return distance
 
+def logdata(list_to_write, logfile):
+    #### This function writes a string to the sensor log file ####
+
+    print "[Sub-process]: Logging data..."
+    logfile.write("\n" + "Sonar Data: " + list_to_write)
+    print "[Sub-process]: Data logged!"
 
 def read_sonar_multi_call(sensor_loop, stdata_q):
 
+    print "[Sub-process]: Opening sensor log file and timestamping..."
+    if os.path.isfile("/home/pi/sensorlog.txt") and os.stat("/home/pi/sensorlog.txt").st_size != 0:         # Here we initialize the sensor log file and write the timestamp
+        logfile = open("sensorlog.txt","a")
+        logfile.write("\n" + "\n" + timestamp())
+    else:
+        logfile = open("sensorlog.txt","w")
+        logfile.write(timestamp())
+
+    print "[Sub-process]: Initializing pool to read sonar data..."
     while sensor_loop.is_set() == False:
 
         pool = multiprocessing.Pool(processes=6)
-        stdata_pre = [pool.apply_async(read_individual_sonar, args=()) for x in range(6)]
+        stdata_pre = [pool.apply_async(read_individual_sonar, args=(x,)) for x in range(6)]
         stdata = [p.get() for p in stdata_pre]
-        print "Stdata in sub-process: " + str(stdata)
-        stdata_q.put(stdata)                                    # Sends stdata back to main process
 
-        for x in stdata:                                        # Writes stdata to the correct row of array "SonarArray"
-            SonarArray[array_y,x] = stdata[x]                   # --
-        array_y += 1                                            # Increases the array y-axis by 1 to prevent overwritting the next time this function is called
+        logdata(str(stdata), logfile)
+        stdata_q.put(stdata)                                                # Sends "stdata" back to main process via multiprocessing queue
 
-    # Logs SonarArray to seperate file and prints it to the console
-    # print "Logging data..."
-    # logdata()
-    # print "Data logged!"
-    print "Printing SonarArray..."
-    print SonarArray
+    print "[Sub-process]: Closing sensor log file..."
+    logfile.close()
+    print "[Sub-process]: Rejoining master process..."
 
 if __name__ == "__main__":
     # All code -- including calling pre-defined functions -- goes here
 
+    GPIO.setmode(GPIO.BOARD)
+    GPIO.setwarnings(False)
+
+    pulse = 0.00002
+    stdata = [0,0,0,0,0,0]
+    sensor_loop = multiprocessing.Event()
+
+    print "Initializing queue to communicate between processes..."
     stdata_q = multiprocessing.Queue()
-    proc = multiprocessing.Process(target=read_sonar_multi_call, args=(sensor_loop, stdata_q))
+    print "Queue initialised!"
+    proc = multiprocessing.Process(target=read_sonar_multi_call, args=(sensor_loop, stdata_q,))
+    print "Starting sub-process to control sensor reading and writing..."
     proc.start()
+    print "Process started!"
 
-    for number in range(5):
+    time.sleep(0.5)
+    for number in range(10):
+        print "Getting list of sonar distances from sub-process..."
+        stdata = stdata_q.get()
         print stdata
-        time.sleep(0.5)
+        time.sleep(0.1)
 
+    print "Triggering sensor_loop event to end sub-process..."
     sensor_loop.set()
+    print "Cleaning up sub-process..."
     proc.join()
+    print "Done!"
 
 GPIO.cleanup()
