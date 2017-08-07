@@ -14,8 +14,8 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
     global stdata_q
 
     ##### CONSTANTS #####
-    DEFAULT_TAKEOFF_THRUST = 0.6
-    SMOOTH_TAKEOFF_THRUST = 0.6
+    DEFAULT_TAKEOFF_THRUST = 0.2
+    SMOOTH_TAKEOFF_THRUST = 0.2
 
     print("Basic pre-arm checks")
     # Don't let the user try to arm until autopilot is ready
@@ -42,30 +42,19 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
     print("Taking off!")
 
     thrust = DEFAULT_TAKEOFF_THRUST
-    set_attitude_alt(thrust = 0.6)
 
     while True:
         sensor_data = stdata_q.get()
         current_altitude = sensor_data[5]
         print " Altitude: " + str(current_altitude)
 
-        if current_altitude > 0.8: # Trigger just below target alt.
+        if current_altitude >= 0.8:                                         # Trigger just below target alt.
             print("Reached target altitude")
             break
 
-    # while True:
-    #     current_altitude = readAltitude()/100
-    #     print " Altitude: " + str(current_altitude)
-    #
-    #     if current_altitude >= aTargetAltitude*0.95: # Trigger just below target alt.
-    #         print("Reached target altitude")
-    #         break
-    #
-    #     elif current_altitude >= aTargetAltitude*0.7: #Slighlty decrease thrust at 0.6 x Target Altitude
-    #         thrust = SMOOTH_TAKEOFF_THRUST
-    #         print("Smoothing thrust...")
-    #
-    #     set_attitude(thrust = thrust)
+        elif current_altitude >= 0.6 and current_altitude < 0.8:            #Slighlty decrease thrust at 0.6 x Target Altitude
+            thrust = SMOOTH_TAKEOFF_THRUST
+            print("Smoothing thrust...")
 
 def timestamp():
 
@@ -84,7 +73,6 @@ def land_and_close():
     vehicle.mode    = VehicleMode("STABILIZE")
 
     print "Stabilizing & Ceasing all movement..."
-    send_ned_velocity(0,0,0)
 
     time.sleep(2)
 
@@ -177,7 +165,7 @@ def set_attitude(roll_angle = 0.0, pitch_angle = 0.0, yaw_rate = 0.0, thrust = 0
             time.sleep(1)
             vehicle.send_mavlink(msg)
 
-def set_attitude_alt(roll_angle = 0.0, pitch_angle = 0.0, yaw_angle = 0.0, thrust = 0.5, duration = 0):
+def set_attitude_alt(roll_angle = 0.0, pitch_angle = 0.0, yaw_angle = 0.0, thrust = 0.2, duration = 0):
     """
     Note that from AC3.3 the message should be re-sent every second (after about 3 seconds
     with no message the velocity will drop back to zero). In AC3.2.1 and earlier the specified
@@ -210,6 +198,131 @@ def set_attitude_alt(roll_angle = 0.0, pitch_angle = 0.0, yaw_angle = 0.0, thrus
         for x in range(0,int(modf[1])):
             time.sleep(1)
             vehicle.send_mavlink(msg)
+
+def read_individual_sonar(direction):
+
+    #### This function reads one SR-04 Sensor, returns results in meters, and stores all data in an array. ####
+    #### The argument "direction" must be an integer from 0 to 5, inclusive ####
+
+    pulse_start = 0.0                       # This resets variables to default state at the beginning of each iteration
+    pulse_end = 0.0                         # --
+
+    if direction == 0:                      # This if-statement sets the Trigger and Echo GPIO pins for each sensor as we iterate
+        # Front sonar
+        sensortype = "Front"
+        TRIG = 33
+        ECHO = 37
+
+    elif direction == 1:
+        # Right sonar
+        sensortype = "Right"
+        TRIG = 7
+        ECHO = 11
+
+    elif direction == 2:
+        # Left sonar
+        sensortype = "Left"
+        TRIG = 13
+        ECHO = 15
+
+    elif direction == 3:
+        # Back sonar
+        sensortype = "Back"
+        TRIG = 16
+        ECHO = 18
+
+    elif direction == 4:
+        # Top sonar
+        sensortype = "Top"
+        TRIG = 29
+        ECHO = 31
+
+    elif direction == 5:
+        # Bottom sonar
+        sensortype = "Bottom"
+        TRIG = 32
+        ECHO = 36
+    else:
+        raise ValueError("The argument 'direction' must be an integer from 0 to 5, inclusive!")
+
+    GPIO.setup(ECHO,GPIO.IN)                # Sets up GPIO pins
+    GPIO.setup(TRIG,GPIO.OUT)               # --
+
+    GPIO.output(TRIG, False)
+    time.sleep(0.2)
+
+    GPIO.output(TRIG, True)
+    time.sleep(pulse)
+    GPIO.output(TRIG, False)
+
+    while GPIO.input(ECHO)==0:
+        pulse_start = time.time()
+
+    while GPIO.input(ECHO)==1:
+        pulse_end = time.time()
+        if pulse_end - pulse_start > 0.5:
+            break
+
+    pulse_duration = pulse_end - pulse_start
+
+    if direction == 0:
+        # Front sonar
+        distance = (pulse_duration*17092) - 15.2979
+
+    elif direction == 1:
+        # Right sonar
+        distance = (pulse_duration*17092) - 23.7135
+
+    elif direction == 2:
+        # Left sonar
+        distance = (pulse_duration*17092) - 24.2425
+
+    elif direction == 3:
+        # Back sonar
+        distance = (pulse_duration*17092) - 15.7859
+
+    elif direction == 4:
+        # Top sonar
+        distance = (pulse_duration*17092) - 1.098
+
+    elif direction == 5:
+        # Bottom sonar
+        distance = (pulse_duration*17092) - 6.92
+
+    distance = float(round(distance,2))                         # Rounds the distance to 2 decimal places
+    return distance
+
+def logdata(list_to_write, logfile):
+    #### This function writes a string to the sensor log file ####
+
+    print "[Sub-process]: Logging data..."
+    logfile.write("\n" + "Sonar Data: " + list_to_write)
+    print "[Sub-process]: Data logged!"
+
+def read_sonar_multi_call(sensor_loop, stdata_q):
+
+    print "[Sub-process]: Opening sensor log file and timestamping..."
+    if os.path.isfile("/home/pi/sensorlog.txt") and os.stat("/home/pi/sensorlog.txt").st_size != 0:         # Here we initialize the sensor log file and write the timestamp
+        logfile = open("sensorlog.txt","a")
+        logfile.write("\n" + "\n" + timestamp())
+    else:
+        logfile = open("sensorlog.txt","w")
+        logfile.write(timestamp())
+
+    print "[Sub-process]: Initializing pool to read sonar data..."
+    while sensor_loop.is_set() == False:
+
+        pool = multiprocessing.Pool(processes=6)
+        stdata_pre = [pool.apply_async(read_individual_sonar, args=(x,)) for x in range(6)]
+        stdata = [p.get() for p in stdata_pre]
+
+        logdata(str(stdata), logfile)
+        stdata_q.put(stdata)                                                # Sends "stdata" back to main process via multiprocessing queue
+
+    print "[Sub-process]: Closing sensor log file..."
+    logfile.close()
+    print "[Sub-process]: Rejoining master process..."
+
 
 if __name__ == "__main__":
     # All code -- including calling pre-defined functions -- goes here
