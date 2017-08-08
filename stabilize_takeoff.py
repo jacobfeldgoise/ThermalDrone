@@ -3,7 +3,8 @@ import time, sys, datetime, pytz, tzlocal, os, pickle, multiprocessing          
 from datetime import datetime                                                   # Needed to generate timestamp
 from dateutil import tz                                                         # Needed to generate timestamp
 from dronekit import *                                                          # Needed for all drone-related commands
-from pymavlink import mavutil                                                   # Needed for command message definitions
+from pymavlink import mavutil
+
 
 def arm_and_takeoff_stabilize(aTargetAltitude):
 
@@ -65,6 +66,8 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
         elif current_altitude >= 0.6 and current_altitude < 0.8:            #Slighlty decrease thrust at 0.6 x Target Altitude
             thrust = SMOOTH_TAKEOFF_THRUST
             print("Smoothing thrust...")
+
+        set_attitude_alt(thrust = thrust)
 
 def timestamp():
 
@@ -175,7 +178,7 @@ def set_attitude(roll_angle = 0.0, pitch_angle = 0.0, yaw_rate = 0.0, thrust = 0
             time.sleep(1)
             vehicle.send_mavlink(msg)
 
-def set_attitude_alt(roll_angle = 0.0, pitch_angle = 0.0, yaw_angle = 0.0, thrust = 0.2, duration = 0):
+def set_attitude_alt(roll_angle = 0.0, pitch_angle = 0.0, yaw_angle = 0.0, thrust = 0.5, duration = 0):
     """
     Note that from AC3.3 the message should be re-sent every second (after about 3 seconds
     with no message the velocity will drop back to zero). In AC3.2.1 and earlier the specified
@@ -333,7 +336,6 @@ def read_sonar_multi_call(sensor_loop, stdata_q):
     logfile.close()
     print "[Sub-process]: Rejoining master process..."
 
-
 if __name__ == "__main__":
     # All code -- including calling pre-defined functions -- goes here
     target = sys.argv[1] if len(sys.argv) >= 2 else 'udpin:0.0.0.0:14550'
@@ -360,36 +362,6 @@ if __name__ == "__main__":
     arm_and_takeoff_stabilize(1)
 
     t = 0
-
-    # while True:
-    #
-    #     if sensor_data[1] < 20:
-    #         print "Leaning Left..."
-    #         set_attitude(0.5,-0.1,0)
-    #
-    #     elif sensor_data[2] < 20:
-    #         print "Leaning Right..."
-    #         send_ned_velocity(0.5,0.1,0)
-    #
-    #     elif sensor_data[1] > 30 and sensor_data[1] < sensor_data[2]:
-    #         print "Leaning Right..."
-    #         send_ned_velocity(0.5,0.1,0)
-    #
-    #     elif sensor_data[2] > 30 and sensor_data[2] < sensor_data[1]:
-    #         print "Leaning Left..."
-    #         send_ned_velocity(0.5,-0.1,0)
-    #
-    #     elif sensor_data[1] > 50 and sensor_data[2] > 50:
-    #         break
-    #
-    #     else:
-    #         send_ned_velocity(0.5,0,0)
-    #     t += 1
-    #
-    #     if t == 4:
-    #         break
-
-    time.sleep(1)
     land_and_close()
 
     print "Triggering sensor_loop event to end sub-process..."
