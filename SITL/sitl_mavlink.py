@@ -19,7 +19,7 @@ def set_attitude_alt(roll_angle = 0.0, pitch_angle = 0.0, yaw_angle = 0.0, thrus
 
     msg = vehicle.message_factory.command_long_encode(
         0, 0,    # target system, target component
-        mavutil.mavlink.SET_ATTITUDE_TARGET, #command
+        mavutil.mavlink.MAV_CMD_CONDITION_CHANGE_ALT, #command
         0, #confirmation
         0,          # param 1, yaw in degrees
         0,          # param 2, yaw speed deg/s
@@ -58,9 +58,52 @@ def to_quaternion(roll = 0.0, pitch = 0.0, yaw = 0.0):
 
     return [w, x, y, z]
 
-target = sys.argv[1] if len(sys.argv) >= 2 else 'tcp:127.0.0.1:5760'
-print 'Connecting to ' + target + '...'
-vehicle = connect(target, wait_ready=True)
+def set_attitude(roll_angle = 0.0, pitch_angle = 0.0, yaw_rate = 0.0, thrust = 0.5, duration = 0):
+
+    # Note that from AC3.3 the message should be re-sent every second (after about 3 seconds with no message the velocity will drop back to zero).
+    # In AC3.2.1 and earlier the specified velocity persists until it is canceled.
+    # The code below should work on either version (sending the message multiple times does not cause problems).
+
+    """
+    The roll and pitch rate cannot be controllbed with rate in radian in AC3.4.4 or earlier,
+    so you must use quaternion to control the pitch and roll for those vehicles.
+    """
+
+    # Thrust >  0.5: Ascend
+    # Thrust == 0.5: Hold the altitude
+    # Thrust <  0.5: Descend
+    # set_roll_pitch_yaw_thrust_encode
+    msg = vehicle.message_factory.set_attitude_target_encode(
+                                                             0,
+                                                             0,
+                                                                 # Target system
+                                                             0,
+                                                                 # Target component
+                                                             0b00000000,
+                                                                 # Type mask: bit 1 is LSB
+                                                             to_quaternion(roll_angle, pitch_angle),
+                                                                 # Quaternion
+                                                             0,
+                                                                 # Body roll rate in radian
+                                                             0,
+                                                                 # Body pitch rate in radian
+                                                             math.radians(yaw_rate),
+                                                                 # Body yaw rate in radian
+                                                             thrust)
+                                                                 # Thrust
+    vehicle.send_mavlink(msg)
+
+    if duration != 0:
+        # Divide the duration into the frational and integer parts
+        modf = math.modf(duration)
+
+        # Sleep for the fractional part
+        time.sleep(modf[0])
+
+        # Send command to vehicle on 1 Hz cycle
+        for x in range(0,int(modf[1])):
+            time.sleep(1)
+            vehicle.send_mavlink(msg)
 
 def arm_and_takeoff_stabilize(aTargetAltitude):
 
@@ -108,7 +151,11 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
 
     thrust = DEFAULT_TAKEOFF_THRUST
 
-    set_attitude_alt(thrust = 0.5)
+    set_attitude()
     vehicle.flush()                         # Forces DroneKit to send all outstanding messages
+
+target = sys.argv[1] if len(sys.argv) >= 2 else 'tcp:127.0.0.1:5760'
+print 'Connecting to ' + target + '...'
+vehicle = connect(target, wait_ready=True)
 
 arm_and_takeoff_stabilize(1)

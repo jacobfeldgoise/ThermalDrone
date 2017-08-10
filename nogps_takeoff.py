@@ -5,10 +5,9 @@ from dateutil import tz                                                         
 from dronekit import *                                                          # Needed for all drone-related commands
 from pymavlink import mavutil
 
+def arm_and_takeoff_nogps(aTargetAltitude):
 
-def arm_and_takeoff_stabilize(aTargetAltitude):
-
-    #### This function arms vehicle and flies to aTargetAltitude without GPS data in STABILIZE Mode. ####
+    """This function arms vehicle and flies to aTargetAltitude without GPS data in ALT_HOLD Mode. """
 
     # The following command disables all arming checks. Be careful, this is very dangerous: vehicle.parameters['ARMING_CHECK']=0
 
@@ -18,39 +17,39 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
     DEFAULT_TAKEOFF_THRUST = 0.7
     SMOOTH_TAKEOFF_THRUST = 0.5
 
-    print("Basic pre-arm checks")
     # Don't let the user try to arm until autopilot is ready
-    # If you need to disable the arming check, just comment it with your own responsibility.
+    # If you need to disable the arming check, just comment it with your own responsibility:
 
+    # print("Basic pre-arm checks")
     # while not vehicle.is_armable:
     #     print(" Waiting for vehicle to initialise...")
     #     time.sleep(1)
-    while vehicle.parameters['ARMING_CHECK'] != -9:
+
+    while vehicle.parameters['ARMING_CHECK'] != -9:                             # Confirm that GPS check has been disabled
         vehicle.parameters['ARMING_CHECK'] = -9
         time.sleep(0.2)
 
     while vehicle.mode != VehicleMode("ALT_HOLD"):
         print("Waiting for ALT_HOLD...")
-        vehicle.mode = VehicleMode("ALT_HOLD") # Copter should arm in STABILIZE mode
+        vehicle.mode = VehicleMode("ALT_HOLD")                                  # Copter should arm in ALT_HOLD mode
         print "Mode: " + vehicle.mode.name
         time.sleep(0.2)
 
     time.sleep(1)
-    print("Flushing queue...                                                                                                                                                                                                                                                                                                                    ")
-    vehicle.flush()                         # Forces DroneKit to send all outstanding messages
+    print("Flushing queue...")
+    vehicle.flush()                                                             # Forces DroneKit to send all outstanding messages
 
     print("Arming motors...")
-    while not vehicle.armed:                # This loops ensures that the vehicle is armed before attempting takeoff
+    while not vehicle.armed:                                                    # This loops ensures that the vehicle is armed before attempting takeoff
         print(" Waiting for arming...")
-        vehicle.armed = True                    # Arms Vehicle
+        vehicle.armed = True                                                    # Arms Vehicle
         time.sleep(1)
 
     print("Vehicle Armed!")
 
     print("Confirming Mode...")
-
     while vehicle.mode != "ALT_HOLD":
-        vehicle.mode = VehicleMode("ALT_HOLD") # Copter should arm in STABILIZE mode
+        vehicle.mode = VehicleMode("ALT_HOLD")                                  # Copter should arm in ALT_HOLD mode
         print "Mode: " + vehicle.mode.name
 
     print("Taking off!")
@@ -58,20 +57,21 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
     thrust = DEFAULT_TAKEOFF_THRUST
 
     while True:
-        print("Retrieving sensor data for take off...")
+        print("Retrieving altitude data for takeoff...")
         sensor_data = stdata_q.get()
         current_altitude = sensor_data[5]/100
         print " Altitude: " + str(current_altitude)
 
-        if current_altitude >= 0.8:                                         # Trigger just below target alt.
+        if current_altitude >= 0.9:                                             # Trigger just below target alt.
             print("Reached target altitude")
             break
 
-        elif current_altitude >= 0.6 and current_altitude < 0.8:            #Slighlty decrease thrust at 0.6 x Target Altitude
+        elif current_altitude >= 0.6 and current_altitude < 0.8:                #Slighlty decrease thrust at 0.6 x Target Altitude
             thrust = SMOOTH_TAKEOFF_THRUST
             print("Smoothing thrust...")
 
         set_attitude_alt(thrust = thrust)
+        vehicle.flush()                                                         # Forces DroneKit to send all outstanding MAVlink messages
         time.sleep(0.2)
 
 def timestamp():
@@ -107,44 +107,106 @@ def land_and_close():
     print "Vehicle Disarmed."
 
 def condition_yaw(heading, direction):
-    # create the CONDITION_YAW command using command_long_encode()
+
+    """
+    This function sends a command_long MAVlink command to change the yaw
+    or heading of the vehicle. Vehicles running ArduCopter will accept
+    parameters for the final yaw, the speed of rotation, the direction
+    of rotation, and whether the final yaw is relative or absolute with
+    the MAVlink command MAV_CMD_CONDITION_YAW.
+    """
+
     msg = vehicle.message_factory.command_long_encode(
-        0, 0,    # target system, target component
-        mavutil.mavlink.MAV_CMD_CONDITION_YAW, #command
-        0, #confirmation
-        heading,    # param 1, yaw in degrees
-        0,          # param 2, yaw speed deg/s
-        direction,  # param 3, direction -1 ccw, 1 cw
-        1,          # param 4, relative offset 1, absolute angle 0
-        0, 0, 0)    # param 5 ~ 7 not used
-    # send command to vehicle
+        0, 0,                                           # target system, target component
+        mavutil.mavlink.MAV_CMD_CONDITION_YAW,          # command
+        0,                                              # confirmation
+        heading,                                        # param 1, yaw in degrees
+        0,                                              # param 2, yaw speed deg/s
+        direction,                                      # param 3, direction -1 ccw, 1 cw
+        1,                                              # param 4, relative offset 1, absolute angle 0
+        0, 0, 0)                                        # param 5 ~ 7 not used
+
+    vehicle.send_mavlink(msg)                           # send command to vehicle
+
+    if duration != 0:
+        modf = math.modf(duration)                      # Divide the duration into the frational and integer parts
+
+        time.sleep(modf[0])                             # Sleep for the fractional parts of duration
+
+        for x in range(0,int(modf[1])):                 # Send command to vehicle on 1 Hz cycle
+            time.sleep(1)
+            vehicle.send_mavlink(msg)
+
+def change_alt(altitude = 1, speed = 0.2, duration = 0):
+
+    """
+    This function sends a command_long MAVlink command to change the altitude
+    of the vehicle. Vehicles running ArduCopter will accept parameters for
+    vertical speed and final altitude with the MAVlink command MAV_CMD_CONDITION_CHANGE_ALT.
+    """
+
+    # Note that from AC3.3 the message should be re-sent every second (after about 3 seconds with no message the velocity will drop back to zero).
+    # In AC3.2.1 and earlier the specified velocity persists until it is canceled.
+    # The code below should work on either version (sending the message multiple times does not cause problems).
+
+    msg = vehicle.message_factory.command_long_encode(
+        0, 0,                                           # target system, target component
+        mavutil.mavlink.MAV_CMD_CONDITION_CHANGE_ALT,   # command
+        0,                                              # confirmation
+        speed,                                          # param 1, speed in m/s or cm/s (?)
+        0, 0, 0, 0, 0,                                  # param 2 - 6 not used
+        altitude)                                       # param 7, final altitude
+
+    vehicle.send_mavlink(msg)                           # send command to vehicle
+
+    if duration != 0:
+        modf = math.modf(duration)                      # Divide the duration into the frational and integer parts
+
+        time.sleep(modf[0])                             # Sleep for the fractional parts of duration
+
+        for x in range(0,int(modf[1])):                 # Send command to vehicle on 1 Hz cycle
+            time.sleep(1)
+            vehicle.send_mavlink(msg)
+
+def change_speed(speed = 0.5, duration = 0):
+
+    """
+    This function sends a command_long MAVlink command to change the
+    horizonatal speed of the vehicle. Vehicles running ArduCopter will
+    accept a parameter horizonatal speed with the MAVlink command MAV_CMD_DO_CHANGE_SPEED.
+    """
+
+    # Note that from AC3.3 the message should be re-sent every second (after about 3 seconds with no message the velocity will drop back to zero).
+    # In AC3.2.1 and earlier the specified velocity persists until it is canceled.
+    # The code below should work on either version (sending the message multiple times does not cause problems).
+
+    msg = vehicle.message_factory.command_long_encode(
+        0, 0,                                           # target system, target component
+        mavutil.mavlink.MAV_CMD_DO_CHANGE_SPEED,   # command
+        0,                                              # confirmation
+        0,                                              # param 1, not used
+        speed,                                          # param 2, speed in m/s
+        0, 0, 0, 0, 0)                                  # param 3 - 7 not used
+
     vehicle.send_mavlink(msg)
 
-def to_quaternion(roll = 0.0, pitch = 0.0, yaw = 0.0):
-    """
-    Convert degrees to quaternions
-    """
-    t0 = math.cos(math.radians(yaw * 0.5))
-    t1 = math.sin(math.radians(yaw * 0.5))
-    t2 = math.cos(math.radians(roll * 0.5))
-    t3 = math.sin(math.radians(roll * 0.5))
-    t4 = math.cos(math.radians(pitch * 0.5))
-    t5 = math.sin(math.radians(pitch * 0.5))
+    if duration != 0:
+        # Divide the duration into the frational and integer parts
+        modf = math.modf(duration)
 
-    w = t0 * t2 * t4 + t1 * t3 * t5
-    x = t0 * t3 * t4 - t1 * t2 * t5
-    y = t0 * t2 * t5 + t1 * t3 * t4
-    z = t1 * t2 * t4 - t0 * t3 * t5
+        # Sleep for the fractional part
+        time.sleep(modf[0])
 
-    return [w, x, y, z]
+        # Send command to vehicle on 1 Hz cycle
+        for x in range(0,int(modf[1])):
+            time.sleep(1)
+            vehicle.send_mavlink(msg)
 
 def set_attitude(roll_angle = 0.0, pitch_angle = 0.0, yaw_rate = 0.0, thrust = 0.5, duration = 0):
-    """
-    Note that from AC3.3 the message should be re-sent every second (after about 3 seconds
-    with no message the velocity will drop back to zero). In AC3.2.1 and earlier the specified
-    velocity persists until it is canceled. The code below should work on either version
-    (sending the message multiple times does not cause problems).
-    """
+
+    # Note that from AC3.3 the message should be re-sent every second (after about 3 seconds with no message the velocity will drop back to zero).
+    # In AC3.2.1 and earlier the specified velocity persists until it is canceled.
+    # The code below should work on either version (sending the message multiple times does not cause problems).
 
     """
     The roll and pitch rate cannot be controllbed with rate in radian in AC3.4.4 or earlier,
@@ -187,39 +249,23 @@ def set_attitude(roll_angle = 0.0, pitch_angle = 0.0, yaw_rate = 0.0, thrust = 0
             time.sleep(1)
             vehicle.send_mavlink(msg)
 
-def set_attitude_alt(roll_angle = 0.0, pitch_angle = 0.0, yaw_angle = 0.0, thrust = 0.5, duration = 0):
+def to_quaternion(roll = 0.0, pitch = 0.0, yaw = 0.0):
     """
-    Note that from AC3.3 the message should be re-sent every second (after about 3 seconds
-    with no message the velocity will drop back to zero). In AC3.2.1 and earlier the specified
-    velocity persists until it is canceled. The code below should work on either version
-    (sending the message multiple times does not cause problems).
+    Convert degrees to quaternions
     """
+    t0 = math.cos(math.radians(yaw * 0.5))
+    t1 = math.sin(math.radians(yaw * 0.5))
+    t2 = math.cos(math.radians(roll * 0.5))
+    t3 = math.sin(math.radians(roll * 0.5))
+    t4 = math.cos(math.radians(pitch * 0.5))
+    t5 = math.sin(math.radians(pitch * 0.5))
 
+    w = t0 * t2 * t4 + t1 * t3 * t5
+    x = t0 * t3 * t4 - t1 * t2 * t5
+    y = t0 * t2 * t5 + t1 * t3 * t4
+    z = t1 * t2 * t4 - t0 * t3 * t5
 
-    # Thrust >  0.5: Ascend
-    # Thrust == 0.5: Hold the altitude
-    # Thrust <  0.5: Descend
-
-    msg = vehicle.message_factory.set_roll_pitch_yaw_thrust_encode(
-                                                             0,                         # Target system
-                                                             0,                         # Target component
-                                                             math.radians(roll_angle),  # Body roll rate in radian
-                                                             math.radians(pitch_angle), # Body pitch rate in radian
-                                                             math.radians(yaw_angle),   # Body yaw angle in radian
-                                                             thrust)                    # Thrust
-    vehicle.send_mavlink(msg)
-
-    if duration != 0:
-        # Divide the duration into the frational and integer parts
-        modf = math.modf(duration)
-
-        # Sleep for the fractional part
-        time.sleep(modf[0])
-
-        # Send command to vehicle on 1 Hz cycle
-        for x in range(0,int(modf[1])):
-            time.sleep(1)
-            vehicle.send_mavlink(msg)
+    return [w, x, y, z]
 
 def read_individual_sonar(direction):
 

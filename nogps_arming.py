@@ -6,7 +6,7 @@ from dronekit import *                                                          
 from pymavlink import mavutil
 
 
-def arm_and_takeoff_stabilize(aTargetAltitude):
+def arm_and_takeoff_nogps_notakeoff(aTargetAltitude):
 
     #### This function arms vehicle and flies to aTargetAltitude without GPS data in STABILIZE Mode. ####
 
@@ -18,34 +18,34 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
     DEFAULT_TAKEOFF_THRUST = 0.2
     SMOOTH_TAKEOFF_THRUST = 0.2
 
-    print("Basic pre-arm checks")
     # Don't let the user try to arm until autopilot is ready
-    # If you need to disable the arming check, just comment it with your own responsibility.
+    # If you need to disable the arming check, just comment it with your own responsibility:
 
+    # print("Basic pre-arm checks")
     # while not vehicle.is_armable:
     #     print(" Waiting for vehicle to initialise...")
     #     time.sleep(1)
 
     while vehicle.mode != VehicleMode("ALT_HOLD"):
         print("Waiting for ALT_HOLD...")
-        vehicle.mode = VehicleMode("ALT_HOLD") # Copter should arm in STABILIZE mode
+        vehicle.mode = VehicleMode("ALT_HOLD")  # Copter should arm in ALT_HOLD mode
         print "Mode: " + vehicle.mode.name
 
     time.sleep(1)
 
-    vehicle.armed = True                    # Arms Vehicle
-    vehicle.flush()                         # Forces DroneKit to send all outstanding messages
+    vehicle.armed = True                        # Arms Vehicle
+    vehicle.flush()                             # Forces DroneKit to send all outstanding MAVlink messages
 
     print("Arming motors...")
-    while not vehicle.armed:                # This loops ensures that the vehicle is armed before attempting takeoff
+    while not vehicle.armed:                    # This loops ensures that the vehicle is armed before attempting takeoff
         print(" Waiting for arming...")
         time.sleep(1)
 
     print("Vehicle Armed!")
 
     print("Confirming Mode...")
-    while vehicle.mode != "ALT_HOLD":
-        vehicle.mode = VehicleMode("ALT_HOLD") # Copter should arm in STABILIZE mode
+    while vehicle.mode != "ALT_HOLD":           # Confirm that copter has armed in ALT_HOLD mode
+        vehicle.mode = VehicleMode("ALT_HOLD")
         print "Mode: " + vehicle.mode.name
 
     print("Taking off!")
@@ -333,7 +333,7 @@ if __name__ == "__main__":
 
     time.sleep(0.5)
 
-    arm_and_takeoff_stabilize(1)
+    arm_and_takeoff_nogps_notakeoff(1)
 
     t = 0
 
