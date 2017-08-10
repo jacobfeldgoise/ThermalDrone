@@ -22,13 +22,13 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
     # Don't let the user try to arm until autopilot is ready
     # If you need to disable the arming check, just comment it with your own responsibility.
 
-    while not vehicle.is_armable:
-        print(" Waiting for vehicle to initialise...")
-        time.sleep(1)
+    # while not vehicle.is_armable:
+    #     print(" Waiting for vehicle to initialise...")
+    #     time.sleep(1)
 
-    while vehicle.mode != VehicleMode("STABILIZE"):
-        print("Waiting for STABILIZE...")
-        vehicle.mode = VehicleMode("STABILIZE") # Copter should arm in STABILIZE mode
+    while vehicle.mode != VehicleMode("ALT_HOLD"):
+        print("Waiting for ALT_HOLD...")
+        vehicle.mode = VehicleMode("ALT_HOLD") # Copter should arm in STABILIZE mode
         print "Mode: " + vehicle.mode.name
 
     time.sleep(1)
@@ -44,28 +44,13 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
     print("Vehicle Armed!")
 
     print("Confirming Mode...")
-
-    while vehicle.mode != "STABILIZE":
-        vehicle.mode = VehicleMode("STABILIZE") # Copter should arm in STABILIZE mode
+    while vehicle.mode != "ALT_HOLD":
+        vehicle.mode = VehicleMode("ALT_HOLD") # Copter should arm in STABILIZE mode
         print "Mode: " + vehicle.mode.name
 
     print("Taking off!")
 
     thrust = DEFAULT_TAKEOFF_THRUST
-
-    while True:
-        print("Retrieving sensor data for take off...")
-        sensor_data = stdata_q.get()
-        current_altitude = sensor_data[5]
-        print " Altitude: " + str(current_altitude)
-
-        if current_altitude >= 0.8:                                         # Trigger just below target alt.
-            print("Reached target altitude")
-            break
-
-        elif current_altitude >= 0.6 and current_altitude < 0.8:            #Slighlty decrease thrust at 0.6 x Target Altitude
-            thrust = SMOOTH_TAKEOFF_THRUST
-            print("Smoothing thrust...")
 
 def timestamp():
 
@@ -345,15 +330,6 @@ if __name__ == "__main__":
 
     pulse = 0.00002
     stdata = [0,0,0,0,0,0]
-    sensor_loop = multiprocessing.Event()
-
-    print "Initializing queue to communicate between processes..."
-    stdata_q = multiprocessing.Queue()
-    print "Queue initialised!"
-    proc = multiprocessing.Process(target=read_sonar_multi_call, args=(sensor_loop, stdata_q,))
-    print "Starting sub-process to control sensor reading and writing..."
-    proc.start()
-    print "Process started!"
 
     time.sleep(0.5)
 
@@ -361,10 +337,6 @@ if __name__ == "__main__":
 
     t = 0
 
-    print "Triggering sensor_loop event to end sub-process..."
-    sensor_loop.set()
-    print "Cleaning up sub-process..."
-    proc.join()
     print "Cleaning up GPIO pins..."
     GPIO.cleanup()
     print "Done!"

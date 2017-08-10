@@ -15,8 +15,8 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
     global stdata_q
 
     ##### CONSTANTS #####
-    DEFAULT_TAKEOFF_THRUST = 0.7
-    SMOOTH_TAKEOFF_THRUST = 0.5
+    DEFAULT_TAKEOFF_THRUST = 0.2
+    SMOOTH_TAKEOFF_THRUST = 0.2
 
     print("Basic pre-arm checks")
     # Don't let the user try to arm until autopilot is ready
@@ -25,30 +25,25 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
     # while not vehicle.is_armable:
     #     print(" Waiting for vehicle to initialise...")
     #     time.sleep(1)
-    while vehicle.parameters['ARMING_CHECK'] != -9:
-        vehicle.parameters['ARMING_CHECK'] = -9
-        time.sleep(0.2)
 
     while vehicle.mode != VehicleMode("ALT_HOLD"):
         print("Waiting for ALT_HOLD...")
         vehicle.mode = VehicleMode("ALT_HOLD") # Copter should arm in STABILIZE mode
         print "Mode: " + vehicle.mode.name
-        time.sleep(0.2)
 
     time.sleep(1)
-    print("Flushing queue...                                                                                                                                                                                                                                                                                                                    ")
+
+    vehicle.armed = True                    # Arms Vehicle
     vehicle.flush()                         # Forces DroneKit to send all outstanding messages
 
     print("Arming motors...")
     while not vehicle.armed:                # This loops ensures that the vehicle is armed before attempting takeoff
         print(" Waiting for arming...")
-        vehicle.armed = True                    # Arms Vehicle
         time.sleep(1)
 
     print("Vehicle Armed!")
 
     print("Confirming Mode...")
-
     while vehicle.mode != "ALT_HOLD":
         vehicle.mode = VehicleMode("ALT_HOLD") # Copter should arm in STABILIZE mode
         print "Mode: " + vehicle.mode.name
@@ -56,23 +51,6 @@ def arm_and_takeoff_stabilize(aTargetAltitude):
     print("Taking off!")
 
     thrust = DEFAULT_TAKEOFF_THRUST
-
-    while True:
-        print("Retrieving sensor data for take off...")
-        sensor_data = stdata_q.get()
-        current_altitude = sensor_data[5]/100
-        print " Altitude: " + str(current_altitude)
-
-        if current_altitude >= 0.8:                                         # Trigger just below target alt.
-            print("Reached target altitude")
-            break
-
-        elif current_altitude >= 0.6 and current_altitude < 0.8:            #Slighlty decrease thrust at 0.6 x Target Altitude
-            thrust = SMOOTH_TAKEOFF_THRUST
-            print("Smoothing thrust...")
-
-        set_attitude_alt(thrust = thrust)
-        time.sleep(0.2)
 
 def timestamp():
 
@@ -95,11 +73,7 @@ def land_and_close():
     time.sleep(2)
 
     print "Landing..."
-
-    while vehicle.mode != VehicleMode("LAND"):
-        print("Waiting for Mode Change to LAND...")
-        vehicle.mode = VehicleMode("LAND") # Copter should arm in STABILIZE mode
-        print "Mode: " + vehicle.mode.name
+    vehicle.mode = VehicleMode("LAND")
 
     print "Closing vehicle object..."
     vehicle.close()
@@ -138,7 +112,7 @@ def to_quaternion(roll = 0.0, pitch = 0.0, yaw = 0.0):
 
     return [w, x, y, z]
 
-def set_attitude(roll_angle = 0.0, pitch_angle = 0.0, yaw_rate = 0.0, thrust = 0.5, duration = 0):
+def set_attitude(roll_angle = 0.0, pitch_angle = 0.0, yaw_rate = 0.0, thrust = 0.005, duration = 0):
     """
     Note that from AC3.3 the message should be re-sent every second (after about 3 seconds
     with no message the velocity will drop back to zero). In AC3.2.1 and earlier the specified
@@ -187,7 +161,7 @@ def set_attitude(roll_angle = 0.0, pitch_angle = 0.0, yaw_rate = 0.0, thrust = 0
             time.sleep(1)
             vehicle.send_mavlink(msg)
 
-def set_attitude_alt(roll_angle = 0.0, pitch_angle = 0.0, yaw_angle = 0.0, thrust = 0.5, duration = 0):
+def set_attitude_alt(roll_angle = 0.0, pitch_angle = 0.0, yaw_angle = 0.0, thrust = 0.2, duration = 0):
     """
     Note that from AC3.3 the message should be re-sent every second (after about 3 seconds
     with no message the velocity will drop back to zero). In AC3.2.1 and earlier the specified
@@ -337,7 +311,7 @@ def read_sonar_multi_call(sensor_loop, stdata_q):
         pool = multiprocessing.Pool(processes=6)
         stdata_pre = [pool.apply_async(read_individual_sonar, args=(x,)) for x in range(6)]
         stdata = [p.get() for p in stdata_pre]
-        pool.close()
+
         logdata(str(stdata), logfile)
         stdata_q.put(stdata)                                                # Sends "stdata" back to main process via multiprocessing queue
 
@@ -347,7 +321,7 @@ def read_sonar_multi_call(sensor_loop, stdata_q):
 
 if __name__ == "__main__":
     # All code -- including calling pre-defined functions -- goes here
-    target = sys.argv[1] if len(sys.argv) >= 2 else 'udpin:0.0.0.0:14550'
+    target = sys.argv[1] if len(sys.argv) >= 2 else 'tcp:127.0.0.1:5760'
     print 'Connecting to ' + target + '...'
     vehicle = connect(target, wait_ready=True)
 
@@ -356,28 +330,13 @@ if __name__ == "__main__":
 
     pulse = 0.00002
     stdata = [0,0,0,0,0,0]
-    sensor_loop = multiprocessing.Event()
-
-    print "Initializing queue to communicate between processes..."
-    stdata_q = multiprocessing.Queue()
-    print "Queue initialised!"
-    proc = multiprocessing.Process(target=read_sonar_multi_call, args=(sensor_loop, stdata_q,))
-    print "Starting sub-process to control sensor reading and writing..."
-    proc.start()
-    print "Process started!"
 
     time.sleep(0.5)
 
     arm_and_takeoff_stabilize(1)
 
     t = 0
-    land_and_close()
 
-    print "Triggering sensor_loop event to end sub-process..."
-    sensor_loop.set()
-    time.sleep(2)
-    print "Cleaning up sub-process..."
-    proc.join()
     print "Cleaning up GPIO pins..."
     GPIO.cleanup()
     print "Done!"
