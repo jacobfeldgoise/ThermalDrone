@@ -1,0 +1,48 @@
+Jul 12 17:15:11 3dr_solo local4.info +440 tlm: Installing SIGQUIT signal handler
+Jul 12 17:15:11 3dr_solo local4.info +476 tlm: telem_forwarder starting: built Sep 22 2016 15:31:01
+Jul 12 17:15:11 3dr_solo local4.info +492 tlm: serial port: /dev/ttymxc1
+Jul 12 17:15:11 3dr_solo local4.info +492 tlm: serial baudrate: 921600
+Jul 12 17:15:11 3dr_solo local4.info +492 tlm: serial hw flow: true
+Jul 12 17:15:11 3dr_solo local4.info +492 tlm: UDP dest port: 14550
+Jul 12 17:15:11 3dr_solo local4.info +492 tlm: use GPS time: true
+Jul 12 17:15:11 3dr_solo local4.info +492 tlm: tos: 0x7f
+Jul 12 17:15:11 3dr_solo local4.info +492 tlm: opened port 14560
+Jul 12 17:15:11 3dr_solo local4.info +496 tlm: opened serial port /dev/ttymxc1
+Jul 12 17:15:11 3dr_solo local4.err +540 tlm: Message too large for aggregate buffer, sending LinkPacket first
+Jul 12 17:15:11 3dr_solo local4.err +646 tlm: poll returned zero
+Jul 12 17:15:11 3dr_solo local4.info +740 tlm: adding new client 10.1.1.10:57521
+Jul 12 17:15:11 3dr_solo local4.info +740 tlm: ARP: Seen (254/17) from 10.1.1.10:57521 client=0x762fdc44
+Jul 12 17:15:11 3dr_solo local4.info +740 tlm: ARP: Seen (57/57) from 10.1.1.10:57521 client=0x762fdc44
+Jul 12 17:15:14 3dr_solo local4.info +741 tlm: adding new client 127.0.0.1:49108
+Jul 12 17:15:14 3dr_solo local4.info +742 tlm: ARP: Seen (255/0) from 127.0.0.1:49108 client=0x762fdc44
+Jul 12 17:15:15 3dr_solo local4.info +610 tlm: SET_MODE: from 127.0.0.1:49108
+Jul 12 17:15:15 3dr_solo local4.info +610 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 12 17:15:15 3dr_solo local4.info +610 tlm: SET_MODE: custom_mode=0.0.0.5 target_system=1 base_mode=1
+Jul 12 17:15:21 3dr_solo local4.info +551 tlm: down: 221 m/s, 19595 b/s, 21%; up: 71 m/s, 1092 b/s, 1%
+Jul 12 17:15:21 3dr_solo local4.info +552 tlm: seq errs: (1,1):1
+Jul 12 17:15:31 3dr_solo local4.info +553 tlm: down: 148 m/s, 16051 b/s, 17%; up: 64 m/s, 971 b/s, 1%
+Jul 12 17:15:41 3dr_solo local4.info +553 tlm: down: 147 m/s, 15980 b/s, 17%; up: 64 m/s, 966 b/s, 1%
+Jul 12 17:15:51 3dr_solo local4.info +554 tlm: down: 146 m/s, 15978 b/s, 17%; up: 64 m/s, 968 b/s, 1%
+Jul 12 17:16:01 3dr_solo local4.info +555 tlm: down: 148 m/s, 16021 b/s, 17%; up: 64 m/s, 968 b/s, 1%
+Jul 12 17:16:11 3dr_solo local4.info +555 tlm: down: 147 m/s, 16001 b/s, 17%; up: 64 m/s, 968 b/s, 1%
+Jul 12 17:16:21 3dr_solo local4.info +556 tlm: down: 146 m/s, 15975 b/s, 17%; up: 64 m/s, 968 b/s, 1%
+Jul 12 17:16:31 3dr_solo local4.info +557 tlm: down: 147 m/s, 15980 b/s, 17%; up: 64 m/s, 965 b/s, 1%
+Jul 12 17:16:41 3dr_solo local4.info +557 tlm: down: 148 m/s, 16048 b/s, 17%; up: 64 m/s, 971 b/s, 1%
+Jul 12 17:16:51 3dr_solo local4.info +558 tlm: down: 146 m/s, 15983 b/s, 17%; up: 64 m/s, 968 b/s, 1%
+Jul 12 17:17:01 3dr_solo local4.info +559 tlm: down: 148 m/s, 16015 b/s, 17%; up: 64 m/s, 969 b/s, 1%
+Jul 12 17:17:05 3dr_solo local4.info +820 tlm: GPS time: 2017-07-26 17:01:37.111000
+Jul 26 17:01:37 3dr_solo local4.info +111 tlm: clock set from GPS
+Jul 26 17:01:42 3dr_solo local4.info +849 tlm: down: 188 m/s, 17266 b/s, 18%; up: 65 m/s, 993 b/s, 1%
+Jul 26 17:01:52 3dr_solo local4.info +850 tlm: down: 162 m/s, 16170 b/s, 17%; up: 65 m/s, 986 b/s, 1%
+Jul 26 17:02:02 3dr_solo local4.info +851 tlm: down: 162 m/s, 16229 b/s, 17%; up: 65 m/s, 986 b/s, 1%
+Jul 26 17:02:12 3dr_solo local4.info +851 tlm: down: 162 m/s, 16174 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 26 17:02:22 3dr_solo local4.info +852 tlm: down: 162 m/s, 16196 b/s, 17%; up: 64 m/s, 968 b/s, 1%
+Jul 26 17:02:32 3dr_solo local4.info +853 tlm: down: 162 m/s, 16184 b/s, 17%; up: 64 m/s, 966 b/s, 1%
+Jul 26 17:02:42 3dr_solo local4.info +853 tlm: down: 162 m/s, 16181 b/s, 17%; up: 64 m/s, 965 b/s, 1%
+Jul 26 17:02:52 3dr_solo local4.info +854 tlm: down: 162 m/s, 16226 b/s, 17%; up: 64 m/s, 969 b/s, 1%
+Jul 26 17:03:02 3dr_solo local4.info +854 tlm: down: 162 m/s, 16186 b/s, 17%; up: 64 m/s, 966 b/s, 1%
+Jul 26 17:03:12 3dr_solo local4.info +855 tlm: down: 162 m/s, 16155 b/s, 17%; up: 63 m/s, 962 b/s, 1%
+Jul 26 17:03:22 3dr_solo local4.info +856 tlm: down: 162 m/s, 16202 b/s, 17%; up: 64 m/s, 969 b/s, 1%
+Jul 26 17:03:32 3dr_solo local4.info +858 tlm: down: 186 m/s, 17137 b/s, 18%; up: 65 m/s, 1009 b/s, 1%
+Jul 26 17:03:42 3dr_solo local4.info +858 tlm: down: 162 m/s, 16182 b/s, 17%; up: 64 m/s, 978 b/s, 1%
+Jul 26 17:03:52 3dr_solo local4.info +859 tlm: down: 162 m/s, 16224 b/s, 17%; up: 64 m/s, 969 b/s, 1%

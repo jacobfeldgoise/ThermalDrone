@@ -1,0 +1,178 @@
+Jul 26 18:30:14 3dr_solo local2.info shot: +-+-+-+-+-+-+ Starting up v2.4.1-1 +-+-+-+-+-+-+
+Jul 26 18:30:14 3dr_solo local2.info shot: [RC] Disabling stick remapping
+Jul 26 18:30:14 3dr_solo local2.info shot: [app]: Ready for connections from app.
+Jul 26 18:30:14 3dr_solo local2.info shot: [button]: Creating a new thread to connect to Artoo.
+Jul 26 18:30:14 3dr_solo local2.info shot: [button]: read in button mappings
+Jul 26 18:30:14 3dr_solo local2.info shot: [button]: Button A - shot Cable Cam, mode None
+Jul 26 18:30:14 3dr_solo local2.info shot: [button]: Button B - shot Orbit, mode None
+Jul 26 18:30:14 3dr_solo local2.info shot: [gopro]: read enabled value from settings of 1.
+Jul 26 18:30:14 3dr_solo local2.info shot: [gopro]: sending gimbal enabled param (GMB_GP_CTRL) to 1.000000
+Jul 26 18:30:14 3dr_solo local2.info shot: [gopro]: Inited GoProManager
+Jul 26 18:30:14 3dr_solo local2.info shot: [RewindManager] Init
+Jul 26 18:30:14 3dr_solo local2.info shot: [shot]: No gimbal detected.
+Jul 26 18:30:16 3dr_solo local2.info shot: [button]: Connected to Artoo.
+Jul 26 18:30:16 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Jul 27 21:57:56 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 21:58:59 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 21:59:28 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 21:59:44 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:01:19 3dr_solo local2.info shot: [button]: Trying shot via Artoo button: Orbit
+Jul 27 22:01:19 3dr_solo local2.info shot: [shot]: Vehicle EKF quality is poor, shot entry into Orbit disallowed.
+Jul 27 22:01:19 3dr_solo local2.info shot: [app]: Can't send packet - app is not connected!
+Jul 27 22:01:19 3dr_solo local2.info shot: [shot]: Already in shot FLY.
+Jul 27 22:01:19 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 27 22:01:19 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:01:24 3dr_solo local2.info shot: [callback]: Mode changed from LOITER -> STABILIZE
+Jul 27 22:01:24 3dr_solo local2.info shot: [button]: sending STABILIZE to Artoo as mode
+Jul 27 22:01:27 3dr_solo local2.info shot: [callback]: armed status changed to 1
+Jul 27 22:01:27 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 27 22:01:27 3dr_solo local2.info shot: [RewindManager] loaded home 42.339417 -71.141487, alt 47.789997
+Jul 27 22:01:27 3dr_solo local2.info shot: [app]: Can't send packet - app is not connected!
+Jul 27 22:01:50 3dr_solo local2.info shot: [callback]: Mode changed from STABILIZE -> LAND
+Jul 27 22:01:50 3dr_solo local2.info shot: [button]: sending LAND to Artoo as mode
+Jul 27 22:01:53 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:01:54 3dr_solo local2.info shot: [callback]: armed status changed to 0
+Jul 27 22:01:54 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 27 22:01:54 3dr_solo local2.info shot: [shot]: Already in shot FLY.
+Jul 27 22:01:54 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 27 22:01:54 3dr_solo local2.info shot: [gopro]: handleRecordCommand called but GoPro is not connected
+Jul 27 22:01:54 3dr_solo local2.info shot: [callback]: Mode changed from LAND -> LOITER
+Jul 27 22:01:54 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Jul 27 22:01:54 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:01:58 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:08:30 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:08:47 3dr_solo local2.info shot: [callback]: Mode changed from LOITER -> STABILIZE
+Jul 27 22:08:47 3dr_solo local2.info shot: [button]: sending STABILIZE to Artoo as mode
+Jul 27 22:08:50 3dr_solo local2.info shot: [callback]: armed status changed to 1
+Jul 27 22:08:50 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 27 22:08:50 3dr_solo local2.info shot: [RewindManager] loaded home 42.339405 -71.141472, alt 47.070000
+Jul 27 22:08:50 3dr_solo local2.info shot: [app]: Can't send packet - app is not connected!
+Jul 27 22:09:01 3dr_solo local2.info shot: [callback]: Mode changed from STABILIZE -> LAND
+Jul 27 22:09:01 3dr_solo local2.info shot: [button]: sending LAND to Artoo as mode
+Jul 27 22:09:04 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:09:05 3dr_solo local2.info shot: [callback]: armed status changed to 0
+Jul 27 22:09:05 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 27 22:09:05 3dr_solo local2.info shot: [shot]: Already in shot FLY.
+Jul 27 22:09:05 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 27 22:09:05 3dr_solo local2.info shot: [gopro]: handleRecordCommand called but GoPro is not connected
+Jul 27 22:09:05 3dr_solo local2.info shot: [callback]: Mode changed from LAND -> LOITER
+Jul 27 22:09:05 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Jul 27 22:09:06 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:09:10 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:09:32 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:14:07 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:14:50 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:16:28 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:16:59 3dr_solo local2.info shot: [callback]: Mode changed from LOITER -> STABILIZE
+Jul 27 22:16:59 3dr_solo local2.info shot: [button]: sending STABILIZE to Artoo as mode
+Jul 27 22:17:01 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:17:01 3dr_solo local2.info shot: [callback]: armed status changed to 1
+Jul 27 22:17:01 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 27 22:17:01 3dr_solo local2.info shot: [RewindManager] loaded home 42.339405 -71.141472, alt 47.070000
+Jul 27 22:17:01 3dr_solo local2.info shot: [app]: Can't send packet - app is not connected!
+Jul 27 22:17:07 3dr_solo local2.info shot: [callback]: Mode changed from STABILIZE -> LAND
+Jul 27 22:17:07 3dr_solo local2.info shot: [button]: sending LAND to Artoo as mode
+Jul 27 22:17:11 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:17:11 3dr_solo local2.info shot: [callback]: armed status changed to 0
+Jul 27 22:17:11 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 27 22:17:11 3dr_solo local2.info shot: [shot]: Already in shot FLY.
+Jul 27 22:17:11 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 27 22:17:11 3dr_solo local2.info shot: [gopro]: handleRecordCommand called but GoPro is not connected
+Jul 27 22:17:11 3dr_solo local2.info shot: [callback]: Mode changed from LAND -> LOITER
+Jul 27 22:17:11 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Jul 27 22:17:12 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:17:16 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:17:41 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:18:00 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:18:12 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:19:34 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:20:02 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:20:48 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:21:00 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:21:53 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:22:04 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:23:04 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:23:17 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:23:55 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:24:13 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:27:03 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:27:13 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:27:16 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:27:45 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:29:07 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:29:22 3dr_solo local2.info shot: [callback]: Mode changed from LOITER -> STABILIZE
+Jul 27 22:29:22 3dr_solo local2.info shot: [button]: sending STABILIZE to Artoo as mode
+Jul 27 22:29:25 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:29:25 3dr_solo local2.info shot: [callback]: armed status changed to 1
+Jul 27 22:29:25 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 27 22:29:25 3dr_solo local2.info shot: [RewindManager] loaded home 42.339405 -71.141472, alt 47.070000
+Jul 27 22:29:25 3dr_solo local2.info shot: [app]: Can't send packet - app is not connected!
+Jul 27 22:29:42 3dr_solo local2.info shot: [callback]: Mode changed from STABILIZE -> LAND
+Jul 27 22:29:42 3dr_solo local2.info shot: [button]: sending LAND to Artoo as mode
+Jul 27 22:29:45 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:29:46 3dr_solo local2.info shot: [callback]: armed status changed to 0
+Jul 27 22:29:46 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 27 22:29:46 3dr_solo local2.info shot: [shot]: Already in shot FLY.
+Jul 27 22:29:46 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 27 22:29:46 3dr_solo local2.info shot: [gopro]: handleRecordCommand called but GoPro is not connected
+Jul 27 22:29:46 3dr_solo local2.info shot: [callback]: Mode changed from LAND -> LOITER
+Jul 27 22:29:46 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Jul 27 22:29:46 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:29:52 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:30:32 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:30:33 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:32:03 3dr_solo local2.info shot: [callback]: Mode changed from LOITER -> STABILIZE
+Jul 27 22:32:03 3dr_solo local2.info shot: [button]: sending STABILIZE to Artoo as mode
+Jul 27 22:32:05 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:32:05 3dr_solo local2.info shot: [callback]: armed status changed to 1
+Jul 27 22:32:05 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 27 22:32:05 3dr_solo local2.info shot: [RewindManager] loaded home 42.339405 -71.141472, alt 47.070000
+Jul 27 22:32:05 3dr_solo local2.info shot: [app]: Can't send packet - app is not connected!
+Jul 27 22:32:13 3dr_solo local2.info shot: [callback]: Mode changed from STABILIZE -> LAND
+Jul 27 22:32:13 3dr_solo local2.info shot: [button]: sending LAND to Artoo as mode
+Jul 27 22:32:17 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:32:17 3dr_solo local2.info shot: [callback]: armed status changed to 0
+Jul 27 22:32:17 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 27 22:32:17 3dr_solo local2.info shot: [shot]: Already in shot FLY.
+Jul 27 22:32:17 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 27 22:32:17 3dr_solo local2.info shot: [gopro]: handleRecordCommand called but GoPro is not connected
+Jul 27 22:32:17 3dr_solo local2.info shot: [callback]: Mode changed from LAND -> LOITER
+Jul 27 22:32:17 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Jul 27 22:32:19 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:32:22 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:32:40 3dr_solo local2.info shot: [callback]: Mode changed from LOITER -> STABILIZE
+Jul 27 22:32:40 3dr_solo local2.info shot: [button]: sending STABILIZE to Artoo as mode
+Jul 27 22:32:42 3dr_solo local2.info shot: [callback]: Mode changed from STABILIZE -> LAND
+Jul 27 22:32:42 3dr_solo local2.info shot: [button]: sending LAND to Artoo as mode
+Jul 27 22:32:52 3dr_solo local2.info shot: [callback]: Mode changed from LAND -> LOITER
+Jul 27 22:32:52 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Jul 27 22:35:15 3dr_solo local2.info shot: [callback]: Mode changed from LOITER -> STABILIZE
+Jul 27 22:35:15 3dr_solo local2.info shot: [button]: sending STABILIZE to Artoo as mode
+Jul 27 22:35:17 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:35:17 3dr_solo local2.info shot: [callback]: armed status changed to 1
+Jul 27 22:35:17 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 27 22:35:17 3dr_solo local2.info shot: [RewindManager] loaded home 42.339405 -71.141472, alt 47.070000
+Jul 27 22:35:17 3dr_solo local2.info shot: [app]: Can't send packet - app is not connected!
+Jul 27 22:35:25 3dr_solo local2.info shot: [callback]: Mode changed from STABILIZE -> LAND
+Jul 27 22:35:25 3dr_solo local2.info shot: [button]: sending LAND to Artoo as mode
+Jul 27 22:35:32 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:35:32 3dr_solo local2.info shot: [callback]: armed status changed to 0
+Jul 27 22:35:32 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 27 22:35:32 3dr_solo local2.info shot: [shot]: Already in shot FLY.
+Jul 27 22:35:32 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 27 22:35:32 3dr_solo local2.info shot: [gopro]: handleRecordCommand called but GoPro is not connected
+Jul 27 22:35:32 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:35:32 3dr_solo local2.info shot: [shot]: Already in shot FLY.
+Jul 27 22:35:32 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 27 22:35:32 3dr_solo local2.info shot: [callback]: Mode changed from LAND -> LOITER
+Jul 27 22:35:32 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Jul 27 22:35:37 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:35:49 3dr_solo local2.info shot: [callback]: Mode changed from LOITER -> STABILIZE
+Jul 27 22:35:49 3dr_solo local2.info shot: [button]: sending STABILIZE to Artoo as mode
+Jul 27 22:35:51 3dr_solo local2.info shot: [callback]: Mode changed from STABILIZE -> LAND
+Jul 27 22:35:51 3dr_solo local2.info shot: [button]: sending LAND to Artoo as mode
+Jul 27 22:35:51 3dr_solo local2.info shot: [callback]: Mode changed from LAND -> LOITER
+Jul 27 22:35:51 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Jul 27 22:36:49 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 27 22:37:18 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 27 22:38:42 3dr_solo local2.info shot: [callback]: EKF status changed to 1

@@ -1,0 +1,80 @@
+Jul 12 17:46:02 3dr_controller local1.info stm32: stm32 update starting
+Jul 12 17:46:02 3dr_controller local1.info stm32: no firmware available for update
+Jul 12 17:46:02 3dr_controller local1.info stm32: requesting stm32 version
+Jul 12 17:46:02 3dr_controller local1.info stm32: running version: 1.2.11
+Jul 12 17:46:02 3dr_controller local1.info stm32: not updating (no new firmware)
+Jul 12 17:46:02 3dr_controller local1.info stm32: writing STM_VERSION with running version 1.2.11
+Jul 12 17:46:02 3dr_controller local1.info stm32: no screen update (READY exists)
+Jul 12 17:46:03 3dr_controller local1.info net: hostapdconfig.py starting
+Jul 12 17:46:03 3dr_controller local1.info net: --channel wlan0
+Jul 12 17:46:03 3dr_controller local1.info net: can't get wlan0 frequency; defaulting to channel 0
+Jul 12 17:46:03 3dr_controller local1.info net: changing channel in /etc/hostapd.conf from 0 to 0
+Jul 12 17:46:03 3dr_controller local1.info pair: pair_server starting
+Jul 12 17:46:03 3dr_controller local1.info pair: using default check_versions=True
+Jul 12 17:46:03 3dr_controller local1.info pair: sololink version "2.4.2"
+Jul 12 17:46:03 3dr_controller local1.info pair: firmware version "1.2.11"
+
+acs_num_scans=8
+wlan0-ap:
+   Freq   Noise   OnChan   ChBusy  ExtBusy    Rxing    Txing
+Ch  MHz     dBm     msec     msec     msec     msec     msec
+ 1 2412     -93     4616     3888              3642        0
+ 2 2417     -95      108       79                74        0
+ 3 2422     -93      108       59                54        0
+ 4 2427     -95      108       59                55        0
+ 5 2432     -94      108       70                66        0
+ 6 2437              108       98                95        0
+ 7 2442     -94      108       81                77        0
+ 8 2447 *   -94      397      188               168        7
+ 9 2452     -93      108       56                52        0
+10 2457     -94      108       60                56        0
+11 2462     -93      108       82                76        0
+
+Jul 12 17:46:19 3dr_controller local1.info pair: connection request from known solo: send CONN_ACK (yes)
+Jul 12 17:46:19 3dr_controller local1.info pair: solo version "2.4.2"; firmware "1.3.1"
+Jul 12 17:46:19 3dr_controller local1.info pair: IDLE -> CONNECTED
+Jul 12 17:46:19 3dr_controller local1.info pair: connected with ('10.1.1.10', 51510)
+Jul 12 17:46:19 3dr_controller local1.info pair: switching to runlevel.READY
+Jul 12 17:46:19 3dr_controller local1.info +764 tlm: telem_ctrl starting: built Sep 22 2016 15:31:04
+Jul 12 17:46:19 3dr_controller local1.info +786 tlm: stm32 @ 127.0.0.1:5015
+Jul 12 17:46:19 3dr_controller local1.info +791 tlm: tlog @ 127.0.0.1:14583
+Jul 12 17:46:19 3dr_controller local1.info +791 tlm: telem_dest_port = 14550
+Jul 12 17:46:19 3dr_controller local1.info +791 tlm: use_gps_time = 1
+Jul 12 17:46:19 3dr_controller local1.info +792 tlm: uplink_tos = 0x00
+Jul 12 17:46:19 3dr_controller local1.info +792 tlm: gcs_tos = 0x00
+Jul 12 17:46:19 3dr_controller local1.info +860 tlm: solo @ 10.1.1.10:14560
+Jul 12 17:46:20 3dr_controller local1.info app: starting
+Jul 12 17:46:20 3dr_controller local1.info app: waiting for connection
+Jul 12 17:46:29 3dr_controller local1.info +870 tlm: dn:101 (1,1)1512/1 (10,0)10/0 up:0
+Jul 12 17:46:39 3dr_controller local1.info +890 tlm: dn:99 (1,1)839/0 (10,0)10/0 up:0
+Jul 12 17:46:44 3dr_controller local1.info +826 tlm: adding telem dest @ 10.1.1.173:14550
+Jul 12 17:46:49 3dr_controller local1.info +864 tlm: dn:97 (1,1)837/0 (10,0)10/0 up:0
+Jul 12 17:46:59 3dr_controller local1.info +831 tlm: adding telem dest @ 10.1.1.106:14550
+Jul 12 17:46:59 3dr_controller local1.info +839 tlm: dn:98 (1,1)820/0 (10,0)10/0 up:0
+Jul 12 17:47:09 3dr_controller local1.info +900 tlm: dn:99 (1,1)843/0 (10,0)10/0 up:0
+Jul 12 17:47:19 3dr_controller local1.info +881 tlm: dn:99 (1,1)837/0 (10,0)10/0 up:0
+Jul 12 17:47:29 3dr_controller local1.info +876 tlm: dn:99 (1,1)825/0 (10,0)10/0 up:0
+Jul 12 17:47:39 3dr_controller local1.info +835 tlm: dn:98 (1,1)834/0 (10,0)10/0 up:0
+Jul 12 17:47:49 3dr_controller local1.info +894 tlm: dn:99 (1,1)842/0 (10,0)10/0 up:0
+Jul 12 17:47:59 3dr_controller local1.info +848 tlm: dn:98 (1,1)821/0 (10,0)10/0 up:0
+Jul 12 17:48:09 3dr_controller local1.info +867 tlm: dn:99 (1,1)837/0 (10,0)10/0 up:0
+Jul 12 17:48:14 3dr_controller local1.info +171 tlm: gps time 2017-07-26 17:01:37,111
+Jul 26 17:01:37 3dr_controller local1.info +111 tlm: system time set from gps time
+Jul 26 17:01:42 3dr_controller local1.info +879 tlm: dn:88 (1,1)1250/0 (10,0)10/0 up:13
+Jul 26 17:01:52 3dr_controller local1.info +811 tlm: dn:56 (1,1)986/0 (10,0)10/0 up:10
+Jul 26 17:02:02 3dr_controller local1.info +778 tlm: dn:52 (1,1)984/0 (10,0)10/0 up:10
+Jul 26 17:02:12 3dr_controller local1.info +936 tlm: dn:57 (1,1)982/0 (10,0)10/0 up:7
+Jul 26 17:02:22 3dr_controller local1.info +763 tlm: dn:55 (1,1)981/0 (10,0)10/0 up:0
+Jul 26 17:02:32 3dr_controller local1.info +801 tlm: dn:56 (1,1)984/0 (10,0)10/0 up:0
+Jul 26 17:02:42 3dr_controller local1.info +828 tlm: dn:56 (1,1)984/0 (10,0)10/0 up:0
+Jul 26 17:02:52 3dr_controller local1.info +838 tlm: dn:53 (1,1)984/0 (10,0)10/0 up:0
+Jul 26 17:03:02 3dr_controller local1.info +783 tlm: dn:51 (1,1)985/0 (10,0)10/0 up:0
+Jul 26 17:03:12 3dr_controller local1.info +799 tlm: dn:55 (1,1)982/0 (10,0)10/0 up:0
+Jul 26 17:03:22 3dr_controller local1.info +833 tlm: dn:56 (1,1)984/0 (10,0)10/0 up:0
+Jul 26 17:03:32 3dr_controller local1.info +764 tlm: dn:73 (1,1)1223/0 (10,0)10/0 up:18
+Jul 26 17:03:42 3dr_controller local1.info +791 tlm: dn:55 (1,1)984/0 (10,0)10/0 up:8
+Jul 26 17:03:52 3dr_controller local1.info +761 tlm: dn:52 (1,1)984/0 (10,0)10/0 up:0
+Jul 26 17:04:02 3dr_controller local1.info +839 tlm: dn:48 (0,0)1/0 (1,1)891/0 (10,0)9/0 up:0
+Jul 26 17:04:12 3dr_controller local1.info +841 tlm: dn:0 up:0
+Jul 26 17:04:22 3dr_controller local1.info +843 tlm: dn:0 up:0
+Jul 26 17:04:32 3dr_controller local1.info +845 tlm: dn:0 up:0

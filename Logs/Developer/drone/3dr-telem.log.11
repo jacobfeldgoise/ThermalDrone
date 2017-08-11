@@ -1,0 +1,295 @@
+Jul 27 23:11:09 3dr_solo local4.info +833 tlm: Installing SIGQUIT signal handler
+Jul 27 23:11:09 3dr_solo local4.info +863 tlm: telem_forwarder starting: built Sep 22 2016 15:31:01
+Jul 27 23:11:09 3dr_solo local4.info +864 tlm: serial port: /dev/ttymxc1
+Jul 27 23:11:09 3dr_solo local4.info +881 tlm: serial baudrate: 921600
+Jul 27 23:11:09 3dr_solo local4.info +881 tlm: serial hw flow: true
+Jul 27 23:11:09 3dr_solo local4.info +881 tlm: UDP dest port: 14550
+Jul 27 23:11:09 3dr_solo local4.info +881 tlm: use GPS time: true
+Jul 27 23:11:09 3dr_solo local4.info +881 tlm: tos: 0x7f
+Jul 27 23:11:09 3dr_solo local4.info +881 tlm: opened port 14560
+Jul 27 23:11:09 3dr_solo local4.info +887 tlm: opened serial port /dev/ttymxc1
+Jul 27 23:11:09 3dr_solo local4.err +934 tlm: Message too large for aggregate buffer, sending LinkPacket first
+Jul 27 23:11:10 3dr_solo local4.err +089 tlm: poll returned zero
+Jul 27 23:11:10 3dr_solo local4.info +134 tlm: adding new client 10.1.1.10:58019
+Jul 27 23:11:10 3dr_solo local4.info +134 tlm: ARP: Seen (254/17) from 10.1.1.10:58019 client=0x762fdc44
+Jul 27 23:11:10 3dr_solo local4.info +135 tlm: ARP: Seen (57/57) from 10.1.1.10:58019 client=0x762fdc44
+Jul 27 23:11:12 3dr_solo local4.info +166 tlm: GPS time: 2017-07-27 23:12:44.067000
+Jul 27 23:12:44 3dr_solo local4.info +067 tlm: clock set from GPS
+Jul 27 23:12:45 3dr_solo local4.info +061 tlm: adding new client 127.0.0.1:50962
+Jul 27 23:12:45 3dr_solo local4.info +061 tlm: ARP: Seen (255/0) from 127.0.0.1:50962 client=0x762fdc44
+Jul 27 23:12:45 3dr_solo local4.info +740 tlm: SET_MODE: from 127.0.0.1:50962
+Jul 27 23:12:45 3dr_solo local4.info +740 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:12:45 3dr_solo local4.info +740 tlm: SET_MODE: custom_mode=0.0.0.5 target_system=1 base_mode=1
+Jul 27 23:12:51 3dr_solo local4.info +835 tlm: down: 223 m/s, 19683 b/s, 21%; up: 71 m/s, 1095 b/s, 1%
+Jul 27 23:12:51 3dr_solo local4.info +835 tlm: seq errs: (1,1):1 (1,155):2
+Jul 27 23:13:01 3dr_solo local4.info +836 tlm: down: 152 m/s, 16278 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:13:11 3dr_solo local4.info +837 tlm: down: 151 m/s, 16249 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:13:21 3dr_solo local4.info +837 tlm: down: 152 m/s, 16236 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:13:31 3dr_solo local4.info +838 tlm: down: 152 m/s, 16300 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:13:41 3dr_solo local4.info +838 tlm: down: 152 m/s, 16300 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:13:51 3dr_solo local4.info +839 tlm: down: 152 m/s, 16244 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:14:01 3dr_solo local4.info +840 tlm: down: 152 m/s, 16258 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:14:11 3dr_solo local4.info +840 tlm: down: 152 m/s, 16300 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:14:21 3dr_solo local4.info +841 tlm: down: 117 m/s, 12451 b/s, 13%; up: 49 m/s, 754 b/s, 0%
+Jul 27 23:14:31 3dr_solo local4.info +842 tlm: down: 128 m/s, 13287 b/s, 14%; up: 52 m/s, 797 b/s, 0%
+Jul 27 23:14:41 3dr_solo local4.info +842 tlm: down: 159 m/s, 16458 b/s, 17%; up: 64 m/s, 972 b/s, 1%
+Jul 27 23:14:51 3dr_solo local4.info +843 tlm: down: 158 m/s, 16519 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:14:53 3dr_solo local4.info +257 tlm: SET_MODE: from 127.0.0.1:50962
+Jul 27 23:14:53 3dr_solo local4.info +257 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:14:53 3dr_solo local4.info +258 tlm: SET_MODE: custom_mode=0.0.0.5 target_system=1 base_mode=1
+Jul 27 23:15:01 3dr_solo local4.info +844 tlm: down: 152 m/s, 16238 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:15:11 3dr_solo local4.info +845 tlm: down: 152 m/s, 16278 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:15:21 3dr_solo local4.info +845 tlm: down: 126 m/s, 13219 b/s, 14%; up: 52 m/s, 797 b/s, 0%
+Jul 27 23:15:31 3dr_solo local4.info +846 tlm: down: 159 m/s, 16483 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:15:41 3dr_solo local4.info +847 tlm: down: 158 m/s, 16436 b/s, 17%; up: 64 m/s, 972 b/s, 1%
+Jul 27 23:15:51 3dr_solo local4.info +847 tlm: down: 160 m/s, 16566 b/s, 17%; up: 65 m/s, 984 b/s, 1%
+Jul 27 23:15:57 3dr_solo local4.info +580 tlm: SET_MODE: from 127.0.0.1:50962
+Jul 27 23:15:57 3dr_solo local4.info +580 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:15:57 3dr_solo local4.info +580 tlm: SET_MODE: custom_mode=0.0.0.5 target_system=1 base_mode=1
+Jul 27 23:16:01 3dr_solo local4.info +849 tlm: down: 156 m/s, 16352 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:16:11 3dr_solo local4.info +849 tlm: down: 152 m/s, 16294 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:16:21 3dr_solo local4.info +850 tlm: down: 153 m/s, 16333 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:16:31 3dr_solo local4.info +851 tlm: down: 152 m/s, 16274 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:16:41 3dr_solo local4.info +851 tlm: down: 152 m/s, 16321 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:16:51 3dr_solo local4.info +852 tlm: down: 152 m/s, 16290 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:17:01 3dr_solo local4.info +853 tlm: down: 152 m/s, 16299 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:17:11 3dr_solo local4.info +854 tlm: down: 152 m/s, 16321 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:17:21 3dr_solo local4.info +854 tlm: down: 152 m/s, 16293 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:17:31 3dr_solo local4.info +855 tlm: down: 152 m/s, 16273 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:17:41 3dr_solo local4.info +856 tlm: down: 152 m/s, 16300 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:17:51 3dr_solo local4.info +856 tlm: down: 152 m/s, 16257 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:18:01 3dr_solo local4.info +857 tlm: down: 152 m/s, 16321 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:18:11 3dr_solo local4.info +858 tlm: down: 152 m/s, 16297 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:18:21 3dr_solo local4.info +859 tlm: down: 152 m/s, 16295 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:18:31 3dr_solo local4.info +859 tlm: down: 152 m/s, 16321 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:18:41 3dr_solo local4.info +860 tlm: down: 151 m/s, 16247 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:18:51 3dr_solo local4.info +861 tlm: down: 152 m/s, 16285 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:19:01 3dr_solo local4.info +861 tlm: down: 152 m/s, 16274 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:19:11 3dr_solo local4.info +862 tlm: down: 153 m/s, 16303 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:19:21 3dr_solo local4.info +862 tlm: down: 152 m/s, 16271 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:19:31 3dr_solo local4.info +863 tlm: down: 152 m/s, 16300 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:19:41 3dr_solo local4.info +864 tlm: down: 152 m/s, 16226 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:19:51 3dr_solo local4.info +865 tlm: down: 152 m/s, 16321 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:20:01 3dr_solo local4.info +865 tlm: down: 152 m/s, 16296 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:20:11 3dr_solo local4.info +866 tlm: down: 152 m/s, 16295 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:20:21 3dr_solo local4.info +866 tlm: down: 152 m/s, 16284 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:20:31 3dr_solo local4.info +867 tlm: down: 152 m/s, 16321 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:20:41 3dr_solo local4.info +868 tlm: down: 152 m/s, 16300 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:20:51 3dr_solo local4.info +868 tlm: down: 152 m/s, 16275 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:21:01 3dr_solo local4.info +869 tlm: down: 163 m/s, 16644 b/s, 18%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:21:03 3dr_solo local4.info +447 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:21:03 3dr_solo local4.info +447 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:21:03 3dr_solo local4.info +447 tlm: SET_MODE: custom_mode=0.0.0.0 target_system=1 base_mode=1
+Jul 27 23:21:10 3dr_solo local4.info +488 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:21:10 3dr_solo local4.info +488 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:21:10 3dr_solo local4.info +488 tlm: SET_MODE: custom_mode=0.0.0.20 target_system=1 base_mode=1
+Jul 27 23:21:11 3dr_solo local4.info +870 tlm: down: 57 m/s, 4173 b/s, 4%; up: 16 m/s, 290 b/s, 0%
+Jul 27 23:21:21 3dr_solo local4.info +870 tlm: down: 162 m/s, 15892 b/s, 17%; up: 64 m/s, 1007 b/s, 1%
+Jul 27 23:21:25 3dr_solo local4.info +112 tlm: SET_MODE: from 127.0.0.1:50962
+Jul 27 23:21:25 3dr_solo local4.info +112 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:21:25 3dr_solo local4.info +112 tlm: SET_MODE: custom_mode=0.0.0.5 target_system=1 base_mode=1
+Jul 27 23:21:31 3dr_solo local4.info +871 tlm: down: 163 m/s, 16310 b/s, 17%; up: 66 m/s, 1042 b/s, 1%
+Jul 27 23:21:41 3dr_solo local4.info +873 tlm: down: 165 m/s, 16431 b/s, 17%; up: 66 m/s, 1039 b/s, 1%
+Jul 27 23:21:51 3dr_solo local4.info +874 tlm: down: 164 m/s, 16377 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:22:01 3dr_solo local4.info +875 tlm: down: 164 m/s, 16421 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:22:11 3dr_solo local4.info +876 tlm: down: 165 m/s, 16406 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:22:21 3dr_solo local4.info +877 tlm: down: 162 m/s, 16329 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:22:31 3dr_solo local4.info +878 tlm: down: 165 m/s, 16435 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:22:41 3dr_solo local4.info +878 tlm: down: 164 m/s, 16377 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:22:51 3dr_solo local4.info +879 tlm: down: 164 m/s, 16419 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:23:01 3dr_solo local4.info +880 tlm: down: 165 m/s, 16432 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:23:11 3dr_solo local4.info +880 tlm: down: 162 m/s, 16351 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:23:21 3dr_solo local4.info +881 tlm: down: 165 m/s, 16454 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:23:31 3dr_solo local4.info +881 tlm: down: 164 m/s, 16360 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:23:41 3dr_solo local4.info +882 tlm: down: 163 m/s, 16375 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:23:51 3dr_solo local4.info +883 tlm: down: 165 m/s, 16428 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:24:01 3dr_solo local4.info +884 tlm: down: 163 m/s, 16375 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:24:11 3dr_solo local4.info +884 tlm: down: 165 m/s, 16433 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:24:21 3dr_solo local4.info +885 tlm: down: 164 m/s, 16400 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:24:31 3dr_solo local4.info +886 tlm: down: 163 m/s, 16334 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:24:41 3dr_solo local4.info +886 tlm: down: 165 m/s, 16450 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:24:51 3dr_solo local4.info +887 tlm: down: 162 m/s, 16350 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:25:01 3dr_solo local4.info +888 tlm: down: 165 m/s, 16431 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:25:11 3dr_solo local4.info +888 tlm: down: 165 m/s, 16448 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:25:21 3dr_solo local4.info +889 tlm: down: 163 m/s, 16375 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:25:31 3dr_solo local4.info +890 tlm: down: 165 m/s, 16368 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:25:41 3dr_solo local4.info +890 tlm: down: 163 m/s, 16374 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:25:51 3dr_solo local4.info +891 tlm: down: 165 m/s, 16404 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:26:01 3dr_solo local4.info +891 tlm: down: 165 m/s, 16429 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:26:11 3dr_solo local4.info +892 tlm: down: 163 m/s, 16396 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:26:21 3dr_solo local4.info +893 tlm: down: 165 m/s, 16429 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:26:31 3dr_solo local4.info +893 tlm: down: 162 m/s, 16348 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:26:41 3dr_solo local4.info +894 tlm: down: 165 m/s, 16390 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:26:51 3dr_solo local4.info +896 tlm: down: 165 m/s, 16424 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:27:01 3dr_solo local4.info +897 tlm: down: 163 m/s, 16377 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:27:11 3dr_solo local4.info +897 tlm: down: 165 m/s, 16429 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:27:21 3dr_solo local4.info +899 tlm: down: 163 m/s, 16368 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:27:31 3dr_solo local4.info +900 tlm: down: 165 m/s, 16409 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:27:41 3dr_solo local4.info +900 tlm: down: 165 m/s, 16450 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:27:51 3dr_solo local4.info +901 tlm: down: 162 m/s, 16313 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:28:01 3dr_solo local4.info +902 tlm: down: 165 m/s, 16426 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:28:11 3dr_solo local4.info +902 tlm: down: 164 m/s, 16402 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:28:21 3dr_solo local4.info +903 tlm: down: 164 m/s, 16402 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:28:31 3dr_solo local4.info +904 tlm: down: 165 m/s, 16424 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:28:41 3dr_solo local4.info +904 tlm: down: 163 m/s, 16359 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:28:51 3dr_solo local4.info +905 tlm: down: 164 m/s, 16379 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:29:01 3dr_solo local4.info +906 tlm: down: 163 m/s, 16388 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:29:11 3dr_solo local4.info +906 tlm: down: 164 m/s, 16422 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:29:21 3dr_solo local4.info +907 tlm: down: 165 m/s, 16424 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:29:31 3dr_solo local4.info +908 tlm: down: 163 m/s, 16398 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:29:41 3dr_solo local4.info +909 tlm: down: 165 m/s, 16409 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:29:51 3dr_solo local4.info +909 tlm: down: 163 m/s, 16368 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:30:01 3dr_solo local4.info +910 tlm: down: 164 m/s, 16368 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:30:11 3dr_solo local4.info +911 tlm: down: 164 m/s, 16422 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:30:21 3dr_solo local4.info +911 tlm: down: 163 m/s, 16394 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:30:31 3dr_solo local4.info +912 tlm: down: 165 m/s, 16411 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:30:41 3dr_solo local4.info +912 tlm: down: 164 m/s, 16398 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:30:51 3dr_solo local4.info +913 tlm: down: 164 m/s, 16405 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:31:01 3dr_solo local4.info +914 tlm: down: 164 m/s, 16362 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:31:11 3dr_solo local4.info +915 tlm: down: 163 m/s, 16389 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:31:21 3dr_solo local4.info +916 tlm: down: 165 m/s, 16436 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:31:31 3dr_solo local4.info +917 tlm: down: 164 m/s, 16377 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:31:41 3dr_solo local4.info +917 tlm: down: 164 m/s, 16403 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:31:51 3dr_solo local4.info +918 tlm: down: 165 m/s, 16429 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:32:01 3dr_solo local4.info +918 tlm: down: 162 m/s, 16306 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:32:09 3dr_solo local4.info +523 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:32:09 3dr_solo local4.info +523 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:32:09 3dr_solo local4.info +523 tlm: SET_MODE: custom_mode=0.0.0.20 target_system=1 base_mode=1
+Jul 27 23:32:11 3dr_solo local4.info +920 tlm: down: 165 m/s, 14362 b/s, 15%; up: 53 m/s, 819 b/s, 0%
+Jul 27 23:32:12 3dr_solo local4.info +540 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:32:12 3dr_solo local4.info +540 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:32:12 3dr_solo local4.info +540 tlm: SET_MODE: custom_mode=0.0.0.20 target_system=1 base_mode=1
+Jul 27 23:32:21 3dr_solo local4.info +921 tlm: down: 164 m/s, 16378 b/s, 17%; up: 66 m/s, 1033 b/s, 1%
+Jul 27 23:32:25 3dr_solo local4.info +282 tlm: SET_MODE: from 127.0.0.1:50962
+Jul 27 23:32:25 3dr_solo local4.info +282 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:32:25 3dr_solo local4.info +282 tlm: SET_MODE: custom_mode=0.0.0.5 target_system=1 base_mode=1
+Jul 27 23:32:31 3dr_solo local4.info +921 tlm: down: 164 m/s, 16389 b/s, 17%; up: 66 m/s, 1028 b/s, 1%
+Jul 27 23:32:41 3dr_solo local4.info +922 tlm: down: 165 m/s, 16386 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:32:51 3dr_solo local4.info +922 tlm: down: 162 m/s, 16332 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:33:01 3dr_solo local4.info +923 tlm: down: 165 m/s, 16403 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:33:11 3dr_solo local4.info +924 tlm: down: 163 m/s, 16353 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:33:21 3dr_solo local4.info +924 tlm: down: 165 m/s, 16386 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:33:31 3dr_solo local4.info +925 tlm: down: 163 m/s, 16353 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:33:41 3dr_solo local4.info +926 tlm: down: 165 m/s, 16430 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:33:51 3dr_solo local4.info +927 tlm: down: 162 m/s, 16279 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:34:01 3dr_solo local4.info +928 tlm: down: 165 m/s, 16436 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:34:11 3dr_solo local4.info +928 tlm: down: 163 m/s, 16360 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:34:21 3dr_solo local4.info +929 tlm: down: 164 m/s, 16334 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:34:31 3dr_solo local4.info +930 tlm: down: 163 m/s, 16394 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:34:41 3dr_solo local4.info +931 tlm: down: 164 m/s, 16383 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:34:51 3dr_solo local4.info +933 tlm: down: 163 m/s, 16330 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:35:01 3dr_solo local4.info +934 tlm: down: 164 m/s, 16386 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:35:11 3dr_solo local4.info +934 tlm: down: 164 m/s, 16418 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:35:21 3dr_solo local4.info +935 tlm: down: 163 m/s, 16295 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:35:31 3dr_solo local4.info +936 tlm: down: 165 m/s, 16429 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:35:38 3dr_solo local4.info +236 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:35:38 3dr_solo local4.info +236 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:35:38 3dr_solo local4.info +236 tlm: SET_MODE: custom_mode=0.0.0.20 target_system=1 base_mode=1
+Jul 27 23:35:41 3dr_solo local4.info +250 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:35:41 3dr_solo local4.info +250 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:35:41 3dr_solo local4.info +250 tlm: SET_MODE: custom_mode=0.0.0.20 target_system=1 base_mode=1
+Jul 27 23:35:41 3dr_solo local4.info +937 tlm: down: 163 m/s, 14336 b/s, 15%; up: 54 m/s, 830 b/s, 0%
+Jul 27 23:35:51 3dr_solo local4.info +937 tlm: down: 164 m/s, 16376 b/s, 17%; up: 66 m/s, 1034 b/s, 1%
+Jul 27 23:35:53 3dr_solo local4.info +987 tlm: SET_MODE: from 127.0.0.1:50962
+Jul 27 23:35:53 3dr_solo local4.info +987 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:35:53 3dr_solo local4.info +987 tlm: SET_MODE: custom_mode=0.0.0.5 target_system=1 base_mode=1
+Jul 27 23:36:01 3dr_solo local4.info +938 tlm: down: 165 m/s, 16436 b/s, 17%; up: 67 m/s, 1039 b/s, 1%
+Jul 27 23:36:11 3dr_solo local4.info +939 tlm: down: 163 m/s, 16396 b/s, 17%; up: 66 m/s, 1004 b/s, 1%
+Jul 27 23:36:21 3dr_solo local4.info +939 tlm: down: 165 m/s, 16409 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:36:31 3dr_solo local4.info +940 tlm: down: 163 m/s, 16402 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:36:41 3dr_solo local4.info +940 tlm: down: 165 m/s, 16442 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:36:51 3dr_solo local4.info +941 tlm: down: 165 m/s, 16436 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:37:01 3dr_solo local4.info +941 tlm: down: 163 m/s, 16381 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:37:11 3dr_solo local4.info +943 tlm: down: 164 m/s, 16413 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:37:21 3dr_solo local4.info +944 tlm: down: 165 m/s, 16457 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:37:31 3dr_solo local4.info +945 tlm: down: 162 m/s, 16346 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:37:41 3dr_solo local4.info +946 tlm: down: 165 m/s, 16454 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:37:45 3dr_solo local4.info +663 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:37:45 3dr_solo local4.info +663 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:37:45 3dr_solo local4.info +663 tlm: SET_MODE: custom_mode=0.0.0.20 target_system=1 base_mode=1
+Jul 27 23:37:48 3dr_solo local4.info +684 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:37:48 3dr_solo local4.info +685 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:37:48 3dr_solo local4.info +685 tlm: SET_MODE: custom_mode=0.0.0.20 target_system=1 base_mode=1
+Jul 27 23:37:51 3dr_solo local4.info +946 tlm: down: 163 m/s, 14305 b/s, 15%; up: 54 m/s, 847 b/s, 0%
+Jul 27 23:38:01 3dr_solo local4.info +947 tlm: down: 163 m/s, 16373 b/s, 17%; up: 66 m/s, 1015 b/s, 1%
+Jul 27 23:38:11 3dr_solo local4.info +948 tlm: down: 164 m/s, 16360 b/s, 17%; up: 65 m/s, 996 b/s, 1%
+Jul 27 23:38:13 3dr_solo local4.info +224 tlm: SET_MODE: from 127.0.0.1:50962
+Jul 27 23:38:13 3dr_solo local4.info +224 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:38:13 3dr_solo local4.info +224 tlm: SET_MODE: custom_mode=0.0.0.5 target_system=1 base_mode=1
+Jul 27 23:38:21 3dr_solo local4.info +948 tlm: down: 164 m/s, 16403 b/s, 17%; up: 66 m/s, 997 b/s, 1%
+Jul 27 23:38:31 3dr_solo local4.info +949 tlm: down: 164 m/s, 16439 b/s, 17%; up: 66 m/s, 1000 b/s, 1%
+Jul 27 23:38:41 3dr_solo local4.info +950 tlm: down: 165 m/s, 16436 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:38:51 3dr_solo local4.info +950 tlm: down: 163 m/s, 16405 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:39:01 3dr_solo local4.info +951 tlm: down: 164 m/s, 16412 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:39:11 3dr_solo local4.info +951 tlm: down: 165 m/s, 16436 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:39:21 3dr_solo local4.info +952 tlm: down: 163 m/s, 16402 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:39:31 3dr_solo local4.info +953 tlm: down: 164 m/s, 16420 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:39:41 3dr_solo local4.info +953 tlm: down: 165 m/s, 16457 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:39:51 3dr_solo local4.info +954 tlm: down: 162 m/s, 16342 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:40:01 3dr_solo local4.info +955 tlm: down: 165 m/s, 16454 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:40:11 3dr_solo local4.info +956 tlm: down: 165 m/s, 16432 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:40:21 3dr_solo local4.info +956 tlm: down: 163 m/s, 16393 b/s, 17%; up: 65 m/s, 984 b/s, 1%
+Jul 27 23:40:31 3dr_solo local4.info +957 tlm: down: 164 m/s, 16363 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:40:41 3dr_solo local4.info +958 tlm: down: 164 m/s, 16426 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:40:51 3dr_solo local4.info +958 tlm: down: 164 m/s, 16399 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:41:01 3dr_solo local4.info +959 tlm: down: 165 m/s, 16433 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 27 23:41:11 3dr_solo local4.info +959 tlm: down: 163 m/s, 16405 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 27 23:41:18 3dr_solo local4.info +608 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:41:18 3dr_solo local4.info +608 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:41:18 3dr_solo local4.info +608 tlm: SET_MODE: custom_mode=0.0.0.20 target_system=1 base_mode=1
+Jul 27 23:41:21 3dr_solo local4.info +621 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:41:21 3dr_solo local4.info +621 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:41:21 3dr_solo local4.info +621 tlm: SET_MODE: custom_mode=0.0.0.20 target_system=1 base_mode=1
+Jul 27 23:41:21 3dr_solo local4.info +960 tlm: down: 165 m/s, 14293 b/s, 15%; up: 53 m/s, 824 b/s, 0%
+Jul 27 23:41:30 3dr_solo local4.info +046 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:41:30 3dr_solo local4.info +046 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:41:30 3dr_solo local4.info +046 tlm: SET_MODE: custom_mode=0.0.0.0 target_system=1 base_mode=1
+Jul 27 23:41:31 3dr_solo local4.info +961 tlm: down: 163 m/s, 16231 b/s, 17%; up: 65 m/s, 1013 b/s, 1%
+Jul 27 23:41:32 3dr_solo local4.info +048 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:41:32 3dr_solo local4.info +048 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:41:32 3dr_solo local4.info +048 tlm: SET_MODE: custom_mode=0.0.0.9 target_system=1 base_mode=1
+Jul 27 23:41:32 3dr_solo local4.info +589 tlm: SET_MODE: from 127.0.0.1:50962
+Jul 27 23:41:32 3dr_solo local4.info +589 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:41:32 3dr_solo local4.info +589 tlm: SET_MODE: custom_mode=0.0.0.5 target_system=1 base_mode=1
+Jul 27 23:41:32 3dr_solo local4.info +599 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 27 23:41:32 3dr_solo local4.info +599 tlm: SET_MODE: len=6 src_sys=255 src_comp=6
+Jul 27 23:41:32 3dr_solo local4.info +599 tlm: SET_MODE: custom_mode=0.0.0.5 target_system=1 base_mode=1
+Jul 27 23:41:41 3dr_solo local4.info +961 tlm: down: 162 m/s, 16269 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:41:51 3dr_solo local4.info +962 tlm: down: 164 m/s, 16310 b/s, 17%; up: 64 m/s, 972 b/s, 1%
+Jul 27 23:42:01 3dr_solo local4.info +963 tlm: down: 163 m/s, 16390 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 27 23:42:11 3dr_solo local4.info +963 tlm: down: 163 m/s, 16291 b/s, 17%; up: 64 m/s, 974 b/s, 1%
+Jul 27 23:42:21 3dr_solo local4.info +964 tlm: down: 163 m/s, 16311 b/s, 17%; up: 64 m/s, 974 b/s, 1%
+Jul 27 23:42:31 3dr_solo local4.info +965 tlm: down: 162 m/s, 16329 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:42:41 3dr_solo local4.info +965 tlm: down: 163 m/s, 16302 b/s, 17%; up: 64 m/s, 974 b/s, 1%
+Jul 27 23:42:51 3dr_solo local4.info +966 tlm: down: 163 m/s, 16367 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:43:01 3dr_solo local4.info +968 tlm: down: 163 m/s, 16309 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:43:11 3dr_solo local4.info +969 tlm: down: 163 m/s, 16316 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:43:21 3dr_solo local4.info +970 tlm: down: 163 m/s, 16345 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:43:31 3dr_solo local4.info +970 tlm: down: 163 m/s, 16301 b/s, 17%; up: 64 m/s, 972 b/s, 1%
+Jul 27 23:43:41 3dr_solo local4.info +971 tlm: down: 162 m/s, 16308 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:43:51 3dr_solo local4.info +972 tlm: down: 164 m/s, 16368 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:44:01 3dr_solo local4.info +972 tlm: down: 163 m/s, 16283 b/s, 17%; up: 64 m/s, 970 b/s, 1%
+Jul 27 23:44:11 3dr_solo local4.info +973 tlm: down: 163 m/s, 16337 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:44:21 3dr_solo local4.info +974 tlm: down: 163 m/s, 16332 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:44:31 3dr_solo local4.info +974 tlm: down: 162 m/s, 16287 b/s, 17%; up: 64 m/s, 974 b/s, 1%
+Jul 27 23:44:41 3dr_solo local4.info +975 tlm: down: 164 m/s, 16368 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 27 23:44:51 3dr_solo local4.info +976 tlm: down: 163 m/s, 16286 b/s, 17%; up: 64 m/s, 974 b/s, 1%
+Jul 27 23:45:01 3dr_solo local4.info +976 tlm: down: 163 m/s, 16313 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:45:11 3dr_solo local4.info +977 tlm: down: 163 m/s, 16314 b/s, 17%; up: 64 m/s, 974 b/s, 1%
+Jul 27 23:45:21 3dr_solo local4.info +978 tlm: down: 163 m/s, 16303 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:45:31 3dr_solo local4.info +978 tlm: down: 163 m/s, 16291 b/s, 17%; up: 64 m/s, 974 b/s, 1%
+Jul 27 23:45:41 3dr_solo local4.info +979 tlm: down: 163 m/s, 16311 b/s, 17%; up: 64 m/s, 974 b/s, 1%
+Jul 27 23:45:51 3dr_solo local4.info +979 tlm: down: 162 m/s, 16305 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:46:01 3dr_solo local4.info +980 tlm: down: 164 m/s, 16331 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:46:11 3dr_solo local4.info +981 tlm: down: 163 m/s, 16304 b/s, 17%; up: 64 m/s, 974 b/s, 1%
+Jul 27 23:46:21 3dr_solo local4.info +981 tlm: down: 163 m/s, 16334 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:46:31 3dr_solo local4.info +982 tlm: down: 162 m/s, 16272 b/s, 17%; up: 64 m/s, 974 b/s, 1%
+Jul 27 23:46:41 3dr_solo local4.info +982 tlm: down: 163 m/s, 16326 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:46:51 3dr_solo local4.info +983 tlm: down: 163 m/s, 16337 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:47:01 3dr_solo local4.info +984 tlm: down: 163 m/s, 16292 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:47:11 3dr_solo local4.info +984 tlm: down: 162 m/s, 16263 b/s, 17%; up: 64 m/s, 972 b/s, 1%
+Jul 27 23:47:21 3dr_solo local4.info +985 tlm: down: 163 m/s, 16337 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:47:31 3dr_solo local4.info +986 tlm: down: 163 m/s, 16335 b/s, 17%; up: 64 m/s, 977 b/s, 1%
+Jul 27 23:47:41 3dr_solo local4.info +986 tlm: down: 163 m/s, 16290 b/s, 17%; up: 64 m/s, 972 b/s, 1%
+Jul 27 23:47:51 3dr_solo local4.info +987 tlm: down: 163 m/s, 16301 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 27 23:48:01 3dr_solo local4.info +987 tlm: down: 163 m/s, 16318 b/s, 17%; up: 64 m/s, 975 b/s, 1%

@@ -1,0 +1,20 @@
+Jul 12 14:49:02 3dr_solo local1.info pix: pixhawk.py starting
+Jul 12 14:49:02 3dr_solo local1.info pix: checking baud...
+Jul 12 14:49:02 3dr_solo local1.info pix: found at 921600
+Jul 12 14:49:02 3dr_solo local1.info pix: no new firmware file
+Jul 12 14:49:02 3dr_solo local1.info pix: build version build=1.3.1 ardupilot=7e9206cc px4=5e693274 nuttx=d48fa307
+Jul 12 14:49:02 3dr_solo local1.info pix: now running:
+Jul 12 14:49:02 3dr_solo local1.info pix: build_version        1.3.1
+Jul 12 14:49:02 3dr_solo local1.info pix: ardupilot_git_hash   7e9206cc
+Jul 12 14:49:02 3dr_solo local1.info pix: px4_git_hash         5e693274
+Jul 12 14:49:02 3dr_solo local1.info pix: nuttx_git_hash       d48fa307
+Jul 12 14:49:02 3dr_solo local1.info pix: pixhawk status: ready
+Jul 12 14:49:02 3dr_solo local1.info pix: pixhawk.py finished
+Jul 12 14:49:09 3dr_solo local1.info unlock: built Sep 22 2016 15:31:09
+Jul 12 14:49:09 3dr_solo local1.info unlock: rc is not locked
+Jul 12 14:49:09 3dr_solo local1.info pair: pair_solo.py starting
+Jul 12 14:49:09 3dr_solo local1.info pair: using default check_versions=True
+Jul 12 14:49:09 3dr_solo local1.info pair: sololink version "2.4.2"
+Jul 12 14:49:09 3dr_solo local1.info pair: firmware version "1.3.1"
+Jul 12 14:49:09 3dr_solo local1.info pair: pairing using wlan0
+Jul 12 14:49:09 3dr_solo local1.info pair: bringing up network...

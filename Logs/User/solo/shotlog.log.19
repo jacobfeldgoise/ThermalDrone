@@ -1,0 +1,16 @@
+Jul 12 14:49:14 3dr_solo local2.info shot: +-+-+-+-+-+-+ Starting up v2.4.1-1 +-+-+-+-+-+-+
+Jul 12 14:49:14 3dr_solo local2.info shot: [RC] Disabling stick remapping
+Jul 12 14:49:14 3dr_solo local2.info shot: [app]: Ready for connections from app.
+Jul 12 14:49:14 3dr_solo local2.info shot: [button]: Creating a new thread to connect to Artoo.
+Jul 12 14:49:14 3dr_solo local2.info shot: [button]: read in button mappings
+Jul 12 14:49:14 3dr_solo local2.info shot: [button]: Button A - shot Cable Cam, mode None
+Jul 12 14:49:14 3dr_solo local2.info shot: [button]: Button B - shot Orbit, mode None
+Jul 12 14:49:14 3dr_solo local2.info shot: [gopro]: read enabled value from settings of 1.
+Jul 12 14:49:14 3dr_solo local2.info shot: [gopro]: sending gimbal enabled param (GMB_GP_CTRL) to 1.000000
+Jul 12 14:49:14 3dr_solo local2.info shot: [gopro]: Inited GoProManager
+Jul 12 14:49:14 3dr_solo local2.info shot: [RewindManager] Init
+Jul 12 14:49:14 3dr_solo local2.info shot: [shot]: No gimbal detected.
+Jul 12 14:49:16 3dr_solo local2.info shot: [button]: Connected to Artoo.
+Jul 12 14:49:16 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Jul 12 14:51:35 3dr_solo local2.info shot: [RC] Enter failsafe
+Jul 12 14:51:46 3dr_solo local2.info shot: [RC] Exit failsafe

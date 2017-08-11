@@ -1,0 +1,31 @@
+Jul 12 17:46:19 3dr_controller local3.info streamer: starting: built Sep 22 2016 15:31:07
+Jul 12 17:46:19 3dr_controller local3.info hdmi: Waiting for an HDMI connection
+Jul 12 17:46:29 3dr_controller local3.info streamer: pkts=58 bytes=2756 drops=0
+Jul 12 17:46:39 3dr_controller local3.info streamer: pkts=69 bytes=3434 drops=77366
+Jul 12 17:46:49 3dr_controller local3.info streamer: pkts=71 bytes=3208 drops=0
+Jul 12 17:46:59 3dr_controller local3.info streamer: pkts=72 bytes=3006 drops=0
+Jul 12 17:47:09 3dr_controller local3.info streamer: pkts=71 bytes=3006 drops=0
+Jul 12 17:47:19 3dr_controller local3.info streamer: pkts=71 bytes=3006 drops=0
+Jul 12 17:47:29 3dr_controller local3.info streamer: pkts=71 bytes=3208 drops=0
+Jul 12 17:47:39 3dr_controller local3.info streamer: pkts=69 bytes=3515 drops=52503
+Jul 12 17:47:49 3dr_controller local3.info streamer: pkts=69 bytes=3483 drops=6
+Jul 12 17:47:59 3dr_controller local3.info streamer: pkts=70 bytes=3403 drops=40713
+Jul 12 17:48:09 3dr_controller local3.info streamer: pkts=71 bytes=3006 drops=0
+Jul 26 17:01:42 3dr_controller local3.info streamer: pkts=71 bytes=3201 drops=0
+Jul 26 17:01:52 3dr_controller local3.info streamer: pkts=71 bytes=3207 drops=0
+Jul 26 17:02:02 3dr_controller local3.info streamer: pkts=71 bytes=3006 drops=0
+Jul 26 17:02:12 3dr_controller local3.info streamer: pkts=69 bytes=3348 drops=27931
+Jul 26 17:02:22 3dr_controller local3.info streamer: pkts=70 bytes=3496 drops=19179
+Jul 26 17:02:32 3dr_controller local3.info streamer: pkts=72 bytes=3006 drops=0
+Jul 26 17:02:42 3dr_controller local3.info streamer: pkts=72 bytes=3006 drops=0
+Jul 26 17:02:52 3dr_controller local3.info streamer: pkts=72 bytes=3006 drops=0
+Jul 26 17:03:02 3dr_controller local3.info streamer: pkts=71 bytes=3301 drops=0
+Jul 26 17:03:12 3dr_controller local3.info streamer: pkts=71 bytes=3207 drops=49957
+Jul 26 17:03:22 3dr_controller local3.info streamer: pkts=71 bytes=3002 drops=0
+Jul 26 17:03:32 3dr_controller local3.info streamer: pkts=72 bytes=3010 drops=0
+Jul 26 17:03:42 3dr_controller local3.info streamer: pkts=70 bytes=3402 drops=62403
+Jul 26 17:03:52 3dr_controller local3.info streamer: pkts=72 bytes=3006 drops=0
+Jul 26 17:04:02 3dr_controller local3.info streamer: pkts=65 bytes=2968 drops=23384
+Jul 26 17:04:12 3dr_controller local3.info streamer: pkts=0 bytes=0 drops=0
+Jul 26 17:04:22 3dr_controller local3.info streamer: pkts=0 bytes=0 drops=0
+Jul 26 17:04:32 3dr_controller local3.info streamer: pkts=0 bytes=0 drops=0

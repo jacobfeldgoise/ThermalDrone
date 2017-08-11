@@ -14,8 +14,8 @@ def arm_and_takeoff_nogps(aTargetAltitude):
     global stdata_q
 
     ##### CONSTANTS #####
-    DEFAULT_TAKEOFF_THRUST = 0.7
-    SMOOTH_TAKEOFF_THRUST = 0.5
+    DEFAULT_TAKEOFF_THRUST = 0.3
+    SMOOTH_TAKEOFF_THRUST = 0.1
 
     # Don't let the user try to arm until autopilot is ready
     # If you need to disable the arming check, just comment it with your own responsibility:
@@ -34,6 +34,7 @@ def arm_and_takeoff_nogps(aTargetAltitude):
         vehicle.mode = VehicleMode("ALT_HOLD")                                  # Copter should arm in ALT_HOLD mode
         print "Mode: " + vehicle.mode.name
         time.sleep(0.2)
+    print "Mode: " + vehicle.mode.name
 
     time.sleep(1)
     print("Flushing queue...")
@@ -70,7 +71,8 @@ def arm_and_takeoff_nogps(aTargetAltitude):
             thrust = SMOOTH_TAKEOFF_THRUST
             print("Smoothing thrust...")
 
-        set_attitude_alt(thrust = thrust)
+        set_attitude(thrust = thrust)
+        print("Flushing queue...")
         vehicle.flush()                                                         # Forces DroneKit to send all outstanding MAVlink messages
         time.sleep(0.2)
 
@@ -100,6 +102,8 @@ def land_and_close():
         print("Waiting for Mode Change to LAND...")
         vehicle.mode = VehicleMode("LAND") # Copter should arm in STABILIZE mode
         print "Mode: " + vehicle.mode.name
+        time.sleep(0.2)
+    print "Mode: " + vehicle.mode.name
 
     print "Closing vehicle object..."
     vehicle.close()
@@ -414,7 +418,7 @@ if __name__ == "__main__":
 
     time.sleep(0.5)
 
-    arm_and_takeoff_stabilize(1)
+    arm_and_takeoff_nogps(1)
 
     t = 0
     land_and_close()

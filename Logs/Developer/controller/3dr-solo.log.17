@@ -1,0 +1,34 @@
+Jul 12 17:27:00 3dr_controller local1.info stm32: stm32 update starting
+Jul 12 17:27:00 3dr_controller local1.info stm32: no firmware available for update
+Jul 12 17:27:00 3dr_controller local1.info stm32: requesting stm32 version
+Jul 12 17:27:00 3dr_controller local1.info stm32: got 0x1/17, retrying
+Jul 12 17:27:00 3dr_controller local1.info stm32: got 0xe/7, retrying
+Jul 12 17:27:00 3dr_controller local1.info stm32: running version: 1.2.11
+Jul 12 17:27:00 3dr_controller local1.info stm32: not updating (no new firmware)
+Jul 12 17:27:00 3dr_controller local1.info stm32: writing STM_VERSION with running version 1.2.11
+Jul 12 17:27:00 3dr_controller local1.info stm32: no screen update (READY exists)
+Jul 12 17:27:02 3dr_controller local1.info net: hostapdconfig.py starting
+Jul 12 17:27:02 3dr_controller local1.info net: --channel wlan0
+Jul 12 17:27:02 3dr_controller local1.info net: can't get wlan0 frequency; defaulting to channel 0
+Jul 12 17:27:02 3dr_controller local1.info net: changing channel in /etc/hostapd.conf from 0 to 0
+Jul 12 17:27:02 3dr_controller local1.info pair: pair_server starting
+Jul 12 17:27:02 3dr_controller local1.info pair: using default check_versions=True
+Jul 12 17:27:02 3dr_controller local1.info pair: sololink version "2.4.2"
+Jul 12 17:27:02 3dr_controller local1.info pair: firmware version "1.2.11"
+
+acs_num_scans=8
+wlan0-ap:
+   Freq   Noise   OnChan   ChBusy  ExtBusy    Rxing    Txing
+Ch  MHz     dBm     msec     msec     msec     msec     msec
+ 1 2412     -94     1055      158                85        0
+ 2 2417     -95      108        9                 8        0
+ 3 2422     -95      108       12                 7        0
+ 4 2427     -94      108        9                 6        0
+ 5 2432     -94      108       15                13        0
+ 6 2437     -95      108       25                24        0
+ 7 2442     -94      108       15                15        0
+ 8 2447 *   -95      426       41                16        7
+ 9 2452     -94      108        4                 2        0
+10 2457     -94      108       17                16        0
+11 2462     -94      108       21                20        0
+

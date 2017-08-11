@@ -1,0 +1,232 @@
+Jul 27 23:11:02 3dr_solo local1.info pix: pixhawk.py starting
+Jul 27 23:11:02 3dr_solo local1.info pix: checking baud...
+Jul 27 23:11:02 3dr_solo local1.info pix: found at 921600
+Jul 27 23:11:02 3dr_solo local1.info pix: no new firmware file
+Jul 27 23:11:02 3dr_solo local1.info pix: build version build=1.3.1 ardupilot=7e9206cc px4=5e693274 nuttx=d48fa307
+Jul 27 23:11:02 3dr_solo local1.info pix: now running:
+Jul 27 23:11:02 3dr_solo local1.info pix: build_version        1.3.1
+Jul 27 23:11:02 3dr_solo local1.info pix: ardupilot_git_hash   7e9206cc
+Jul 27 23:11:02 3dr_solo local1.info pix: px4_git_hash         5e693274
+Jul 27 23:11:02 3dr_solo local1.info pix: nuttx_git_hash       d48fa307
+Jul 27 23:11:02 3dr_solo local1.info pix: pixhawk status: ready
+Jul 27 23:11:02 3dr_solo local1.info pix: pixhawk.py finished
+Jul 27 23:11:09 3dr_solo local1.info unlock: built Sep 22 2016 15:31:09
+Jul 27 23:11:09 3dr_solo local1.info unlock: rc is not locked
+Jul 27 23:11:09 3dr_solo local1.info pair: pair_solo.py starting
+Jul 27 23:11:09 3dr_solo local1.info pair: using default check_versions=True
+Jul 27 23:11:09 3dr_solo local1.info pair: sololink version "2.4.2"
+Jul 27 23:11:09 3dr_solo local1.info pair: firmware version "1.3.1"
+Jul 27 23:11:09 3dr_solo local1.info pair: pairing using wlan0
+Jul 27 23:11:09 3dr_solo local1.info pair: bringing up network...
+Jul 27 23:11:09 3dr_solo local1.info pair: network already up
+Jul 27 23:11:09 3dr_solo local1.info pair: establishing connection...
+Jul 27 23:11:09 3dr_solo local1.info pair: controller version "2.4.2"; firmware "1.2.11"
+Jul 27 23:11:09 3dr_solo local1.info pair: switching to runlevel.READY
+Jul 27 23:11:09 3dr_solo local1.info dl: dataflash_logger starting: built Sep 22 2016 15:30:50
+Jul 27 23:11:09 3dr_solo local1.info dl: df-tfc: connecting to telem-forwarder at 10.1.1.10:14560
+Jul 27 23:11:10 3dr_solo local1.info dl: mh-dfl: sending start packet to (0/0)
+Jul 27 23:11:10 3dr_solo local1.info dl: mh-dfl: Starting log, target is (1/155), I am (57/57)
+Jul 27 23:11:10 3dr_solo local1.info dl: mh-dfl: Opened log file (/log/dataflash/16.BIN)
+Jul 27 23:11:10 3dr_solo local1.err dl: mh-dfl: long time between messages (23347057)
+Jul 27 23:11:10 3dr_solo local1.info dl: mh-dfl: Current log size: 20000
+Jul 27 23:12:54 3dr_solo local1.info dl: mh-dfl: Current log size: 160000
+Jul 27 23:13:04 3dr_solo local1.info dl: mh-dfl: Current log size: 300000
+Jul 27 23:13:15 3dr_solo local1.info dl: mh-dfl: Current log size: 440000
+Jul 27 23:13:26 3dr_solo local1.info dl: mh-dfl: Current log size: 580000
+Jul 27 23:13:37 3dr_solo local1.info dl: mh-dfl: Current log size: 720000
+Jul 27 23:13:48 3dr_solo local1.info dl: mh-dfl: Current log size: 860000
+Jul 27 23:13:59 3dr_solo local1.info dl: mh-dfl: Current log size: 1000000
+Jul 27 23:14:10 3dr_solo local1.info dl: mh-dfl: Current log size: 1140000
+Jul 27 23:14:21 3dr_solo local1.err dl: mh-dfl: long time between messages (2408414)
+Jul 27 23:14:21 3dr_solo local1.info dl: mh-dfl: Current log size: 1260000
+Jul 27 23:14:24 3dr_solo local1.err dl: mh-dfl: long time between messages (2016225)
+Jul 27 23:14:33 3dr_solo local1.info dl: mh-dfl: Current log size: 1380000
+Jul 27 23:14:44 3dr_solo local1.info dl: mh-dfl: Current log size: 1520000
+Jul 27 23:14:55 3dr_solo local1.info dl: mh-dfl: Current log size: 1660000
+Jul 27 23:15:06 3dr_solo local1.info dl: mh-dfl: Current log size: 1800000
+Jul 27 23:15:17 3dr_solo local1.err dl: mh-dfl: long time between messages (2016389)
+Jul 27 23:15:19 3dr_solo local1.info dl: mh-dfl: Current log size: 1940000
+Jul 27 23:15:30 3dr_solo local1.info dl: mh-dfl: Current log size: 2080000
+Jul 27 23:15:41 3dr_solo local1.info dl: mh-dfl: Current log size: 2220000
+Jul 27 23:15:51 3dr_solo local1.info dl: mh-dfl: Current log size: 2360000
+Jul 27 23:16:02 3dr_solo local1.info dl: mh-dfl: Current log size: 2500000
+Jul 27 23:16:13 3dr_solo local1.info dl: mh-dfl: Current log size: 2640000
+Jul 27 23:16:24 3dr_solo local1.info dl: mh-dfl: Current log size: 2780000
+Jul 27 23:16:35 3dr_solo local1.info dl: mh-dfl: Current log size: 2920000
+Jul 27 23:16:46 3dr_solo local1.info dl: mh-dfl: Current log size: 3060000
+Jul 27 23:16:57 3dr_solo local1.info dl: mh-dfl: Current log size: 3200000
+Jul 27 23:17:08 3dr_solo local1.info dl: mh-dfl: Current log size: 3340000
+Jul 27 23:17:19 3dr_solo local1.info dl: mh-dfl: Current log size: 3480000
+Jul 27 23:17:30 3dr_solo local1.info dl: mh-dfl: Current log size: 3620000
+Jul 27 23:17:41 3dr_solo local1.info dl: mh-dfl: Current log size: 3760000
+Jul 27 23:17:52 3dr_solo local1.info dl: mh-dfl: Current log size: 3900000
+Jul 27 23:18:03 3dr_solo local1.info dl: mh-dfl: Current log size: 4040000
+Jul 27 23:18:14 3dr_solo local1.info dl: mh-dfl: Current log size: 4180000
+Jul 27 23:18:24 3dr_solo local1.info dl: mh-dfl: Current log size: 4320000
+Jul 27 23:18:35 3dr_solo local1.info dl: mh-dfl: Current log size: 4460000
+Jul 27 23:18:46 3dr_solo local1.info dl: mh-dfl: Current log size: 4600000
+Jul 27 23:18:57 3dr_solo local1.info dl: mh-dfl: Current log size: 4740000
+Jul 27 23:19:08 3dr_solo local1.info dl: mh-dfl: Current log size: 4880000
+Jul 27 23:19:19 3dr_solo local1.info dl: mh-dfl: Current log size: 5020000
+Jul 27 23:19:30 3dr_solo local1.info dl: mh-dfl: Current log size: 5160000
+Jul 27 23:19:41 3dr_solo local1.info dl: mh-dfl: Current log size: 5300000
+Jul 27 23:19:52 3dr_solo local1.info dl: mh-dfl: Current log size: 5440000
+Jul 27 23:20:03 3dr_solo local1.info dl: mh-dfl: Current log size: 5580000
+Jul 27 23:20:14 3dr_solo local1.info dl: mh-dfl: Current log size: 5720000
+Jul 27 23:20:25 3dr_solo local1.info dl: mh-dfl: Current log size: 5860000
+Jul 27 23:20:36 3dr_solo local1.info dl: mh-dfl: Current log size: 6000000
+Jul 27 23:20:47 3dr_solo local1.info dl: mh-dfl: Current log size: 6140000
+Jul 27 23:20:57 3dr_solo local1.info dl: mh-dfl: Current log size: 6280000
+Jul 27 23:21:09 3dr_solo local1.err dl: mh-dfl: long time between messages (6030056)
+Jul 27 23:21:11 3dr_solo local1.err dl: mh-dfl: long time between messages (2018197)
+Jul 27 23:21:12 3dr_solo local1.info dl: mh-dfl: Current log size: 6360000
+Jul 27 23:21:23 3dr_solo local1.info dl: mh-dfl: Current log size: 6500000
+Jul 27 23:21:34 3dr_solo local1.info dl: mh-dfl: Current log size: 6640000
+Jul 27 23:21:45 3dr_solo local1.info dl: mh-dfl: Current log size: 6780000
+Jul 27 23:21:56 3dr_solo local1.info dl: mh-dfl: Current log size: 6920000
+Jul 27 23:22:07 3dr_solo local1.info dl: mh-dfl: Current log size: 7060000
+Jul 27 23:22:18 3dr_solo local1.info dl: mh-dfl: Current log size: 7200000
+Jul 27 23:22:29 3dr_solo local1.info dl: mh-dfl: Current log size: 7340000
+Jul 27 23:22:40 3dr_solo local1.info dl: mh-dfl: Current log size: 7480000
+Jul 27 23:22:51 3dr_solo local1.info dl: mh-dfl: Current log size: 7620000
+Jul 27 23:23:02 3dr_solo local1.info dl: mh-dfl: Current log size: 7760000
+Jul 27 23:23:12 3dr_solo local1.info dl: mh-dfl: Current log size: 7900000
+Jul 27 23:23:23 3dr_solo local1.info dl: mh-dfl: Current log size: 8040000
+Jul 27 23:23:34 3dr_solo local1.info dl: mh-dfl: Current log size: 8180000
+Jul 27 23:23:45 3dr_solo local1.info dl: mh-dfl: Current log size: 8320000
+Jul 27 23:23:56 3dr_solo local1.info dl: mh-dfl: Current log size: 8460000
+Jul 27 23:24:07 3dr_solo local1.info dl: mh-dfl: Current log size: 8600000
+Jul 27 23:24:18 3dr_solo local1.info dl: mh-dfl: Current log size: 8740000
+Jul 27 23:24:29 3dr_solo local1.info dl: mh-dfl: Current log size: 8880000
+Jul 27 23:24:40 3dr_solo local1.info dl: mh-dfl: Current log size: 9020000
+Jul 27 23:24:51 3dr_solo local1.info dl: mh-dfl: Current log size: 9160000
+Jul 27 23:25:02 3dr_solo local1.info dl: mh-dfl: Current log size: 9300000
+Jul 27 23:25:13 3dr_solo local1.info dl: mh-dfl: Current log size: 9440000
+Jul 27 23:25:23 3dr_solo local1.info dl: mh-dfl: Current log size: 9580000
+Jul 27 23:25:34 3dr_solo local1.info dl: mh-dfl: Current log size: 9720000
+Jul 27 23:25:45 3dr_solo local1.info dl: mh-dfl: Current log size: 9860000
+Jul 27 23:25:56 3dr_solo local1.info dl: mh-dfl: Current log size: 10000000
+Jul 27 23:26:07 3dr_solo local1.info dl: mh-dfl: Current log size: 10140000
+Jul 27 23:26:18 3dr_solo local1.info dl: mh-dfl: Current log size: 10280000
+Jul 27 23:26:29 3dr_solo local1.info dl: mh-dfl: Current log size: 10420000
+Jul 27 23:26:40 3dr_solo local1.info dl: mh-dfl: Current log size: 10560000
+Jul 27 23:26:51 3dr_solo local1.info dl: mh-dfl: Current log size: 10700000
+Jul 27 23:27:02 3dr_solo local1.info dl: mh-dfl: Current log size: 10840000
+Jul 27 23:27:13 3dr_solo local1.info dl: mh-dfl: Current log size: 10980000
+Jul 27 23:27:24 3dr_solo local1.info dl: mh-dfl: Current log size: 11120000
+Jul 27 23:27:35 3dr_solo local1.info dl: mh-dfl: Current log size: 11260000
+Jul 27 23:27:46 3dr_solo local1.info dl: mh-dfl: Current log size: 11400000
+Jul 27 23:27:57 3dr_solo local1.info dl: mh-dfl: Current log size: 11540000
+Jul 27 23:28:07 3dr_solo local1.info dl: mh-dfl: Current log size: 11680000
+Jul 27 23:28:18 3dr_solo local1.info dl: mh-dfl: Current log size: 11820000
+Jul 27 23:28:29 3dr_solo local1.info dl: mh-dfl: Current log size: 11960000
+Jul 27 23:28:40 3dr_solo local1.info dl: mh-dfl: Current log size: 12100000
+Jul 27 23:28:51 3dr_solo local1.info dl: mh-dfl: Current log size: 12240000
+Jul 27 23:29:02 3dr_solo local1.info dl: mh-dfl: Current log size: 12380000
+Jul 27 23:29:13 3dr_solo local1.info dl: mh-dfl: Current log size: 12520000
+Jul 27 23:29:24 3dr_solo local1.info dl: mh-dfl: Current log size: 12660000
+Jul 27 23:29:35 3dr_solo local1.info dl: mh-dfl: Current log size: 12800000
+Jul 27 23:29:46 3dr_solo local1.info dl: mh-dfl: Current log size: 12940000
+Jul 27 23:29:57 3dr_solo local1.info dl: mh-dfl: Current log size: 13080000
+Jul 27 23:30:08 3dr_solo local1.info dl: mh-dfl: Current log size: 13220000
+Jul 27 23:30:19 3dr_solo local1.info dl: mh-dfl: Current log size: 13360000
+Jul 27 23:30:29 3dr_solo local1.info dl: mh-dfl: Current log size: 13500000
+Jul 27 23:30:40 3dr_solo local1.info dl: mh-dfl: Current log size: 13640000
+Jul 27 23:30:51 3dr_solo local1.info dl: mh-dfl: Current log size: 13780000
+Jul 27 23:31:02 3dr_solo local1.info dl: mh-dfl: Current log size: 13920000
+Jul 27 23:31:13 3dr_solo local1.info dl: mh-dfl: Current log size: 14060000
+Jul 27 23:31:24 3dr_solo local1.info dl: mh-dfl: Current log size: 14200000
+Jul 27 23:31:35 3dr_solo local1.info dl: mh-dfl: Current log size: 14340000
+Jul 27 23:31:46 3dr_solo local1.info dl: mh-dfl: Current log size: 14480000
+Jul 27 23:31:57 3dr_solo local1.info dl: mh-dfl: Current log size: 14620000
+Jul 27 23:32:08 3dr_solo local1.info dl: mh-dfl: Current log size: 14760000
+Jul 27 23:32:11 3dr_solo local1.err dl: mh-dfl: long time between messages (2020312)
+Jul 27 23:32:19 3dr_solo local1.info dl: mh-dfl: Current log size: 14880000
+Jul 27 23:32:31 3dr_solo local1.info dl: mh-dfl: Current log size: 15020000
+Jul 27 23:32:41 3dr_solo local1.info dl: mh-dfl: Current log size: 15160000
+Jul 27 23:32:52 3dr_solo local1.info dl: mh-dfl: Current log size: 15300000
+Jul 27 23:33:03 3dr_solo local1.info dl: mh-dfl: Current log size: 15440000
+Jul 27 23:33:14 3dr_solo local1.info dl: mh-dfl: Current log size: 15580000
+Jul 27 23:33:25 3dr_solo local1.info dl: mh-dfl: Current log size: 15720000
+Jul 27 23:33:36 3dr_solo local1.info dl: mh-dfl: Current log size: 15860000
+Jul 27 23:33:47 3dr_solo local1.info dl: mh-dfl: Current log size: 16000000
+Jul 27 23:33:58 3dr_solo local1.info dl: mh-dfl: Current log size: 16140000
+Jul 27 23:34:09 3dr_solo local1.info dl: mh-dfl: Current log size: 16280000
+Jul 27 23:34:20 3dr_solo local1.info dl: mh-dfl: Current log size: 16420000
+Jul 27 23:34:31 3dr_solo local1.info dl: mh-dfl: Current log size: 16560000
+Jul 27 23:34:42 3dr_solo local1.info dl: mh-dfl: Current log size: 16700000
+Jul 27 23:34:53 3dr_solo local1.info dl: mh-dfl: Current log size: 16840000
+Jul 27 23:35:04 3dr_solo local1.info dl: mh-dfl: Current log size: 16980000
+Jul 27 23:35:14 3dr_solo local1.info dl: mh-dfl: Current log size: 17120000
+Jul 27 23:35:25 3dr_solo local1.info dl: mh-dfl: Current log size: 17260000
+Jul 27 23:35:36 3dr_solo local1.info dl: mh-dfl: Current log size: 17400000
+Jul 27 23:35:40 3dr_solo local1.err dl: mh-dfl: long time between messages (2021532)
+Jul 27 23:35:48 3dr_solo local1.info dl: mh-dfl: Current log size: 17520000
+Jul 27 23:35:59 3dr_solo local1.info dl: mh-dfl: Current log size: 17660000
+Jul 27 23:36:10 3dr_solo local1.info dl: mh-dfl: Current log size: 17800000
+Jul 27 23:36:21 3dr_solo local1.info dl: mh-dfl: Current log size: 17940000
+Jul 27 23:36:31 3dr_solo local1.info dl: mh-dfl: Current log size: 18080000
+Jul 27 23:36:42 3dr_solo local1.info dl: mh-dfl: Current log size: 18220000
+Jul 27 23:36:53 3dr_solo local1.info dl: mh-dfl: Current log size: 18360000
+Jul 27 23:37:04 3dr_solo local1.info dl: mh-dfl: Current log size: 18500000
+Jul 27 23:37:15 3dr_solo local1.info dl: mh-dfl: Current log size: 18640000
+Jul 27 23:37:26 3dr_solo local1.info dl: mh-dfl: Current log size: 18780000
+Jul 27 23:37:37 3dr_solo local1.info dl: mh-dfl: Current log size: 18920000
+Jul 27 23:37:47 3dr_solo local1.err dl: mh-dfl: long time between messages (2025671)
+Jul 27 23:37:48 3dr_solo local1.info dl: mh-dfl: Current log size: 19040000
+Jul 27 23:37:59 3dr_solo local1.info dl: mh-dfl: Current log size: 19180000
+Jul 27 23:38:10 3dr_solo local1.info dl: mh-dfl: Current log size: 19320000
+Jul 27 23:38:21 3dr_solo local1.info dl: mh-dfl: Current log size: 19460000
+Jul 27 23:38:32 3dr_solo local1.info dl: mh-dfl: Current log size: 19600000
+Jul 27 23:38:43 3dr_solo local1.info dl: mh-dfl: Current log size: 19740000
+Jul 27 23:38:54 3dr_solo local1.info dl: mh-dfl: Current log size: 19880000
+Jul 27 23:39:05 3dr_solo local1.info dl: mh-dfl: Current log size: 20020000
+Jul 27 23:39:16 3dr_solo local1.info dl: mh-dfl: Current log size: 20160000
+Jul 27 23:39:27 3dr_solo local1.info dl: mh-dfl: Current log size: 20300000
+Jul 27 23:39:38 3dr_solo local1.info dl: mh-dfl: Current log size: 20440000
+Jul 27 23:39:48 3dr_solo local1.info dl: mh-dfl: Current log size: 20580000
+Jul 27 23:39:59 3dr_solo local1.info dl: mh-dfl: Current log size: 20720000
+Jul 27 23:40:10 3dr_solo local1.info dl: mh-dfl: Current log size: 20860000
+Jul 27 23:40:21 3dr_solo local1.info dl: mh-dfl: Current log size: 21000000
+Jul 27 23:40:32 3dr_solo local1.info dl: mh-dfl: Current log size: 21140000
+Jul 27 23:40:43 3dr_solo local1.info dl: mh-dfl: Current log size: 21280000
+Jul 27 23:40:54 3dr_solo local1.info dl: mh-dfl: Current log size: 21420000
+Jul 27 23:41:05 3dr_solo local1.info dl: mh-dfl: Current log size: 21560000
+Jul 27 23:41:16 3dr_solo local1.info dl: mh-dfl: Current log size: 21700000
+Jul 27 23:41:20 3dr_solo local1.err dl: mh-dfl: long time between messages (2017403)
+Jul 27 23:41:27 3dr_solo local1.info dl: mh-dfl: Current log size: 21820000
+Jul 27 23:41:38 3dr_solo local1.info dl: mh-dfl: Current log size: 21960000
+Jul 27 23:41:49 3dr_solo local1.info dl: mh-dfl: Current log size: 22100000
+Jul 27 23:42:00 3dr_solo local1.info dl: mh-dfl: Current log size: 22240000
+Jul 27 23:42:11 3dr_solo local1.info dl: mh-dfl: Current log size: 22380000
+Jul 27 23:42:22 3dr_solo local1.info dl: mh-dfl: Current log size: 22520000
+Jul 27 23:42:33 3dr_solo local1.info dl: mh-dfl: Current log size: 22660000
+Jul 27 23:42:44 3dr_solo local1.info dl: mh-dfl: Current log size: 22800000
+Jul 27 23:42:55 3dr_solo local1.info dl: mh-dfl: Current log size: 22940000
+Jul 27 23:43:06 3dr_solo local1.info dl: mh-dfl: Current log size: 23080000
+Jul 27 23:43:17 3dr_solo local1.info dl: mh-dfl: Current log size: 23220000
+Jul 27 23:43:28 3dr_solo local1.info dl: mh-dfl: Current log size: 23360000
+Jul 27 23:43:39 3dr_solo local1.info dl: mh-dfl: Current log size: 23500000
+Jul 27 23:43:50 3dr_solo local1.info dl: mh-dfl: Current log size: 23640000
+Jul 27 23:44:01 3dr_solo local1.info dl: mh-dfl: Current log size: 23780000
+Jul 27 23:44:12 3dr_solo local1.info dl: mh-dfl: Current log size: 23920000
+Jul 27 23:44:23 3dr_solo local1.info dl: mh-dfl: Current log size: 24060000
+Jul 27 23:44:34 3dr_solo local1.info dl: mh-dfl: Current log size: 24200000
+Jul 27 23:44:45 3dr_solo local1.info dl: mh-dfl: Current log size: 24340000
+Jul 27 23:44:56 3dr_solo local1.info dl: mh-dfl: Current log size: 24480000
+Jul 27 23:45:07 3dr_solo local1.info dl: mh-dfl: Current log size: 24620000
+Jul 27 23:45:18 3dr_solo local1.info dl: mh-dfl: Current log size: 24760000
+Jul 27 23:45:29 3dr_solo local1.info dl: mh-dfl: Current log size: 24900000
+Jul 27 23:45:40 3dr_solo local1.info dl: mh-dfl: Current log size: 25040000
+Jul 27 23:45:51 3dr_solo local1.info dl: mh-dfl: Current log size: 25180000
+Jul 27 23:46:02 3dr_solo local1.info dl: mh-dfl: Current log size: 25320000
+Jul 27 23:46:13 3dr_solo local1.info dl: mh-dfl: Current log size: 25460000
+Jul 27 23:46:24 3dr_solo local1.info dl: mh-dfl: Current log size: 25600000
+Jul 27 23:46:35 3dr_solo local1.info dl: mh-dfl: Current log size: 25740000
+Jul 27 23:46:46 3dr_solo local1.info dl: mh-dfl: Current log size: 25880000
+Jul 27 23:46:57 3dr_solo local1.info dl: mh-dfl: Current log size: 26020000
+Jul 27 23:47:08 3dr_solo local1.info dl: mh-dfl: Current log size: 26160000
+Jul 27 23:47:19 3dr_solo local1.info dl: mh-dfl: Current log size: 26300000
+Jul 27 23:47:30 3dr_solo local1.info dl: mh-dfl: Current log size: 26440000
+Jul 27 23:47:41 3dr_solo local1.info dl: mh-dfl: Current log size: 26580000
+                                                                                                                                                        
