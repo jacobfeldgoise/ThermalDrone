@@ -1,0 +1,388 @@
+
+2017-07-12 17:15:10,137 proc_top starting
+
+2017-07-12 17:15:20,138
+   pid name                  utime  stime  pct
+    13 (kworker/0:1)             0     66   7%
+   846 (python)                 31     10   4%
+   732 (wpa_supplicant)         11      2   1%
+    71 (mmcqd/0)                 0     10   1%
+    24 (ipu1_task)               0      5   1%
+   106 (loop0)                   0      5   1%
+
+2017-07-12 17:15:30,138
+   pid name                  utime  stime  pct
+   904 (telem_down)             16     83  10%
+   916 (python)                 83      4   9%
+   919 (python)                 47     14   6%
+    13 (kworker/0:1)             0     49   5%
+   917 (python)                 39      6   5%
+   912 (vidsrc:src)             24     12   4%
+   903 (pixrc_udp)               0     28   3%
+   900 (python)                 26      2   3%
+   889 (dataflash_logge)         3     10   1%
+   891 (vidlaunch)               2      9   1%
+    24 (ipu1_task)               0      9   1%
+    71 (mmcqd/0)                 0      6   1%
+   905 (telem_up)                3      2   1%
+   918 (python)                  4      1   1%
+
+2017-07-12 17:15:40,138
+   pid name                  utime  stime  pct
+   904 (telem_down)             11     83   9%
+   916 (python)                 84      3   9%
+   919 (python)                 45     15   6%
+    13 (kworker/0:1)             0     47   5%
+   917 (python)                 37      8   5%
+   912 (vidsrc:src)             19     14   3%
+   903 (pixrc_udp)               0     31   3%
+   900 (python)                 28      1   3%
+   889 (dataflash_logge)         3      9   1%
+    24 (ipu1_task)               0      8   1%
+   891 (vidlaunch)               3      3   1%
+   918 (python)                  6      0   1%
+   907 (pixrc_ser)               0      5   1%
+
+2017-07-12 17:15:50,137
+   pid name                  utime  stime  pct
+   904 (telem_down)             16     82  10%
+   916 (python)                 82      4   9%
+   919 (python)                 49     11   6%
+    13 (kworker/0:1)             0     49   5%
+   917 (python)                 37      8   5%
+   912 (vidsrc:src)             18     14   3%
+   903 (pixrc_udp)               3     26   3%
+   900 (python)                 29      0   3%
+   889 (dataflash_logge)         5      8   1%
+    24 (ipu1_task)               0      9   1%
+   905 (telem_up)                1      4   1%
+   918 (python)                  4      1   1%
+
+2017-07-12 17:16:00,138
+   pid name                  utime  stime  pct
+   904 (telem_down)             13     82  10%
+   916 (python)                 83      5   9%
+   919 (python)                 48     12   6%
+    64 (kworker/0:2)             0     47   5%
+   917 (python)                 44      1   5%
+   912 (vidsrc:src)             19     12   3%
+   900 (python)                 31      0   3%
+   903 (pixrc_udp)               7     23   3%
+   889 (dataflash_logge)         3     10   1%
+    24 (ipu1_task)               0      8   1%
+   907 (pixrc_ser)               0      5   1%
+   918 (python)                  5      0   1%
+
+2017-07-12 17:16:10,138
+   pid name                  utime  stime  pct
+   904 (telem_down)             14     85  10%
+   916 (python)                 80      6   9%
+   919 (python)                 48     13   6%
+    64 (kworker/0:2)             0     48   5%
+   917 (python)                 39      6   5%
+   912 (vidsrc:src)             18     14   3%
+   903 (pixrc_udp)               5     25   3%
+   900 (python)                 28      0   3%
+   889 (dataflash_logge)         2     11   1%
+    24 (ipu1_task)               0      9   1%
+   918 (python)                  5      1   1%
+   905 (telem_up)                0      5   1%
+
+2017-07-12 17:16:20,138
+   pid name                  utime  stime  pct
+   904 (telem_down)             14     83  10%
+   916 (python)                 79      8   9%
+   919 (python)                 43     16   6%
+    64 (kworker/0:2)             0     49   5%
+   917 (python)                 36      8   4%
+   912 (vidsrc:src)             20     13   3%
+   900 (python)                 31      0   3%
+   903 (pixrc_udp)               5     25   3%
+   889 (dataflash_logge)         2     11   1%
+    24 (ipu1_task)               0      8   1%
+   891 (vidlaunch)               2      4   1%
+   907 (pixrc_ser)               1      4   1%
+   918 (python)                  4      1   1%
+
+2017-07-12 17:16:30,138
+   pid name                  utime  stime  pct
+   904 (telem_down)             12     86  10%
+   916 (python)                 79      7   9%
+   919 (python)                 43     17   6%
+    64 (kworker/0:2)             0     49   5%
+   917 (python)                 35     10   5%
+   912 (vidsrc:src)             25     11   4%
+   903 (pixrc_udp)               8     22   3%
+   900 (python)                 24      1   3%
+   889 (dataflash_logge)         1     11   1%
+   891 (vidlaunch)               2      9   1%
+    24 (ipu1_task)               0      8   1%
+   918 (python)                  6      0   1%
+   907 (pixrc_ser)               0      5   1%
+   905 (telem_up)                0      5   1%
+
+2017-07-12 17:16:40,138
+   pid name                  utime  stime  pct
+   904 (telem_down)             12     85  10%
+   916 (python)                 78      8   9%
+   919 (python)                 43     17   6%
+    64 (kworker/0:2)             0     49   5%
+   917 (python)                 39      6   5%
+   912 (vidsrc:src)             17     18   4%
+   903 (pixrc_udp)               3     27   3%
+   900 (python)                 26      2   3%
+   889 (dataflash_logge)         4      9   1%
+    24 (ipu1_task)               0      9   1%
+   891 (vidlaunch)               4      5   1%
+   907 (pixrc_ser)               0      5   1%
+   918 (python)                  4      1   1%
+
+2017-07-12 17:16:50,138
+   pid name                  utime  stime  pct
+   904 (telem_down)             10     88  10%
+   916 (python)                 82      4   9%
+   919 (python)                 37     24   6%
+    64 (kworker/0:2)             0     49   5%
+   917 (python)                 29     15   4%
+   912 (vidsrc:src)             22     13   4%
+   903 (pixrc_udp)               7     23   3%
+   900 (python)                 23      6   3%
+   889 (dataflash_logge)         2     11   1%
+    24 (ipu1_task)               0      8   1%
+   891 (vidlaunch)               2      6   1%
+   905 (telem_up)                1      4   1%
+   918 (python)                  4      1   1%
+
+2017-07-12 17:17:00,138
+   pid name                  utime  stime  pct
+   904 (telem_down)             16     81  10%
+   916 (python)                 78      9   9%
+   919 (python)                 43     17   6%
+   917 (python)                 35     10   5%
+   912 (vidsrc:src)             23      9   3%
+    64 (kworker/0:2)             0     30   3%
+   903 (pixrc_udp)               6     24   3%
+   900 (python)                 27      1   3%
+    13 (kworker/0:1)             0     18   2%
+   889 (dataflash_logge)         5      8   1%
+    24 (ipu1_task)               0      8   1%
+   918 (python)                  3      3   1%
+   905 (telem_up)                2      3   1%
+
+2017-07-26 17:01:41,428
+   pid name                  utime  stime  pct
+   904 (telem_down)             12     93  11%
+   916 (python)                 95     10  11%
+   919 (python)                 49     19   7%
+   917 (python)                 30     15   5%
+   912 (vidsrc:src)             21     13   3%
+    13 (kworker/0:1)             0     31   3%
+   903 (pixrc_udp)               3     28   3%
+   900 (python)                 15     13   3%
+    64 (kworker/0:2)             0     21   2%
+   889 (dataflash_logge)         4     11   2%
+    24 (ipu1_task)               0      9   1%
+   891 (vidlaunch)               2      4   1%
+   918 (python)                  3      2   1%
+
+2017-07-26 17:01:51,428
+   pid name                  utime  stime  pct
+   904 (telem_down)             13     86  10%
+   916 (python)                 83      9   9%
+   919 (python)                 41     22   6%
+    64 (kworker/0:2)             0     49   5%
+   917 (python)                 36      8   4%
+   912 (vidsrc:src)             18     16   3%
+   903 (pixrc_udp)               0     32   3%
+   900 (python)                 24      4   3%
+   889 (dataflash_logge)         3     10   1%
+    24 (ipu1_task)               0      8   1%
+   891 (vidlaunch)               3      3   1%
+   918 (python)                  6      0   1%
+   907 (pixrc_ser)               3      2   1%
+   905 (telem_up)                2      3   1%
+
+2017-07-26 17:02:01,428
+   pid name                  utime  stime  pct
+   904 (telem_down)             12     85  10%
+   916 (python)                 83      6   9%
+   919 (python)                 45     17   6%
+    13 (kworker/0:1)             0     46   5%
+   917 (python)                 34     10   4%
+   903 (pixrc_udp)               3     29   3%
+   912 (vidsrc:src)             13     19   3%
+   900 (python)                 23      5   3%
+   889 (dataflash_logge)         3     10   1%
+    24 (ipu1_task)               0      8   1%
+   918 (python)                  4      1   1%
+
+2017-07-26 17:02:11,428
+   pid name                  utime  stime  pct
+   904 (telem_down)             19     78  10%
+   916 (python)                 72     18   9%
+   919 (python)                 36     27   6%
+    13 (kworker/0:1)             0     50   5%
+   917 (python)                 39      6   5%
+   912 (vidsrc:src)             17     20   4%
+   903 (pixrc_udp)              11     20   3%
+   900 (python)                 23      5   3%
+   889 (dataflash_logge)         4      9   1%
+   891 (vidlaunch)               1     10   1%
+    24 (ipu1_task)               0      9   1%
+   907 (pixrc_ser)               0      5   1%
+   905 (telem_up)                1      4   1%
+   918 (python)                  2      3   1%
+
+2017-07-26 17:02:21,428
+   pid name                  utime  stime  pct
+   904 (telem_down)             12     87  10%
+   916 (python)                 47     43   9%
+   919 (python)                 31     33   6%
+    13 (kworker/0:1)             0     48   5%
+   917 (python)                 27     17   4%
+   912 (vidsrc:src)             15     21   4%
+   903 (pixrc_udp)               4     26   3%
+   900 (python)                 23      4   3%
+   889 (dataflash_logge)         0     13   1%
+   891 (vidlaunch)               1      8   1%
+    24 (ipu1_task)               0      8   1%
+   918 (python)                  3      3   1%
+
+2017-07-26 17:02:31,428
+   pid name                  utime  stime  pct
+   904 (telem_down)              9     86  10%
+   916 (python)                 85      5   9%
+   919 (python)                 45     18   6%
+    13 (kworker/0:1)             0     48   5%
+   917 (python)                 39      5   4%
+   912 (vidsrc:src)             21     11   3%
+   903 (pixrc_udp)               4     26   3%
+   900 (python)                 23      5   3%
+   889 (dataflash_logge)         3     10   1%
+    24 (ipu1_task)               0      9   1%
+   918 (python)                  6      0   1%
+   907 (pixrc_ser)               0      5   1%
+
+2017-07-26 17:02:41,428
+   pid name                  utime  stime  pct
+   904 (telem_down)             26     73  10%
+   916 (python)                 90      1   9%
+   919 (python)                 54      9   6%
+    13 (kworker/0:1)             0     50   5%
+   917 (python)                 42      3   5%
+   912 (vidsrc:src)             15     18   3%
+   903 (pixrc_udp)               4     25   3%
+   900 (python)                 24      4   3%
+   889 (dataflash_logge)         7      7   1%
+    24 (ipu1_task)               0      8   1%
+   905 (telem_up)                0      5   1%
+   918 (python)                  5      0   1%
+
+2017-07-26 17:02:51,428
+   pid name                  utime  stime  pct
+   904 (telem_down)              7     90  10%
+   916 (python)                 82      8   9%
+   919 (python)                 51     12   6%
+    13 (kworker/0:1)             0     48   5%
+   917 (python)                 38      6   4%
+   912 (vidsrc:src)             18     14   3%
+   903 (pixrc_udp)               5     25   3%
+   900 (python)                 23      5   3%
+   889 (dataflash_logge)         2     11   1%
+    24 (ipu1_task)               0      8   1%
+   907 (pixrc_ser)               0      5   1%
+   918 (python)                  3      2   1%
+
+2017-07-26 17:03:01,428
+   pid name                  utime  stime  pct
+   904 (telem_down)             13     85  10%
+   916 (python)                 89      1   9%
+   919 (python)                 46     18   6%
+    13 (kworker/0:1)             0     49   5%
+   917 (python)                 37      8   5%
+   912 (vidsrc:src)             23     11   3%
+   903 (pixrc_udp)               3     26   3%
+   900 (python)                 24      4   3%
+   889 (dataflash_logge)         6      7   1%
+    24 (ipu1_task)               0      9   1%
+   891 (vidlaunch)               1      5   1%
+   905 (telem_up)                0      5   1%
+   918 (python)                  4      1   1%
+
+2017-07-26 17:03:11,428
+   pid name                  utime  stime  pct
+   904 (telem_down)             11     88  10%
+   916 (python)                 87      4   9%
+   919 (python)                 50     13   6%
+    13 (kworker/0:1)             0     49   5%
+   917 (python)                 33     11   4%
+   912 (vidsrc:src)             19     15   3%
+   903 (pixrc_udp)               5     24   3%
+   900 (python)                 23      4   3%
+   889 (dataflash_logge)         1     12   1%
+    24 (ipu1_task)               0      8   1%
+   891 (vidlaunch)               2      4   1%
+   907 (pixrc_ser)               2      3   1%
+   918 (python)                  4      1   1%
+
+2017-07-26 17:03:21,428
+   pid name                  utime  stime  pct
+   904 (telem_down)             11     87  10%
+   916 (python)                 89      1   9%
+   919 (python)                 62      1   6%
+    13 (kworker/0:1)             0     49   5%
+   917 (python)                 40      5   5%
+   912 (vidsrc:src)             19     14   3%
+   903 (pixrc_udp)               4     26   3%
+   900 (python)                 22      5   3%
+   889 (dataflash_logge)         4      9   1%
+    24 (ipu1_task)               0      9   1%
+   918 (python)                  6      0   1%
+
+2017-07-26 17:03:31,428
+   pid name                  utime  stime  pct
+   904 (telem_down)             20     83  10%
+   916 (python)                100      3  10%
+   919 (python)                 57     10   7%
+    13 (kworker/0:1)             0     51   5%
+   917 (python)                 41      4   5%
+   912 (vidsrc:src)             22     11   3%
+   903 (pixrc_udp)               4     26   3%
+   900 (python)                 23      5   3%
+   889 (dataflash_logge)         3     12   2%
+    24 (ipu1_task)               0      8   1%
+   905 (telem_up)                2      3   1%
+   918 (python)                  5      0   1%
+
+2017-07-26 17:03:41,428
+   pid name                  utime  stime  pct
+   904 (telem_down)             19     78  10%
+   916 (python)                 86      3   9%
+   919 (python)                 46     17   6%
+   917 (python)                 39      5   4%
+    13 (kworker/0:1)             0     39   4%
+   912 (vidsrc:src)             19     16   4%
+   903 (pixrc_udp)               4     26   3%
+   900 (python)                 25      4   3%
+   889 (dataflash_logge)         0     13   1%
+    64 (kworker/0:2)             0      9   1%
+   891 (vidlaunch)               4      5   1%
+    24 (ipu1_task)               0      8   1%
+   907 (pixrc_ser)               0      6   1%
+   905 (telem_up)                0      5   1%
+   918 (python)                  4      1   1%
+
+2017-07-26 17:03:51,428
+   pid name                  utime  stime  pct
+   904 (telem_down)             15     83  10%
+   916 (python)                 86      5   9%
+   919 (python)                 49     14   6%
+    64 (kworker/0:2)             0     49   5%
+   917 (python)                 37      8   5%
+   912 (vidsrc:src)             22     10   3%
+   903 (pixrc_udp)               4     26   3%
+   900 (python)                 23      5   3%
+   889 (dataflash_logge)         2     11   1%
+    24 (ipu1_task)               0      9   1%
+   918 (python)                  6      0   1%
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

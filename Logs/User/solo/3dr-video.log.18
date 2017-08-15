@@ -1,0 +1,9 @@
+Jul 12 15:18:11 3dr_solo local6.info video: main: built Sep 22 2016 15:31:07
+Jul 12 15:18:11 3dr_solo local6.info video: Operating in variable bitrate mode (800000-1800000)@24fps
+Jul 12 15:18:11 3dr_solo local6.info video: Using variable streaming resolution
+Jul 12 15:18:11 3dr_solo local6.info video: Initializing
+Jul 12 15:18:12 3dr_solo local6.info video: Creating pipeline
+Jul 12 15:18:12 3dr_solo local6.info video: Starting play
+Jul 12 15:18:12 3dr_solo local6.info video: new size: 640x480
+Jul 12 15:18:12 3dr_solo local6.info video: Restarting pipeline
+Jul 12 15:18:12 3dr_solo local6.info video: Last timestamp: 0

@@ -1,0 +1,62 @@
+Jul 27 23:47:09 3dr_solo local4.info +847 tlm: Installing SIGQUIT signal handler
+Jul 27 23:47:09 3dr_solo local4.info +858 tlm: telem_forwarder starting: built Sep 22 2016 15:31:01
+Jul 27 23:47:09 3dr_solo local4.info +860 tlm: serial port: /dev/ttymxc1
+Jul 27 23:47:09 3dr_solo local4.info +860 tlm: serial baudrate: 921600
+Jul 27 23:47:09 3dr_solo local4.info +860 tlm: serial hw flow: true
+Jul 27 23:47:09 3dr_solo local4.info +860 tlm: UDP dest port: 14550
+Jul 27 23:47:09 3dr_solo local4.info +860 tlm: use GPS time: true
+Jul 27 23:47:09 3dr_solo local4.info +860 tlm: tos: 0x7f
+Jul 27 23:47:09 3dr_solo local4.info +860 tlm: opened port 14560
+Jul 27 23:47:09 3dr_solo local4.info +872 tlm: opened serial port /dev/ttymxc1
+Jul 27 23:47:09 3dr_solo local4.err +939 tlm: Message too large for aggregate buffer, sending LinkPacket first
+Jul 27 23:47:09 3dr_solo local4.err +981 tlm: poll returned zero
+Jul 27 23:47:10 3dr_solo local4.info +156 tlm: adding new client 10.1.1.10:40171
+Jul 27 23:47:10 3dr_solo local4.info +156 tlm: ARP: Seen (254/17) from 10.1.1.10:40171 client=0x762fdc44
+Jul 27 23:47:10 3dr_solo local4.info +156 tlm: ARP: Seen (57/57) from 10.1.1.10:40171 client=0x762fdc44
+Jul 27 23:47:13 3dr_solo local4.info +171 tlm: adding new client 127.0.0.1:36329
+Jul 27 23:47:13 3dr_solo local4.info +171 tlm: ARP: Seen (255/0) from 127.0.0.1:36329 client=0x762fdc44
+Jul 27 23:47:14 3dr_solo local4.info +340 tlm: SET_MODE: from 127.0.0.1:36329
+Jul 27 23:47:14 3dr_solo local4.info +340 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 27 23:47:14 3dr_solo local4.info +340 tlm: SET_MODE: custom_mode=0.0.0.5 target_system=1 base_mode=1
+Jul 27 23:47:19 3dr_solo local4.info +896 tlm: down: 220 m/s, 19661 b/s, 21%; up: 72 m/s, 1096 b/s, 1%
+Jul 27 23:47:19 3dr_solo local4.info +896 tlm: seq errs: (1,155):2
+Jul 27 23:47:26 3dr_solo local4.info +142 tlm: GPS time: 2017-07-28 14:58:51.428000
+Jul 28 14:58:51 3dr_solo local4.info +428 tlm: clock set from GPS
+Jul 28 14:58:55 3dr_solo local4.info +183 tlm: down: 150 m/s, 16181 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 28 14:59:05 3dr_solo local4.info +183 tlm: down: 152 m/s, 16295 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 28 14:59:15 3dr_solo local4.info +184 tlm: down: 152 m/s, 16269 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 28 14:59:25 3dr_solo local4.info +185 tlm: down: 152 m/s, 16269 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 28 14:59:35 3dr_solo local4.info +185 tlm: down: 152 m/s, 16257 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 28 14:59:45 3dr_solo local4.info +186 tlm: down: 152 m/s, 16278 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 28 14:59:55 3dr_solo local4.info +187 tlm: down: 152 m/s, 16300 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 28 15:00:05 3dr_solo local4.info +187 tlm: down: 152 m/s, 16266 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 28 15:00:15 3dr_solo local4.info +188 tlm: down: 152 m/s, 16257 b/s, 17%; up: 65 m/s, 978 b/s, 1%
+Jul 28 15:00:25 3dr_solo local4.info +189 tlm: down: 152 m/s, 16300 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 28 15:00:35 3dr_solo local4.info +189 tlm: down: 150 m/s, 16217 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 28 15:00:41 3dr_solo local4.info +075 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 28 15:00:41 3dr_solo local4.info +075 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 28 15:00:41 3dr_solo local4.info +075 tlm: SET_MODE: custom_mode=0.0.0.20 target_system=1 base_mode=1
+Jul 28 15:00:44 3dr_solo local4.info +086 tlm: SET_MODE: from 10.1.1.1:14550
+Jul 28 15:00:44 3dr_solo local4.info +086 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 28 15:00:44 3dr_solo local4.info +086 tlm: SET_MODE: custom_mode=0.0.0.20 target_system=1 base_mode=1
+Jul 28 15:00:45 3dr_solo local4.info +190 tlm: down: 160 m/s, 14280 b/s, 15%; up: 54 m/s, 860 b/s, 0%
+Jul 28 15:00:55 3dr_solo local4.info +190 tlm: down: 164 m/s, 16431 b/s, 17%; up: 71 m/s, 1228 b/s, 1%
+Jul 28 15:00:56 3dr_solo local4.info +763 tlm: SET_MODE: from 127.0.0.1:36329
+Jul 28 15:00:56 3dr_solo local4.info +763 tlm: SET_MODE: len=6 src_sys=255 src_comp=0
+Jul 28 15:00:56 3dr_solo local4.info +763 tlm: SET_MODE: custom_mode=0.0.0.5 target_system=1 base_mode=1
+Jul 28 15:01:05 3dr_solo local4.info +191 tlm: down: 165 m/s, 16414 b/s, 17%; up: 69 m/s, 1162 b/s, 1%
+Jul 28 15:01:15 3dr_solo local4.info +192 tlm: down: 162 m/s, 16286 b/s, 17%; up: 64 m/s, 975 b/s, 1%
+Jul 28 15:01:25 3dr_solo local4.info +193 tlm: down: 165 m/s, 16427 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 28 15:01:35 3dr_solo local4.info +193 tlm: down: 164 m/s, 16426 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 28 15:01:45 3dr_solo local4.info +194 tlm: down: 164 m/s, 16420 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 28 15:01:55 3dr_solo local4.info +195 tlm: down: 165 m/s, 16433 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 28 15:02:05 3dr_solo local4.info +196 tlm: down: 163 m/s, 16403 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 28 15:02:15 3dr_solo local4.info +196 tlm: down: 164 m/s, 16438 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 28 15:02:25 3dr_solo local4.info +197 tlm: down: 165 m/s, 16432 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 28 15:02:35 3dr_solo local4.info +197 tlm: down: 164 m/s, 16414 b/s, 17%; up: 65 m/s, 981 b/s, 1%
+Jul 28 15:02:45 3dr_solo local4.info +198 tlm: down: 163 m/s, 16412 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 28 15:02:55 3dr_solo local4.info +199 tlm: down: 165 m/s, 16428 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 28 15:03:05 3dr_solo local4.info +200 tlm: down: 164 m/s, 16423 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 28 15:03:15 3dr_solo local4.info +201 tlm: down: 164 m/s, 16423 b/s, 17%; up: 65 m/s, 983 b/s, 1%
+Jul 28 15:03:25 3dr_solo local4.info +201 tlm: down: 165 m/s, 16433 b/s, 17%; up: 65 m/s, 980 b/s, 1%
+Jul 28 15:03:35 3dr_solo local4.info +202 tlm: down: 164 m/s, 16411 b/s, 17%; up: 65 m/s, 981 b/s, 1%

@@ -1,0 +1,29 @@
+Aug  8 22:01:13 3dr_solo local2.info shot: +-+-+-+-+-+-+ Starting up v2.4.1-1 +-+-+-+-+-+-+
+Aug  8 22:01:13 3dr_solo local2.info shot: [RC] Disabling stick remapping
+Aug  8 22:01:13 3dr_solo local2.info shot: [app]: Ready for connections from app.
+Aug  8 22:01:13 3dr_solo local2.info shot: [button]: Creating a new thread to connect to Artoo.
+Aug  8 22:01:13 3dr_solo local2.info shot: [button]: read in button mappings
+Aug  8 22:01:13 3dr_solo local2.info shot: [button]: Button A - shot Cable Cam, mode None
+Aug  8 22:01:13 3dr_solo local2.info shot: [button]: Button B - shot Orbit, mode None
+Aug  8 22:01:13 3dr_solo local2.info shot: [gopro]: read enabled value from settings of 1.
+Aug  8 22:01:13 3dr_solo local2.info shot: [gopro]: sending gimbal enabled param (GMB_GP_CTRL) to 1.000000
+Aug  8 22:01:13 3dr_solo local2.info shot: [gopro]: Inited GoProManager
+Aug  8 22:01:13 3dr_solo local2.info shot: [RewindManager] Init
+Aug  8 22:01:13 3dr_solo local2.info shot: [shot]: No gimbal detected.
+Aug  8 22:01:15 3dr_solo local2.info shot: [button]: Connected to Artoo.
+Aug  8 22:01:15 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Aug  8 22:01:23 3dr_solo local2.info shot: [callback]: Mode changed from LOITER -> ALT_HOLD
+Aug  8 22:01:23 3dr_solo local2.info shot: [button]: sending FLY: MANUAL to Artoo as mode
+Aug  8 22:01:28 3dr_solo local2.info shot: [callback]: armed status changed to 1
+Aug  8 22:01:28 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Aug  8 22:01:28 3dr_solo local2.info shot: [RewindManager] loaded home 0.000000 0.000000, alt 0.000000
+Aug  8 22:01:28 3dr_solo local2.info shot: [app]: Can't send packet - app is not connected!
+Aug  8 22:01:32 3dr_solo local2.info shot: [callback]: Mode changed from ALT_HOLD -> LAND
+Aug  8 22:01:32 3dr_solo local2.info shot: [button]: sending LAND to Artoo as mode
+Aug  8 22:01:32 3dr_solo local2.info shot: [callback]: armed status changed to 0
+Aug  8 22:01:32 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Aug  8 22:01:32 3dr_solo local2.info shot: [shot]: Already in shot FLY.
+Aug  8 22:01:32 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Aug  8 22:01:32 3dr_solo local2.info shot: [gopro]: handleRecordCommand called but GoPro is not connected
+Aug  8 22:01:32 3dr_solo local2.info shot: [callback]: Mode changed from LAND -> LOITER
+Aug  8 22:01:32 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode

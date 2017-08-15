@@ -333,7 +333,6 @@ def read_sonar_multi_call(sensor_loop, stdata_q):
     logfile.close()
     print "[Sub-process]: Rejoining master process..."
 
-
 if __name__ == "__main__":
     # All code -- including calling pre-defined functions -- goes here
     target = sys.argv[1] if len(sys.argv) >= 2 else 'udpin:0.0.0.0:14550'

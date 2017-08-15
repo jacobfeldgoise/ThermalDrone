@@ -1,0 +1,13 @@
+Jan  1 00:00:08 3dr_solo syslog.info syslogd started: BusyBox v1.21.1
+Jan  1 00:00:08 3dr_solo daemon.info kernel: udevd[142]: starting version 182
+Jul 26 18:30:09 3dr_solo daemon.info init: Entering runlevel: 3
+Jul 26 18:30:09 3dr_solo auth.info sshd[836]: Server listening on 0.0.0.0 port 22.
+Jul 26 18:30:09 3dr_solo auth.info sshd[836]: Server listening on :: port 22.
+Jul 26 18:30:09 3dr_solo daemon.info dnsmasq[840]: started, version 2.72 cachesize 150
+Jul 26 18:30:09 3dr_solo daemon.info dnsmasq[840]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset auth no-DNSSEC loop-detect
+Jul 26 18:30:09 3dr_solo daemon.warn dnsmasq[840]: warning: interface wlan0-ap does not currently exist
+Jul 26 18:30:09 3dr_solo daemon.info dnsmasq-dhcp[840]: DHCP, IP range 10.1.1.100 -- 10.1.1.199, lease time 2h
+Jul 26 18:30:09 3dr_solo daemon.info dnsmasq[840]: reading /etc/resolv.conf
+Jul 26 18:30:09 3dr_solo daemon.info dnsmasq[840]: using nameserver 8.8.8.8#53
+Jul 26 18:30:09 3dr_solo daemon.info dnsmasq[840]: read /etc/hosts - 1 addresses
+Jul 26 18:30:09 3dr_solo daemon.info init: Switching to runlevel: 4

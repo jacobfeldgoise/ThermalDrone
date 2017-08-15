@@ -1,0 +1,117 @@
+Jan  1 00:00:05 3dr_controller syslog.info syslogd started: BusyBox v1.21.1
+Jan  1 00:00:05 3dr_controller daemon.info kernel: udevd[141]: starting version 182
+Jul 26 17:37:00 3dr_controller daemon.info init: Entering runlevel: 3
+Jul 26 17:37:00 3dr_controller auth.info sshd[722]: Server listening on 0.0.0.0 port 22.
+Jul 26 17:37:00 3dr_controller auth.info sshd[722]: Server listening on :: port 22.
+Jul 26 17:37:01 3dr_controller daemon.info dnsmasq[727]: started, version 2.72 cachesize 150
+Jul 26 17:37:01 3dr_controller daemon.info dnsmasq[727]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset auth no-DNSSEC loop-detect
+Jul 26 17:37:01 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCP, IP range 10.1.1.100 -- 10.1.1.199, lease time 2h
+Jul 26 17:37:01 3dr_controller daemon.warn dnsmasq[727]: no servers found in /etc/resolv.conf, will retry
+Jul 26 17:37:01 3dr_controller daemon.info dnsmasq[727]: read /etc/hosts - 1 addresses
+Jul 26 17:37:16 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 IEEE 802.11: authenticated
+Jul 26 17:37:16 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 IEEE 802.11: associated (aid 1)
+Jul 26 17:37:16 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 RADIUS: starting accounting session 5978D346-00000000
+Jul 26 17:37:16 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 WPA: pairwise key handshake completed (RSN)
+Jul 26 17:37:20 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: authenticated
+Jul 26 17:37:20 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: associated (aid 2)
+Jul 26 17:37:20 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e RADIUS: starting accounting session 5978D346-00000001
+Jul 26 17:37:20 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e WPA: pairwise key handshake completed (RSN)
+Jul 26 17:37:25 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 IEEE 802.11: authenticated
+Jul 26 17:37:25 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 IEEE 802.11: associated (aid 1)
+Jul 26 17:37:25 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 RADIUS: starting accounting session 5978D346-00000002
+Jul 26 17:37:25 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 WPA: pairwise key handshake completed (RSN)
+Jul 26 17:37:25 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPDISCOVER(wlan0-ap) 88:dc:96:40:21:50 
+Jul 26 17:37:25 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPOFFER(wlan0-ap) 10.1.1.10 88:dc:96:40:21:50 
+Jul 26 17:37:25 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPREQUEST(wlan0-ap) 10.1.1.10 88:dc:96:40:21:50 
+Jul 26 17:37:25 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPACK(wlan0-ap) 10.1.1.10 88:dc:96:40:21:50 solo
+Jul 26 17:37:26 3dr_controller daemon.info init: Switching to runlevel: 4
+Jul 26 17:37:32 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPDISCOVER(wlan0-ap) 60:03:08:96:b0:9e 
+Jul 26 17:37:32 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPOFFER(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e 
+Jul 26 17:37:32 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPDISCOVER(wlan0-ap) 60:03:08:96:b0:9e 
+Jul 26 17:37:32 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPOFFER(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e 
+Jul 26 17:37:32 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 IEEE 802.11: authenticated
+Jul 26 17:37:32 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 IEEE 802.11: associated (aid 3)
+Jul 26 17:37:32 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 RADIUS: starting accounting session 5978D346-00000003
+Jul 26 17:37:32 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 WPA: pairwise key handshake completed (RSN)
+Jul 26 17:37:33 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPREQUEST(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e 
+Jul 26 17:37:33 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPACK(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e JAF-Pro
+Jul 26 17:37:41 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPDISCOVER(wlan0-ap) b8:27:eb:7e:c1:f9 
+Jul 26 17:37:41 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPOFFER(wlan0-ap) 10.1.1.173 b8:27:eb:7e:c1:f9 
+Jul 26 17:37:41 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPREQUEST(wlan0-ap) 10.1.1.173 b8:27:eb:7e:c1:f9 
+Jul 26 17:37:41 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPACK(wlan0-ap) 10.1.1.173 b8:27:eb:7e:c1:f9 raspberrypi
+Jul 26 17:46:48 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: disassociated
+Jul 26 17:46:49 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: deauthenticated due to inactivity (timer DEAUTH/REMOVE)
+Jul 26 17:49:17 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: authenticated
+Jul 26 17:49:17 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: associated (aid 2)
+Jul 26 17:49:17 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e RADIUS: starting accounting session 5978D346-00000004
+Jul 26 17:49:17 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e WPA: pairwise key handshake completed (RSN)
+Jul 26 17:49:17 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPREQUEST(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e 
+Jul 26 17:49:17 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPACK(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e JAF-Pro
+Jul 26 17:50:34 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e WPA: group key handshake completed (RSN)
+Jul 26 17:50:34 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 WPA: group key handshake completed (RSN)
+Jul 26 17:50:34 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 WPA: group key handshake completed (RSN)
+Jul 26 17:54:01 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: disassociated
+Jul 26 17:54:02 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: deauthenticated due to inactivity (timer DEAUTH/REMOVE)
+Jul 26 17:54:41 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: authenticated
+Jul 26 17:54:41 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: associated (aid 2)
+Jul 26 17:54:41 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e RADIUS: starting accounting session 5978D346-00000005
+Jul 26 17:54:41 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e WPA: pairwise key handshake completed (RSN)
+Jul 26 17:54:41 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPREQUEST(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e 
+Jul 26 17:54:41 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPACK(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e JAF-Pro
+Jul 26 17:58:07 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: disassociated
+Jul 26 17:58:08 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: deauthenticated due to inactivity (timer DEAUTH/REMOVE)
+Jul 26 17:59:51 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: authenticated
+Jul 26 17:59:51 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: associated (aid 2)
+Jul 26 17:59:51 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e RADIUS: starting accounting session 5978D346-00000006
+Jul 26 17:59:51 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e WPA: pairwise key handshake completed (RSN)
+Jul 26 17:59:51 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPREQUEST(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e 
+Jul 26 17:59:51 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPACK(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e JAF-Pro
+Jul 26 18:00:34 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e WPA: group key handshake completed (RSN)
+Jul 26 18:00:34 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 WPA: group key handshake completed (RSN)
+Jul 26 18:00:34 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 WPA: group key handshake completed (RSN)
+Jul 26 18:00:47 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 IEEE 802.11: disassociated
+Jul 26 18:00:48 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 IEEE 802.11: deauthenticated due to inactivity (timer DEAUTH/REMOVE)
+Jul 26 18:01:37 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 IEEE 802.11: authenticated
+Jul 26 18:01:37 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 IEEE 802.11: associated (aid 3)
+Jul 26 18:01:37 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 RADIUS: starting accounting session 5978D346-00000007
+Jul 26 18:01:37 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 WPA: pairwise key handshake completed (RSN)
+Jul 26 18:01:38 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPREQUEST(wlan0-ap) 10.1.1.173 b8:27:eb:7e:c1:f9 
+Jul 26 18:01:38 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPACK(wlan0-ap) 10.1.1.173 b8:27:eb:7e:c1:f9 raspberrypi
+Jul 26 18:03:37 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: disassociated
+Jul 26 18:03:38 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: deauthenticated due to inactivity (timer DEAUTH/REMOVE)
+Jul 26 18:04:59 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: authenticated
+Jul 26 18:04:59 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: associated (aid 2)
+Jul 26 18:04:59 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e RADIUS: starting accounting session 5978D346-00000008
+Jul 26 18:04:59 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e WPA: pairwise key handshake completed (RSN)
+Jul 26 18:05:00 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPREQUEST(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e 
+Jul 26 18:05:00 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPACK(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e JAF-Pro
+Jul 26 18:10:34 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 WPA: group key handshake completed (RSN)
+Jul 26 18:10:34 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e WPA: group key handshake completed (RSN)
+Jul 26 18:10:34 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 WPA: group key handshake completed (RSN)
+Jul 26 18:12:21 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: disassociated
+Jul 26 18:12:22 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: deauthenticated due to inactivity (timer DEAUTH/REMOVE)
+Jul 26 18:14:06 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: authenticated
+Jul 26 18:14:06 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: associated (aid 2)
+Jul 26 18:14:06 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e RADIUS: starting accounting session 5978D346-00000009
+Jul 26 18:14:06 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e WPA: pairwise key handshake completed (RSN)
+Jul 26 18:14:06 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPREQUEST(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e 
+Jul 26 18:14:06 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPACK(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e JAF-Pro
+Jul 26 18:20:34 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e WPA: group key handshake completed (RSN)
+Jul 26 18:20:34 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 WPA: group key handshake completed (RSN)
+Jul 26 18:20:34 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 WPA: group key handshake completed (RSN)
+Jul 26 18:22:28 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: disassociated
+Jul 26 18:22:29 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: deauthenticated due to inactivity (timer DEAUTH/REMOVE)
+Jul 26 18:27:08 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: authenticated
+Jul 26 18:27:08 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e IEEE 802.11: associated (aid 2)
+Jul 26 18:27:08 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e RADIUS: starting accounting session 5978D346-0000000A
+Jul 26 18:27:08 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e WPA: pairwise key handshake completed (RSN)
+Jul 26 18:27:09 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPREQUEST(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e 
+Jul 26 18:27:09 3dr_controller daemon.info dnsmasq-dhcp[727]: DHCPACK(wlan0-ap) 10.1.1.106 60:03:08:96:b0:9e JAF-Pro
+Jul 26 18:30:20 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 IEEE 802.11: disassociated
+Jul 26 18:30:21 3dr_controller daemon.info hostapd: wlan0-ap: STA b8:27:eb:7e:c1:f9 IEEE 802.11: deauthenticated due to inactivity (timer DEAUTH/REMOVE)
+Jul 26 18:30:34 3dr_controller daemon.info hostapd: wlan0-ap: STA 60:03:08:96:b0:9e WPA: group key handshake completed (RSN)
+Jul 26 18:30:34 3dr_controller daemon.info hostapd: wlan0-ap: STA 88:dc:96:40:21:50 WPA: group key handshake completed (RSN)
+Jul 26 18:30:41 3dr_controller daemon.info init: Switching to runlevel: 0
+Jul 26 18:30:42 3dr_controller auth.info sshd[722]: Received signal 15; terminating.
+Jul 26 18:30:42 3dr_controller daemon.info dnsmasq[727]: exiting on receipt of SIGTERM
+Jul 26 18:30:43 3dr_controller syslog.info syslogd exiting

@@ -1,0 +1,1988 @@
+
+2017-07-26 17:37:01,204 proc_top starting
+
+2017-07-26 17:37:11,204
+   pid name                  utime  stime  pct
+   758 (python)                 33      6   4%
+    62 (kworker/0:2)             0     27   3%
+   741 (hostapd)                17      4   2%
+    18 (kworker/u2:1)            0     15   2%
+
+2017-07-26 17:37:21,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     34   3%
+    62 (kworker/0:2)             0     28   3%
+   741 (hostapd)                 1      5   1%
+
+2017-07-26 17:37:31,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     37   4%
+    62 (kworker/0:2)             0     28   3%
+
+2017-07-26 17:37:41,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     40   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:37:51,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)               37      3   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:38:01,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                8     32   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:38:11,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                8     31   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:38:21,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                8     32   4%
+    62 (kworker/0:2)             0     30   3%
+   799 (app_streamer)            2      6   1%
+
+2017-07-26 17:38:31,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     44   4%
+    62 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:38:41,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     34   4%
+    62 (kworker/0:2)             0     30   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 17:38:51,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                7     33   4%
+    62 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:39:01,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     53   5%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:39:11,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     35   4%
+    62 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:39:21,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     42   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 17:39:31,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     36   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:39:41,204
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     47   5%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 17:43:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     36   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    2      3   1%
+
+2017-07-26 17:43:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     37   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:43:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     41   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:43:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     46   5%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:43:55,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     37   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:44:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     37   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            1      7   1%
+   807 (tlm_main)                0      5   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:44:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     37   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:44:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     46   5%
+    62 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            2      6   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:44:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     36   4%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:44:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     38   4%
+    62 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      9   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:44:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     40   4%
+    62 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:45:05,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)               52      0   5%
+    62 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:45:15,216
+   pid name                  utime  stime  pct
+    62 (kworker/0:2)             0     28   3%
+   772 (stm32_up)                0     23   2%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:45:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     51   5%
+    62 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      9   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:45:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     45   5%
+    62 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:45:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     44   4%
+    62 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:45:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     47   5%
+    62 (kworker/0:2)             0     29   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    3      2   1%
+
+2017-07-26 17:46:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     26   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 17:46:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     44   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            2      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:46:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     63   6%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:46:35,216
+   pid name                  utime  stime  pct
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            3      5   1%
+   802 (tlog)                    3      2   1%
+
+2017-07-26 17:46:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     55   6%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            2      6   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:46:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     44   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:47:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     39   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    7      0   1%
+
+2017-07-26 17:47:15,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     39   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 17:47:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     40   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:47:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     36   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      6   1%
+
+2017-07-26 17:47:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     36   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:47:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     36   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      9   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:48:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     38   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:48:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:48:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     38   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 17:48:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     37   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:48:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            2      6   1%
+
+2017-07-26 17:48:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:49:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            1      8   1%
+
+2017-07-26 17:49:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:49:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:49:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:49:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 17:49:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            2      6   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:50:05,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 17:50:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      6   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:50:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      9   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:50:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:50:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:50:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:51:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     30   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:51:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            1      8   1%
+
+2017-07-26 17:51:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:51:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:51:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:51:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:52:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 17:52:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 17:52:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:52:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:52:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:52:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+  2606 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 17:53:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 17:53:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     35   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:53:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     43   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:53:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     35   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 17:53:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     34   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      6   1%
+
+2017-07-26 17:53:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     40   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            2      6   1%
+
+2017-07-26 17:54:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     33   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:54:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:54:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 17:54:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     42   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 17:54:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     40   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 17:54:55,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                1     34   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:55:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 17:55:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            2      6   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:55:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:55:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:55:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 17:55:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 2      3   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:56:05,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 17:56:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:56:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 3      2   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:56:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      9   1%
+   741 (hostapd)                 3      2   1%
+
+2017-07-26 17:56:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 4      1   1%
+
+2017-07-26 17:56:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 6      0   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:57:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            2      7   1%
+
+2017-07-26 17:57:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   741 (hostapd)                 3      2   1%
+   771 (stm32_down)              0      5   1%
+
+2017-07-26 17:57:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 2      3   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 17:57:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            3      5   1%
+
+2017-07-26 17:57:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 17:57:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 2      3   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:58:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 17:58:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            1      6   1%
+   741 (hostapd)                 1      4   1%
+
+2017-07-26 17:58:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   741 (hostapd)                 1      5   1%
+
+2017-07-26 17:58:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      9   1%
+   741 (hostapd)                 2      3   1%
+
+2017-07-26 17:58:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   741 (hostapd)                 3      2   1%
+
+2017-07-26 17:58:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   741 (hostapd)                 2      3   1%
+
+2017-07-26 17:59:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:59:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 17:59:25,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 17:59:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 17:59:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  2606 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 2      3   1%
+
+2017-07-26 17:59:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                7     32   4%
+  2606 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 5      1   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:00:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+   799 (app_streamer)            2      7   1%
+  2606 (kworker/0:0)             0      9   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:00:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  7563 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 2      3   1%
+
+2017-07-26 18:00:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                5     34   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:00:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     44   4%
+  7563 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:00:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                6     27   3%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:00:55,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+    70 (mmcqd/1)                 0      5   1%
+
+2017-07-26 18:01:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                7     32   4%
+  7563 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:01:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     35   4%
+  7563 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:01:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     35   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            3      6   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:01:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     35   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 18:01:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                1     38   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      7   1%
+
+2017-07-26 18:01:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+  7563 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:02:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      7   1%
+
+2017-07-26 18:02:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:02:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:02:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  7563 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:02:45,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      7   1%
+
+2017-07-26 18:02:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  7563 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      6   1%
+
+2017-07-26 18:03:05,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:03:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     35   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      9   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:03:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:03:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            2      6   1%
+
+2017-07-26 18:03:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:03:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 18:04:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:04:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:04:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:04:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 18:04:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  7563 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:04:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:05:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:05:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  7563 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      9   1%
+   802 (tlog)                    0      6   1%
+
+2017-07-26 18:05:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  7563 (kworker/0:2)             0      9   1%
+   799 (app_streamer)            1      6   1%
+   741 (hostapd)                 4      1   1%
+
+2017-07-26 18:05:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:05:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:05:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:06:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:06:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    3      2   1%
+
+2017-07-26 18:06:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            2      7   1%
+
+2017-07-26 18:06:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:06:45,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:06:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                5     34   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:07:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     39   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    2      3   1%
+
+2017-07-26 18:07:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     44   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            0      9   1%
+   771 (stm32_down)              0      5   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:07:25,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     39   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 18:07:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                1     35   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            0      7   1%
+   802 (tlog)                    2      3   1%
+
+2017-07-26 18:07:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     41   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:07:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                8     31   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:08:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     40   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            2      6   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:08:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            0     10   1%
+   741 (hostapd)                 0      5   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:08:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                9     31   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            1      6   1%
+
+2017-07-26 18:08:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     35   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    2      3   1%
+
+2017-07-26 18:08:45,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:08:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    2      3   1%
+
+2017-07-26 18:09:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:09:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            2      6   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:09:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 18:09:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            1      6   1%
+   802 (tlog)                    2      3   1%
+
+2017-07-26 18:09:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            0      9   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:09:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:10:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:10:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:10:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    3      2   1%
+
+2017-07-26 18:10:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  9451 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 4      1   1%
+
+2017-07-26 18:10:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+  9451 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   741 (hostapd)                 4      2   1%
+   802 (tlog)                    4      1   1%
+
+2017-07-26 18:10:55,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+  9451 (kworker/0:1)             0     24   2%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 3      3   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:11:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            2      6   1%
+   741 (hostapd)                 4      2   1%
+
+2017-07-26 18:11:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:11:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            2      7   1%
+
+2017-07-26 18:11:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 3      3   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:11:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+ 11420 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:11:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:12:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      9   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:12:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            1      6   1%
+
+2017-07-26 18:12:25,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      9   1%
+   741 (hostapd)                 3      2   1%
+
+2017-07-26 18:12:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:12:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:12:55,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:13:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:13:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:13:25,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     35   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 2      3   1%
+
+2017-07-26 18:13:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      6   1%
+
+2017-07-26 18:13:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      8   1%
+
+2017-07-26 18:13:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                1     39   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            2      6   1%
+   741 (hostapd)                 2      3   1%
+
+2017-07-26 18:14:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                7     32   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:14:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                8     31   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   741 (hostapd)                 4      1   1%
+   802 (tlog)                    2      3   1%
+
+2017-07-26 18:14:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     35   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:14:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     40   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            2      6   1%
+   741 (hostapd)                 0      5   1%
+
+2017-07-26 18:14:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 5      0   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:14:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     36   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:15:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                5     35   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      9   1%
+   741 (hostapd)                 1      4   1%
+
+2017-07-26 18:15:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     44   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    3      2   1%
+
+2017-07-26 18:15:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     35   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:15:35,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:15:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+    70 (mmcqd/1)                 0      5   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:15:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:16:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     34   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:16:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      9   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:16:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:16:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:16:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:16:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            2      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:17:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   741 (hostapd)                 2      3   1%
+
+2017-07-26 18:17:15,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     35   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:17:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:17:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:17:45,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:17:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      6   1%
+
+2017-07-26 18:18:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            1      8   1%
+
+2017-07-26 18:18:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:18:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:18:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      9   1%
+   802 (tlog)                    0      7   1%
+   741 (hostapd)                 3      3   1%
+
+2017-07-26 18:18:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            3      5   1%
+
+2017-07-26 18:18:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 4      1   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:19:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 18:19:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:19:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 1      4   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:19:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      9   1%
+   741 (hostapd)                 2      3   1%
+
+2017-07-26 18:19:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   741 (hostapd)                 3      2   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:19:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   741 (hostapd)                 4      1   1%
+
+2017-07-26 18:20:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     37   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:20:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:20:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                6     32   4%
+ 11420 (kworker/0:0)             0     27   3%
+   799 (app_streamer)            1      8   1%
+   802 (tlog)                    0      7   1%
+   741 (hostapd)                 2      3   1%
+
+2017-07-26 18:20:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                1     38   4%
+ 11420 (kworker/0:0)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:20:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     42   4%
+   799 (app_streamer)            0      8   1%
+ 11420 (kworker/0:0)             0      6   1%
+   741 (hostapd)                 5      0   1%
+
+2017-07-26 18:20:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                6     32   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:21:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                6     33   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            2      6   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:21:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                1     37   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:21:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     40   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      9   1%
+   741 (hostapd)                 1      4   1%
+   802 (tlog)                    2      3   1%
+
+2017-07-26 18:21:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     42   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   741 (hostapd)                 2      3   1%
+
+2017-07-26 18:21:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     38   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      6   1%
+   741 (hostapd)                 5      0   1%
+
+2017-07-26 18:21:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                8     31   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:22:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                1     37   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:22:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     36   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            2      7   1%
+   741 (hostapd)                 2      3   1%
+
+2017-07-26 18:22:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:22:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:22:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            2      6   1%
+   741 (hostapd)                 1      4   1%
+
+2017-07-26 18:22:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 2      3   1%
+
+2017-07-26 18:23:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            1      8   1%
+
+2017-07-26 18:23:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:23:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 3      2   1%
+
+2017-07-26 18:23:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:23:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            1      8   1%
+
+2017-07-26 18:23:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            2      6   1%
+
+2017-07-26 18:24:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:24:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:24:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 2      3   1%
+   802 (tlog)                    1      4   1%
+
+2017-07-26 18:24:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            1      8   1%
+   741 (hostapd)                 5      0   1%
+
+2017-07-26 18:24:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:24:55,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 7      0   1%
+
+2017-07-26 18:25:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:25:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 18:25:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:25:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:25:45,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 3      2   1%
+
+2017-07-26 18:25:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      9   1%
+
+2017-07-26 18:26:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      7   1%
+
+2017-07-26 18:26:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+   799 (app_streamer)            1      8   1%
+
+2017-07-26 18:26:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+ 16789 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:26:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 16789 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:26:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+ 16789 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:26:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+ 16789 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            1      8   1%
+
+2017-07-26 18:27:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 16789 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            0      9   1%
+   741 (hostapd)                 1      4   1%
+
+2017-07-26 18:27:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 16789 (kworker/0:1)             0     29   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:27:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     35   4%
+ 16789 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            1      6   1%
+
+2017-07-26 18:27:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                7     32   4%
+ 16789 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      9   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:27:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     42   4%
+ 16789 (kworker/0:1)             0     27   3%
+   799 (app_streamer)            1      6   1%
+
+2017-07-26 18:27:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     34   3%
+ 16789 (kworker/0:1)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:28:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)               12     27   4%
+ 16789 (kworker/0:1)             0     23   2%
+   799 (app_streamer)            0      9   1%
+   741 (hostapd)                 3      2   1%
+   802 (tlog)                    1      4   1%
+ 14859 (kworker/0:2)             0      5   1%
+
+2017-07-26 18:28:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     39   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:28:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:28:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                4     35   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:28:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                1     38   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:28:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     39   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:29:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                0     41   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:29:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                1     35   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+
+2017-07-26 18:29:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     38   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:29:35,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            1      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:29:45,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:29:55,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     36   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            0      8   1%
+   741 (hostapd)                 5      0   1%
+
+2017-07-26 18:30:05,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     35   4%
+ 14859 (kworker/0:2)             0     27   3%
+   799 (app_streamer)            2      7   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:30:15,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                2     37   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%
+   802 (tlog)                    0      5   1%
+
+2017-07-26 18:30:25,216
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            1      7   1%
+
+2017-07-26 18:30:35,217
+   pid name                  utime  stime  pct
+   772 (stm32_up)                3     36   4%
+ 14859 (kworker/0:2)             0     28   3%
+   799 (app_streamer)            0      8   1%

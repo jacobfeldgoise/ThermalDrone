@@ -1,0 +1,45 @@
+Jul 27 23:47:09 3dr_solo local0.info +862 pixrc: main: built Sep 22 2016 15:30:53
+Jul 27 23:47:09 3dr_solo local0.info +887 pixrc: main: rcSourceIps: 10.1.1.1,127.0.0.1
+Jul 27 23:47:09 3dr_solo local0.info +888 pixrc: main: rcDestPort:  5005
+Jul 27 23:47:09 3dr_solo local0.info +905 pixrc: main: rcDsmDev:    /dev/ttymxc2
+Jul 27 23:47:09 3dr_solo local0.info +905 pixrc: main: Throttle PWM in  1000...2000
+Jul 27 23:47:09 3dr_solo local0.info +905 pixrc: main:          PWM out 1000...1900
+Jul 27 23:47:09 3dr_solo local0.info +906 pixrc: main: Other    PWM in  1000...2000
+Jul 27 23:47:09 3dr_solo local0.info +906 pixrc: main:          PWM out 1000...2000
+Jul 27 23:47:09 3dr_solo local0.info +906 pixrc: udp: listening on port 5005
+Jul 27 23:47:10 3dr_solo local0.info +385 pixrc: udp: failsafe start after 446 ms of inactivity
+Jul 27 23:47:10 3dr_solo local0.info +404 pixrc: serial: started
+Jul 27 23:47:10 3dr_solo local0.info +404 pixrc: serial: failsafe start
+Jul 27 23:47:10 3dr_solo local0.info +529 pixrc: udp: failsafe end after 591 ms
+Jul 27 23:47:10 3dr_solo local0.info +545 pixrc: serial: failsafe end
+Jul 27 23:47:14 3dr_solo local0.info +341 pixrc: cmd: uplink attached
+Jul 27 23:47:19 3dr_solo local0.info +949 pixrc: a:21,m:591,n:472,u:0,d:0,o:0,q:8576,udp=50036,ser=21471
+Jul 28 14:58:55 3dr_solo local0.info +235 pixrc: a:20,m:61,n:500,u:0,d:0,o:0,q:4992,udp=48560,ser=21729
+Jul 28 14:59:05 3dr_solo local0.info +245 pixrc: a:20,m:75,n:500,u:0,d:0,o:0,q:7488,udp=45843,ser=21150
+Jul 28 14:59:15 3dr_solo local0.info +235 pixrc: a:20,m:75,n:500,u:0,d:0,o:0,q:4992,udp=46090,ser=21335
+Jul 28 14:59:25 3dr_solo local0.info +236 pixrc: a:20,m:56,n:500,u:0,d:0,o:0,q:4992,udp=49035,ser=21004
+Jul 28 14:59:35 3dr_solo local0.info +236 pixrc: a:20,m:35,n:500,u:0,d:0,o:0,q:0,udp=34884,ser=21007
+Jul 28 14:59:45 3dr_solo local0.info +236 pixrc: a:20,m:36,n:500,u:0,d:0,o:0,q:0,udp=36153,ser=20950
+Jul 28 14:59:55 3dr_solo local0.info +245 pixrc: a:20,m:44,n:500,u:0,d:0,o:0,q:2496,udp=43740,ser=21841
+Jul 28 15:00:05 3dr_solo local0.info +236 pixrc: a:20,m:47,n:500,u:0,d:0,o:0,q:0,udp=44293,ser=20726
+Jul 28 15:00:15 3dr_solo local0.info +237 pixrc: a:20,m:34,n:500,u:0,d:0,o:0,q:0,udp=33922,ser=21317
+Jul 28 15:00:25 3dr_solo local0.info +237 pixrc: a:20,m:24,n:500,u:0,d:0,o:0,q:0,udp=23560,ser=21298
+Jul 28 15:00:35 3dr_solo local0.info +237 pixrc: a:20,m:45,n:500,u:0,d:0,o:0,q:0,udp=41661,ser=21087
+Jul 28 15:00:45 3dr_solo local0.info +237 pixrc: a:20,m:47,n:500,u:0,d:0,o:0,q:0,udp=43796,ser=21878
+Jul 28 15:00:55 3dr_solo local0.info +239 pixrc: a:20,m:26,n:500,u:0,d:0,o:0,q:0,udp=25998,ser=21244
+Jul 28 15:01:05 3dr_solo local0.info +237 pixrc: a:20,m:47,n:500,u:0,d:0,o:0,q:0,udp=43372,ser=21009
+Jul 28 15:01:15 3dr_solo local0.info +237 pixrc: a:20,m:47,n:500,u:0,d:0,o:0,q:0,udp=43048,ser=21392
+Jul 28 15:01:25 3dr_solo local0.info +238 pixrc: a:20,m:23,n:500,u:0,d:0,o:0,q:0,udp=22632,ser=20954
+Jul 28 15:01:35 3dr_solo local0.info +238 pixrc: a:20,m:27,n:500,u:0,d:0,o:0,q:0,udp=27021,ser=21949
+Jul 28 15:01:45 3dr_solo local0.info +238 pixrc: a:20,m:27,n:500,u:0,d:0,o:0,q:0,udp=26730,ser=21906
+Jul 28 15:01:55 3dr_solo local0.info +239 pixrc: a:20,m:27,n:500,u:0,d:0,o:0,q:0,udp=26731,ser=21152
+Jul 28 15:02:05 3dr_solo local0.info +238 pixrc: a:20,m:25,n:500,u:0,d:0,o:0,q:0,udp=24715,ser=21100
+Jul 28 15:02:15 3dr_solo local0.info +238 pixrc: a:20,m:27,n:500,u:0,d:0,o:0,q:0,udp=27292,ser=21119
+Jul 28 15:02:25 3dr_solo local0.info +238 pixrc: a:20,m:26,n:500,u:0,d:0,o:0,q:0,udp=25735,ser=20942
+Jul 28 15:02:35 3dr_solo local0.info +239 pixrc: a:20,m:26,n:500,u:0,d:0,o:0,q:0,udp=25610,ser=22599
+Jul 28 15:02:45 3dr_solo local0.info +239 pixrc: a:20,m:24,n:500,u:0,d:0,o:0,q:0,udp=23965,ser=21183
+Jul 28 15:02:55 3dr_solo local0.info +239 pixrc: a:20,m:24,n:500,u:0,d:0,o:0,q:0,udp=24164,ser=22076
+Jul 28 15:03:05 3dr_solo local0.info +239 pixrc: a:20,m:23,n:500,u:0,d:0,o:0,q:0,udp=23067,ser=21022
+Jul 28 15:03:15 3dr_solo local0.info +239 pixrc: a:20,m:23,n:500,u:0,d:0,o:0,q:0,udp=23242,ser=21104
+Jul 28 15:03:25 3dr_solo local0.info +240 pixrc: a:20,m:24,n:500,u:0,d:0,o:0,q:0,udp=24246,ser=21047
+Jul 28 15:03:35 3dr_solo local0.info +239 pixrc: a:20,m:25,n:500,u:0,d:0,o:0,q:0,udp=24969,ser=20963

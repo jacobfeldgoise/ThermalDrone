@@ -1,0 +1,16 @@
+Jul 12 14:49:10 3dr_solo local6.info video: main: built Sep 22 2016 15:31:07
+Jul 12 14:49:10 3dr_solo local6.info video: Operating in variable bitrate mode (800000-1800000)@24fps
+Jul 12 14:49:10 3dr_solo local6.info video: Using variable streaming resolution
+Jul 12 14:49:10 3dr_solo local6.info video: Initializing
+Jul 12 14:49:10 3dr_solo local6.info video: Creating pipeline
+Jul 12 14:49:11 3dr_solo local6.info video: Starting play
+Jul 12 14:49:11 3dr_solo local6.info video: new size: 640x480
+Jul 12 14:49:11 3dr_solo local6.info video: Restarting pipeline
+Jul 12 14:49:11 3dr_solo local6.info video: Last timestamp: 0
+Jul 12 14:52:17 3dr_solo local6.err video: Unable to send data on OOB port
+Jul 12 15:00:15 3dr_solo local6.info video: New bitrate: 1700000bps
+Jul 12 15:00:15 3dr_solo local6.info video: Last timestamp: 59767775
+Jul 12 15:00:16 3dr_solo local6.info video: New bitrate: 1600000bps
+Jul 12 15:00:16 3dr_solo local6.info video: Last timestamp: 59783595
+Jul 12 15:00:19 3dr_solo local6.info video: New bitrate: 1800000bps
+Jul 12 15:00:19 3dr_solo local6.info video: Last timestamp: 60053684

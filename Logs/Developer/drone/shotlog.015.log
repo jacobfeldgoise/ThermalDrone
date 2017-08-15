@@ -1,0 +1,82 @@
+Jul 26 17:03:15 3dr_solo local2.info shot: +-+-+-+-+-+-+ Starting up v2.4.1-1 +-+-+-+-+-+-+
+Jul 26 17:03:15 3dr_solo local2.info shot: [RC] Disabling stick remapping
+Jul 26 17:03:15 3dr_solo local2.info shot: [app]: Ready for connections from app.
+Jul 26 17:03:15 3dr_solo local2.info shot: [button]: Creating a new thread to connect to Artoo.
+Jul 26 17:03:15 3dr_solo local2.info shot: [button]: read in button mappings
+Jul 26 17:03:15 3dr_solo local2.info shot: [button]: Button A - shot Cable Cam, mode None
+Jul 26 17:03:15 3dr_solo local2.info shot: [button]: Button B - shot Orbit, mode None
+Jul 26 17:03:15 3dr_solo local2.info shot: [gopro]: read enabled value from settings of 1.
+Jul 26 17:03:15 3dr_solo local2.info shot: [gopro]: sending gimbal enabled param (GMB_GP_CTRL) to 1.000000
+Jul 26 17:03:15 3dr_solo local2.info shot: [gopro]: Inited GoProManager
+Jul 26 17:03:15 3dr_solo local2.info shot: [RewindManager] Init
+Jul 26 17:03:15 3dr_solo local2.info shot: [shot]: No gimbal detected.
+Jul 26 17:03:17 3dr_solo local2.info shot: [button]: Connected to Artoo.
+Jul 26 17:03:17 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Jul 26 17:28:38 3dr_solo local2.info shot: [app]: Connected to App. ('10.1.1.108', 53550)
+Jul 26 17:28:38 3dr_solo local2.info shot: [gopro]: sending Gopro state to app
+Jul 26 17:28:39 3dr_solo local2.info shot: [app]: App requested button mapping for 4
+Jul 26 17:28:39 3dr_solo local2.info shot: [app]: App requested button mapping for 5
+Jul 26 17:28:39 3dr_solo local2.info shot: wrote setting: A: 6, -1
+Jul 26 17:28:40 3dr_solo local2.info shot: wrote setting: B: 1, -1
+Jul 26 17:28:56 3dr_solo local2.info shot: [app]: App requested shot : FLY.
+Jul 26 17:28:56 3dr_solo local2.info shot: [shot]: Already in shot FLY.
+Jul 26 17:28:56 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 26 17:31:07 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 26 17:31:57 3dr_solo local2.info shot: [app]: Data from client ('10.1.1.108', 53550) is nil.
+Jul 26 17:31:57 3dr_solo local2.info shot: [app]: Closing client connection with ('10.1.1.108', 53550).
+Jul 26 17:32:54 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 26 17:33:07 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 26 17:35:38 3dr_solo local2.info shot: [callback]: armed status changed to 1
+Jul 26 17:35:38 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 26 17:35:38 3dr_solo local2.info shot: [RewindManager] loaded home 42.340599 -71.135933, alt 35.149998
+Jul 26 17:35:38 3dr_solo local2.info shot: [app]: Can't send packet - app is not connected!
+Jul 26 17:36:14 3dr_solo local2.info shot: [shot]: Entering shot Rewind.
+Jul 26 17:36:14 3dr_solo local2.info shot: [RC] Enabling stick remapping
+Jul 26 17:36:14 3dr_solo local2.info shot: [Rewind] Try Guided
+Jul 26 17:36:14 3dr_solo local2.info shot: [Rewind] generateSplines
+Jul 26 17:36:15 3dr_solo local2.info shot: [Rewind] read loc: 42.340599 -71.135930 0.550000
+Jul 26 17:36:15 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 26 17:36:15 3dr_solo local2.info shot: [Rewind]: Spline generation failed.
+Jul 26 17:36:15 3dr_solo local2.info shot: [shot]: Successfully entered Rewind.
+Jul 26 17:36:15 3dr_solo local2.info shot: [button]: sending REWIND to Artoo as shot
+Jul 26 17:36:15 3dr_solo local2.info shot: [shot]: Entering shot FLY.
+Jul 26 17:36:15 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 26 17:36:15 3dr_solo local2.info shot: [RC] Disabling stick remapping
+Jul 26 17:36:15 3dr_solo local2.info shot: [shot]: Successfully entered FLY.
+Jul 26 17:36:15 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 26 17:36:15 3dr_solo local2.info shot: [callback]: Mode changed from LOITER -> GUIDED
+Jul 26 17:36:15 3dr_solo local2.info shot: [callback]: Mode changed from GUIDED -> BRAKE
+Jul 26 17:36:15 3dr_solo local2.info shot: [button]: sending BRAKE to Artoo as mode
+Jul 26 17:36:16 3dr_solo local2.info shot: [callback]: Mode changed from BRAKE -> ALT_HOLD
+Jul 26 17:36:16 3dr_solo local2.info shot: [button]: sending FLY: MANUAL to Artoo as mode
+Jul 26 17:36:17 3dr_solo local2.info shot: [shot]: Entering shot Return Home.
+Jul 26 17:36:17 3dr_solo local2.info shot: [RC] Enabling stick remapping
+Jul 26 17:36:17 3dr_solo local2.info shot: [RTL] Try Guided
+Jul 26 17:36:17 3dr_solo local2.info shot: [shot]: Successfully entered Return Home.
+Jul 26 17:36:17 3dr_solo local2.info shot: [button]: sending RETURN HOME to Artoo as shot
+Jul 26 17:36:22 3dr_solo local2.info shot: [shot]: Entering shot FLY.
+Jul 26 17:36:22 3dr_solo local2.info shot: [RC] Disabling stick remapping
+Jul 26 17:36:22 3dr_solo local2.info shot: [shot]: Successfully entered FLY.
+Jul 26 17:36:22 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 26 17:36:22 3dr_solo local2.info shot: [button]: Exited shot via Artoo Fly button.
+Jul 26 17:36:24 3dr_solo local2.info shot: [callback]: Mode changed from ALT_HOLD -> LAND
+Jul 26 17:36:24 3dr_solo local2.info shot: [button]: sending LAND to Artoo as mode
+Jul 26 17:36:31 3dr_solo local2.info shot: [shot]: Entering shot Return Home.
+Jul 26 17:36:31 3dr_solo local2.info shot: [RC] Enabling stick remapping
+Jul 26 17:36:31 3dr_solo local2.info shot: [RTL] Try Guided
+Jul 26 17:36:31 3dr_solo local2.info shot: [shot]: Successfully entered Return Home.
+Jul 26 17:36:31 3dr_solo local2.info shot: [button]: sending RETURN HOME to Artoo as shot
+Jul 26 17:36:33 3dr_solo local2.info shot: [callback]: EKF status changed to 0
+Jul 26 17:36:33 3dr_solo local2.info shot: [callback]: armed status changed to 0
+Jul 26 17:36:33 3dr_solo local2.info shot: [RewindManager] reset Spline to size 20
+Jul 26 17:36:33 3dr_solo local2.info shot: [shot]: Entering shot FLY.
+Jul 26 17:36:33 3dr_solo local2.info shot: [RC] Disabling stick remapping
+Jul 26 17:36:33 3dr_solo local2.info shot: [shot]: Successfully entered FLY.
+Jul 26 17:36:33 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 26 17:36:33 3dr_solo local2.info shot: [gopro]: handleRecordCommand called but GoPro is not connected
+Jul 26 17:36:33 3dr_solo local2.info shot: [callback]: EKF status changed to 1
+Jul 26 17:36:33 3dr_solo local2.info shot: [shot]: Already in shot FLY.
+Jul 26 17:36:33 3dr_solo local2.info shot: [button]: sending FLY to Artoo as shot
+Jul 26 17:36:33 3dr_solo local2.info shot: [callback]: Mode changed from LAND -> LOITER
+Jul 26 17:36:33 3dr_solo local2.info shot: [button]: sending FLY to Artoo as mode
+Jul 26 17:36:40 3dr_solo local2.info shot: [callback]: EKF status changed to 0

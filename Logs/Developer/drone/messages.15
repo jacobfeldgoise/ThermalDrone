@@ -1,0 +1,30 @@
+Jan  1 00:00:06 3dr_solo syslog.info syslogd started: BusyBox v1.21.1
+Jan  1 00:00:06 3dr_solo daemon.info kernel: udevd[142]: starting version 182
+Jul 26 17:03:09 3dr_solo daemon.info init: Entering runlevel: 3
+Jul 26 17:03:09 3dr_solo auth.info sshd[828]: Server listening on 0.0.0.0 port 22.
+Jul 26 17:03:09 3dr_solo auth.info sshd[828]: Server listening on :: port 22.
+Jul 26 17:03:09 3dr_solo daemon.info dnsmasq[832]: started, version 2.72 cachesize 150
+Jul 26 17:03:09 3dr_solo daemon.info dnsmasq[832]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset auth no-DNSSEC loop-detect
+Jul 26 17:03:09 3dr_solo daemon.warn dnsmasq[832]: warning: interface wlan0-ap does not currently exist
+Jul 26 17:03:09 3dr_solo daemon.info dnsmasq-dhcp[832]: DHCP, IP range 10.1.1.100 -- 10.1.1.199, lease time 2h
+Jul 26 17:03:09 3dr_solo daemon.warn dnsmasq[832]: no servers found in /etc/resolv.conf, will retry
+Jul 26 17:03:09 3dr_solo daemon.info dnsmasq[832]: read /etc/hosts - 1 addresses
+Jul 26 17:03:11 3dr_solo daemon.info init: Switching to runlevel: 4
+Jul 26 17:03:11 3dr_solo daemon.info dnsmasq[832]: reading /etc/resolv.conf
+Jul 26 17:03:11 3dr_solo daemon.info dnsmasq[832]: using nameserver 8.8.8.8#53
+Jul 26 17:28:40 3dr_solo auth.info sshd[1216]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:28:50 3dr_solo auth.info sshd[1225]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:28:52 3dr_solo auth.info sshd[1233]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:29:02 3dr_solo auth.info sshd[1235]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:29:02 3dr_solo auth.info sshd[1240]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:29:13 3dr_solo auth.info sshd[1242]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:29:13 3dr_solo auth.info sshd[1247]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:29:24 3dr_solo auth.info sshd[1249]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:29:24 3dr_solo auth.info sshd[1255]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:29:35 3dr_solo auth.info sshd[1258]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:29:35 3dr_solo auth.info sshd[1265]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:29:46 3dr_solo auth.info sshd[1267]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:29:46 3dr_solo auth.info sshd[1275]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:29:57 3dr_solo auth.info sshd[1277]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:29:57 3dr_solo auth.info sshd[1283]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]
+Jul 26 17:30:07 3dr_solo auth.info sshd[1285]: Received disconnect from 10.1.1.108: 11: NMSSH: Disconnect [preauth]

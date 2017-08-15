@@ -1,0 +1,23 @@
+Jul 27 23:47:10 3dr_solo local6.info video: main: built Sep 22 2016 15:31:07
+Jul 27 23:47:10 3dr_solo local6.info video: Operating in variable bitrate mode (800000-1800000)@24fps
+Jul 27 23:47:10 3dr_solo local6.info video: Using variable streaming resolution
+Jul 27 23:47:10 3dr_solo local6.info video: Initializing
+Jul 27 23:47:10 3dr_solo local6.info video: Creating pipeline
+Jul 27 23:47:11 3dr_solo local6.info video: Starting play
+Jul 27 23:47:11 3dr_solo local6.info video: new size: 640x480
+Jul 27 23:47:11 3dr_solo local6.info video: Restarting pipeline
+Jul 27 23:47:11 3dr_solo local6.info video: Last timestamp: 0
+Jul 28 14:59:26 3dr_solo local6.info video: New bitrate: 1700000bps
+Jul 28 14:59:26 3dr_solo local6.info video: Last timestamp: 4421672
+Jul 28 14:59:29 3dr_solo local6.info video: New bitrate: 1800000bps
+Jul 28 14:59:29 3dr_solo local6.info video: Last timestamp: 4692677
+Jul 28 14:59:30 3dr_solo local6.info video: New bitrate: 1700000bps
+Jul 28 14:59:30 3dr_solo local6.info video: Last timestamp: 4779826
+Jul 28 14:59:33 3dr_solo local6.info video: New bitrate: 1800000bps
+Jul 28 14:59:33 3dr_solo local6.info video: Last timestamp: 5046614
+Jul 28 15:01:07 3dr_solo local6.info video: New bitrate: 1700000bps
+Jul 28 15:01:07 3dr_solo local6.info video: Last timestamp: 13559907
+Jul 28 15:01:09 3dr_solo local6.info video: New bitrate: 1600000bps
+Jul 28 15:01:09 3dr_solo local6.info video: Last timestamp: 13666060
+Jul 28 15:01:12 3dr_solo local6.info video: New bitrate: 1800000bps
+Jul 28 15:01:12 3dr_solo local6.info video: Last timestamp: 13936274

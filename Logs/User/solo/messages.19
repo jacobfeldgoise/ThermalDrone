@@ -1,0 +1,60 @@
+Jan  1 00:00:06 3dr_solo syslog.info syslogd started: BusyBox v1.21.1
+Jan  1 00:00:06 3dr_solo daemon.info kernel: udevd[142]: starting version 182
+Jul 12 14:49:09 3dr_solo daemon.info init: Entering runlevel: 3
+Jul 12 14:49:09 3dr_solo auth.info sshd[830]: Server listening on 0.0.0.0 port 22.
+Jul 12 14:49:09 3dr_solo auth.info sshd[830]: Server listening on :: port 22.
+Jul 12 14:49:09 3dr_solo daemon.info dnsmasq[834]: started, version 2.72 cachesize 150
+Jul 12 14:49:09 3dr_solo daemon.info dnsmasq[834]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset auth no-DNSSEC loop-detect
+Jul 12 14:49:09 3dr_solo daemon.warn dnsmasq[834]: warning: interface wlan0-ap does not currently exist
+Jul 12 14:49:09 3dr_solo daemon.info dnsmasq-dhcp[834]: DHCP, IP range 10.1.1.100 -- 10.1.1.199, lease time 2h
+Jul 12 14:49:09 3dr_solo daemon.info dnsmasq[834]: reading /etc/resolv.conf
+Jul 12 14:49:09 3dr_solo daemon.info dnsmasq[834]: using nameserver 8.8.8.8#53
+Jul 12 14:49:09 3dr_solo daemon.info dnsmasq[834]: read /etc/hosts - 1 addresses
+Jul 12 14:49:09 3dr_solo daemon.info init: Switching to runlevel: 4
+Jul 12 14:49:22 3dr_solo auth.info sshd[902]: Accepted password for root from 10.1.1.106 port 63213 ssh2
+Jul 12 14:49:35 3dr_solo auth.info sshd[912]: Accepted password for root from 10.1.1.106 port 63224 ssh2
+Jul 12 14:52:14 3dr_solo auth.info sshd[977]: Accepted password for root from 10.1.1.106 port 63305 ssh2
+Jul 12 14:52:20 3dr_solo daemon.info dnsmasq[834]: reading /etc/resolv.conf
+Jul 12 14:52:20 3dr_solo daemon.info dnsmasq[834]: using nameserver 8.8.8.8#53
+Jul 12 14:53:06 3dr_solo auth.info sshd[1035]: Invalid user jake from 10.1.1.106
+Jul 12 14:53:06 3dr_solo auth.info sshd[1035]: input_userauth_request: invalid user jake [preauth]
+Jul 12 14:53:06 3dr_solo auth.err sshd[1035]: error: Could not get shadow information for NOUSER
+Jul 12 14:53:06 3dr_solo auth.info sshd[1035]: Failed none for invalid user jake from 10.1.1.106 port 63355 ssh2
+Jul 12 14:53:15 3dr_solo auth.info sshd[1035]: Failed password for invalid user jake from 10.1.1.106 port 63355 ssh2
+Jul 12 14:53:16 3dr_solo auth.info sshd[1035]: Failed password for invalid user jake from 10.1.1.106 port 63355 ssh2
+Jul 12 14:53:18 3dr_solo auth.info sshd[1035]: Failed password for invalid user jake from 10.1.1.106 port 63355 ssh2
+Jul 12 14:53:18 3dr_solo auth.info sshd[1035]: Connection closed by 10.1.1.106 [preauth]
+Jul 12 14:53:21 3dr_solo auth.info sshd[1046]: Invalid user jake from 10.1.1.106
+Jul 12 14:53:21 3dr_solo auth.info sshd[1046]: input_userauth_request: invalid user jake [preauth]
+Jul 12 14:53:21 3dr_solo auth.err sshd[1046]: error: Could not get shadow information for NOUSER
+Jul 12 14:53:21 3dr_solo auth.info sshd[1046]: Failed none for invalid user jake from 10.1.1.106 port 63361 ssh2
+Jul 12 14:53:37 3dr_solo auth.info sshd[1046]: Failed password for invalid user jake from 10.1.1.106 port 63361 ssh2
+Jul 12 14:53:41 3dr_solo auth.info sshd[1046]: Failed password for invalid user jake from 10.1.1.106 port 63361 ssh2
+Jul 12 14:53:55 3dr_solo auth.info sshd[1046]: Failed password for invalid user jake from 10.1.1.106 port 63361 ssh2
+Jul 12 14:53:55 3dr_solo auth.info sshd[1046]: Connection closed by 10.1.1.106 [preauth]
+Jul 12 14:54:14 3dr_solo auth.info sshd[1066]: Failed password for root from 10.1.1.106 port 63382 ssh2
+Jul 12 14:54:19 3dr_solo auth.info sshd[1066]: Accepted password for root from 10.1.1.106 port 63382 ssh2
+Jul 12 14:54:19 3dr_solo auth.info sshd[1069]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 14:54:19 3dr_solo auth.info sshd[1069]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:00:43 3dr_solo auth.info sshd[1216]: Accepted password for root from 10.1.1.106 port 63472 ssh2
+Jul 12 15:00:53 3dr_solo auth.info sshd[1226]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:00:53 3dr_solo auth.info sshd[1226]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:02:15 3dr_solo auth.info sshd[1285]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:02:15 3dr_solo auth.info sshd[1285]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:04:08 3dr_solo auth.info sshd[1066]: Received disconnect from 10.1.1.106: 11: disconnected by user
+Jul 12 15:06:15 3dr_solo auth.info sshd[1376]: Accepted password for root from 10.1.1.106 port 63516 ssh2
+Jul 12 15:06:16 3dr_solo auth.info sshd[1376]: Received disconnect from 10.1.1.106: 11: disconnected by user
+Jul 12 15:06:25 3dr_solo auth.info sshd[1386]: Accepted password for root from 10.1.1.106 port 63526 ssh2
+Jul 12 15:06:25 3dr_solo auth.info sshd[1391]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:06:25 3dr_solo auth.info sshd[1391]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:14:53 3dr_solo auth.info sshd[1601]: Accepted password for root from 10.1.1.106 port 63704 ssh2
+Jul 12 15:14:53 3dr_solo auth.info sshd[1601]: Received disconnect from 10.1.1.106: 11: disconnected by user
+Jul 12 15:15:35 3dr_solo auth.info sshd[1626]: Accepted password for root from 10.1.1.106 port 63709 ssh2
+Jul 12 15:15:42 3dr_solo auth.info sshd[1635]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:15:42 3dr_solo auth.info sshd[1635]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:16:20 3dr_solo auth.info sshd[1661]: Accepted password for root from 10.1.1.106 port 63718 ssh2
+Jul 12 15:16:29 3dr_solo auth.info sshd[1671]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:16:29 3dr_solo auth.info sshd[1671]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:17:47 3dr_solo auth.info sshd[1722]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:17:47 3dr_solo auth.info sshd[1722]: lastlog_openseek: Couldn't stat /var/log/lastlog: No such file or directory
+Jul 12 15:18:06 3dr_solo auth.info sshd[1386]: Received disconnect from 10.1.1.106: 11: disconnected by user
