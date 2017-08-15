@@ -1,12 +1,14 @@
-import time
+import time, tzlocal, pytz, io
 from picamera.array import PiRGBArray
-from picamera import PiCamera
+import picamera
 import traceback
 import numpy as np
 import cv2
 from pylepton import Lepton
+from datetime import datetime                                                   # Needed to generate timestamp
+from dateutil import tz                                                         # Needed to generate timestamp
 
-def timestamp():
+def timestamp_img():
 
     #### This function generates a timestemp which will be written to the log file ####
 
@@ -15,62 +17,51 @@ def timestamp():
 
     # Convert time zone
     local_time= utc_time.replace(tzinfo=pytz.utc).astimezone(local_timezone)
-    timestamp_local = local_time.strftime('%m-%d-%Y %H:%M:%S %Z')
+    timestamp_local = local_time.strftime('%m-%d-%Y-%H-%M-%S')
     return timestamp_local
 
-def OverlayImage(src, overlay, posx, posy, S, D):
+def OverlayImage(base_img, overlay_img):
 
-	for x in range(overlay.width):
+    dst = cv2.addWeighted(base_img,0.7,overlay_img,0.3,0)
+    return dst
 
-		if x+posx < src.width:
+with Lepton("/dev/spidev0.1") as l:
+    a,_ = l.capture()
+cv2.normalize(a, a, 0, 65535, cv2.NORM_MINMAX) # extend contrast
+np.right_shift(a, 8, a) # fit data into 8 bits
+a = np.uint8(a)
+a = cv2.applyColorMap(a, cv2.COLORMAP_JET)
 
-			for y in range(overlay.height):
+(h, w) = a.shape[:2]
 
-				if y+posy < src.width:
+print h, w
 
-					source = cv.Get2D(src, y+posy, x+posx)
-					over   = cv.Get2D(overlay, y, x)
-					merger = [0, 0, 0, 0]
+center = (w / 2, h / 2)
 
-					for i in range(3):
-						merger[i] = (S[i]*source[i]+D[i]*over[i])
+M = cv2.getRotationMatrix2D(center, 180, 1.0)
+flir = cv2.warpAffine(a, M, (w, h))
+cv2.waitKey(0)
 
-					merged = tuple(merger)
+# Create the in-memory stream
+stream = io.BytesIO()
+with picamera.PiCamera() as camera:
+    camera.start_preview()
+    time.sleep(2)
+    camera.capture(stream, format='jpeg')
+# Construct a numpy array from the stream
+data = np.fromstring(stream.getvalue(), dtype=np.uint8)
+# "Decode" the image from the array, preserving colour
+image = cv2.imdecode(data, 1)
+# OpenCV returns an array with data in BGR order. If you want RGB instead
+# use the following...
+image = image[:, :, ::-1]
+resized_image = cv2.resize(image, (80, 60))
 
-					cv.Set2D(src, y+posy, x+posx, merged)
+(h, w) = resized_image.shape[:2]
 
-while True:
-    with Lepton("/dev/spidev0.1") as l:
-        a,_ = l.capture()
-    cv2.normalize(a, a, 0, 65535, cv2.NORM_MINMAX) # extend contrast
-    np.right_shift(a, 8, a) # fit data into 8 bits
-    a = np.uint8(a)
-    a = cv2.applyColorMap(a, cv2.COLORMAP_JET)
+print h, w
 
-    (h, w) = a.shape[:2]
-    center = (w / 2, h / 2)
+image_blended = OverlayImage(resized_image, flir)
 
-    M = cv2.getRotationMatrix2D(center, 180, 1.0)
-    flir = cv2.warpAffine(a, M, (w, h))
-    cv2.waitKey(0)
-
-    # initialize the regular camera and grab a reference to the raw camera capture
-    camera = PiCamera()
-    rawCapture = PiRGBArray(camera)
-
-    # allow the regular camera to warmup
-    time.sleep(0.1)
-
-    # grab an image from the regular camera
-    camera.capture(rawCapture, format="bgr")
-    image = rawCapture.array
-
-    posx = 0					        # Define a point (posx, posy) on the source
-    posy = 0                            # image where the overlay will be placed
-    S = (0.5, 0.5, 0.5, 0.5)			# Define blending coefficients S and D
-    D = (0.5, 0.5, 0.5, 0.5)
-
-    OverlayImage(image, flir, posx, posy, S, D)
-
-    print("Writing & timestamping image...")
-    cv2.imwrite("img-" + timestamp() + ".jpg", image) # write it
+print("Writing & timestamping image...")
+cv2.imwrite("/home/pi/thermal_images/img-" + str(timestamp_img()) + ".jpg", image_blended) # write it
