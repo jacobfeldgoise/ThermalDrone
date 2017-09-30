@@ -1,13 +1,13 @@
 # ThermalDrone
 
 ## Table of Contents:
-1. [Introduction](#10-Introduction)
-2. [Progress](#20-Progress)
-3. [Current Design](30-Current-Design)
-4. [Obstacles](#40-Obstacles)
-5. [Improvements](#50-Improvements)
-6. [Setup](#60-Setup)
-7. [Resources](#70-Resources)
+1. [Introduction](#10-introduction)
+2. [Progress](#20-progress)
+3. [Current Design](30-current-design)
+4. [Obstacles](#40-obstacles)
+5. [Improvements](#50-improvements)
+6. [Setup](#60-setup)
+7. [Resources](#70-resources)
 
 ## 1.0 Introduction
 
