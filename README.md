@@ -1,13 +1,13 @@
 # ThermalDrone
 
 ## Table of Contents:
-1. [Introduction](#1.0-Introduction)
-2. [Progress](#2.0-Progress)
-3. [Current Design](3.0-Current-Design)
-4. [Obstacles](#4.0-Obstacles)
-5. [Improvements](#5.0-Improvements)
-6. [Setup](#6.0-Setup)
-7. [Resources](#7.0-Resources)
+1. [Introduction](#10-Introduction)
+2. [Progress](#20-Progress)
+3. [Current Design](30-Current-Design)
+4. [Obstacles](#40-Obstacles)
+5. [Improvements](#50-Improvements)
+6. [Setup](#60-Setup)
+7. [Resources](#70-Resources)
 
 ## 1.0 Introduction
 
@@ -53,7 +53,7 @@ This research project is conducted through the MIT Research Laboratory of Electr
 
 ### 3.1 Selecting the Drone
 
-We considered five primary criteria when choosing which drone to purchase: assembly/configuration time, payload capacity, size, price, and programmability. Based on these criteria, 
+We considered five primary criteria when choosing which drone to purchase: assembly/configuration time, payload capacity, size, price, and programmability. Based on these criteria,
 
 ### 3.2 Communication
 
