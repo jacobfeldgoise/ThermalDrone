@@ -84,7 +84,7 @@ The following sensors were used in this project:
 
 ![multiprocessing](https://raw.githubusercontent.com/ArathornII/ThermalDrone/master/multiprocessing.jpg)
 
-
+The most recently-updated sensor reading scripts for this project utilize multiprocessing. Implementation of multiprocessing, despite the RPi Zero's single core, has improved the read speed for all six sonars (SR-04)  by over 10 times.
 
 ## 4.0 Obstacles
 
@@ -106,7 +106,7 @@ The following sensors were used in this project:
 
 #### 4.2.3 RC Overrides
 
-   RC overrides essentially involve sending MAVlink commands to the drone that act like transmissions from the Solo's controller. This is incredibly dangerous because it inpairs the controller's funciton as a failsafe in case of a severe drone malfunction. So far, we have not tested this option for navigation in a GPS-denied environment.
+   RC overrides essentially involve sending MAVlink commands to the drone that act like transmissions from the controller. This is incredibly dangerous because it inpairs the controller's function as a failsafe in case of a severe drone malfunction. So far, we have not tested this option for navigation in a GPS-denied environment.
 
 ### 4.3 Optical Camera
 
@@ -116,7 +116,7 @@ The following sensors were used in this project:
 
 ### 5.1 Custom Drone Design
 
-   The best -- but most time consuming -- approach is to build a custom drone from scratch with all the neccessary sensors included in the original design. This is a feasible but unreasonable option given the project's current progress.
+   The best -- but most time consuming -- approach is to build a custom drone from scratch with all the neccessary sensors included in the original design. This is a feasible but unreasonable option given the current pace of the project.
 
 ### 5.2 Wired MAVlink Connection (via Accessory Bay)
 
@@ -126,7 +126,7 @@ The following sensors were used in this project:
 
 ### 5.4 Raspberry Pi 3B for Image Processing
 
-The RPi Zero is an incredibly useful device for its size, but it is limited by its single-core processor and less-than-optimal processing power. A RPi 3 Model B will ultimately be worth the extra weight because it will be capable of taking sonar readings -- essential navigation input -- at far greater speeds.
+The RPi Zero is an incredibly useful device for its size, but it is limited by its single-core processor and less-than-optimal processing power. A RPi 3 Model B will ultimately be worth the extra weight because it will be capable of taking sonar readings -- essential input for navigation -- at far greater speeds.
 
 ## 6.0 Setup
 
@@ -139,8 +139,23 @@ The RPi Zero is an incredibly useful device for its size, but it is limited by i
 
 
 
-## 7.0 Resources
+### 6.3 Setting up the sensors
 
+
+#### 6.3.1 Sonars
+
+
+#### 6.3.2 Optical Camera
+
+
+#### 6.3.3 Temperature Sensor
+
+
+#### 6.3.4 Thermal Camera
+
+
+
+## 7.0 Resources
 
 
 ### 7.1 BME280 Temperature Sensor
