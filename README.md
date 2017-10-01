@@ -63,16 +63,32 @@ This research project is conducted through the MIT Research Laboratory of Electr
 
    We considered five primary criteria when choosing which drone to purchase: assembly/configuration time, payload capacity, size, price, and programmability. Based on these criteria, we selected the 3DR Solo for this project. The 3DR Solo was the best choice mostly because it features a MAVlink Python library called "DroneKit-Python".
 
-### 3.2 Communication
+### 3.2 Sensors
+
+The following sensors were used in this project:
+* 6 Sonars (SR-04)
+* 1 Temperature Sensor (BMP280)
+* 1 Optical Camera (Raspberry Pi Camera Module v2)
+* 1 Thermal Camera (Lepton FLiR)
 
 
+### 3.3 Communication
 
-### 3.3 Multiprocessing
+![communication](https://raw.githubusercontent.com/ArathornII/ThermalDrone/master/communication.jpg)
 
+  All the sensors mentioned in section 3.2 are directly wired into the Raspberry Pi's 40-pin GPIO board. The full pinout can be found below. The temperature sensor, optical camera, and thermal camera all provide information essential to the thermal data collection componant of the project. The sonars are primarily used for navigation and object avoidance.
+  
+  The RPi inputs and processes the data from the 9 sensors, and then instructs the drone to take specific actions. These commands are sent from the RPi to the drone as MAVlink messages. These messages are transmitted via a wifi network broadcasted by the 3DR Solo's controller.
+
+### 3.4 Multiprocessing
+
+![multiprocessing](https://raw.githubusercontent.com/ArathornII/ThermalDrone/master/multiprocessing.jpg)
 
 
 
 ## 4.0 Obstacles
+
+   So far, numerous problems have impeded the development process. The majority of issues have originated from attempts to control the drone in a GPS-denied environment, but other issues exist as well.
 
 ### 4.1 Upgrading 3DR Solo Firmware from 1.3.1 to 1.5.2
 
@@ -80,19 +96,37 @@ This research project is conducted through the MIT Research Laboratory of Electr
 
 ### 4.2 Taking off in GPS-denied environment
 
+   This project would be infinitely easier if we could utilize GPS in an indoor space. The 3DR Solo's ArduCopter firmware is primarily designed for GPS navigation and offers few good options for working in a GPS-denied environment.
+
 #### 4.2.1 GUIDED_NOGPS Mode
 
-#### 4.2.2 RC Overrides
+
+#### 4.2.2 STABILIZE Mode
+
+
+#### 4.2.3 RC Overrides
+
+   RC overrides essentially involve sending MAVlink commands to the drone that act like transmissions from the Solo's controller. This is incredibly dangerous because it inpairs the controller's funciton as a failsafe in case of a severe drone malfunction. So far, we have not tested this option for navigation in a GPS-denied environment.
+
+### 4.3 Optical Camera
+
+   The viusal camera can malfunction when there is a faulty connection between the camera module and the RPi's camera port. This could be the result of a broken cable, but more likely, the camera module itself or the camera port are broken.
 
 ## 5.0 Improvements
 
-### 5.1 Custom Design
+### 5.1 Custom Drone Design
+
+   The best -- but most time consuming -- approach is to build a custom drone from scratch with all the neccessary sensors included in the original design. This is a feasible but unreasonable option given the project's current progress.
 
 ### 5.2 Wired MAVlink Connection (via Accessory Bay)
+
+
 
 ### 5.3 Optical Flow Rangefinder
 
 ### 5.4 Raspberry Pi 3B for Image Processing
+
+The RPi Zero is an incredibly useful device for its size, but it is limited by its single-core processor and less-than-optimal processing power. A RPi 3 Model B will ultimately be worth the extra weight because it will be capable of taking sonar readings -- essential navigation input -- at far greater speeds.
 
 ## 6.0 Setup
 
