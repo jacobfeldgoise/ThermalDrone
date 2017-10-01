@@ -105,6 +105,7 @@ We considered five primary criteria when choosing which drone to purchase: assem
 ### 6.2 Configuring your Computer
 
 
+
 ## 7.0 Resources
 
 
@@ -115,81 +116,81 @@ We considered five primary criteria when choosing which drone to purchase: assem
 
 ### 7.2 Flight
 
-[Altitude Hold Mode](http://ardupilot.org/copter/docs/altholdmode.html)
-[Autopilot Firmware Upgrade from 1.3.1 to 1.5.2](https://3drpilots.com/threads/autopilot-firmware-upgrade-from-1-3-1-to-1-5-2.8819/)
-[Copter Commands in Guided Mode](http://ardupilot.org/dev/docs/copter-commands-in-guided-mode.html)
-[Create setter functions rather than setting attributes directly](https://github.com/dronekit/dronekit-python/pull/566)
-[Move/direct Copter and send commands in GUIDED_NOGPS mode using DroneKit Python](https://github.com/studroid/dronekit-python/blob/84b68270d31798568602f36d06ee8c85c2b100ce/examples/change_attribute/change_attitude.py)
-[Guiding and Controlling Copter](http://python.dronekit.io/1.5.0/guide/copter/guided_mode.html)
-[Indoor copter flight](https://github.com/dronekit/dronekit-python/issues/697)
-[Indoor Flying Guidelines](http://ardupilot.org/copter/docs/indoor-flying.html)
-[Quaternions](http://diydrones.com/profiles/blogs/post-5-maaxx-europe-quaternions-control-code-and-pids)
-[QGroundControl User Guide](https://www.gitbook.com/book/donlakeflyer/qgroundcontrol-user-guide/details)
-[3DR Solo Development Area](https://3drpilots.com/threads/solo-development-area.5062/)
-[3DR Solo User Guide](https://3dr.com/wp-content/uploads/2016/01/v8_01_05_16.pdf)
-[DroneKit-Python Documentation](http://python.dronekit.io)
+* [Altitude Hold Mode](http://ardupilot.org/copter/docs/altholdmode.html)
+* [Autopilot Firmware Upgrade from 1.3.1 to 1.5.2](https://3drpilots.com/threads/autopilot-firmware-upgrade-from-1-3-1-to-1-5-2.8819/)
+* [Copter Commands in Guided Mode](http://ardupilot.org/dev/docs/copter-commands-in-guided-mode.html)
+* [Create setter functions rather than setting attributes directly](https://github.com/dronekit/dronekit-python/pull/566)
+* [Move/direct Copter and send commands in GUIDED_NOGPS mode using DroneKit Python](https://github.com/studroid/dronekit-python/blob/84b68270d31798568602f36d06ee8c85c2b100ce/examples/change_attribute/change_attitude.py)
+* [Guiding and Controlling Copter](http://python.dronekit.io/1.5.0/guide/copter/guided_mode.html)
+* [Indoor copter flight](https://github.com/dronekit/dronekit-python/issues/697)
+* [Indoor Flying Guidelines](http://ardupilot.org/copter/docs/indoor-flying.html)
+* [Quaternions](http://diydrones.com/profiles/blogs/post-5-maaxx-europe-quaternions-control-code-and-pids)
+* [QGroundControl User Guide](https://www.gitbook.com/book/donlakeflyer/qgroundcontrol-user-guide/details)
+* [3DR Solo Development Area](https://3drpilots.com/threads/solo-development-area.5062/)
+* [3DR Solo User Guide](https://3dr.com/wp-content/uploads/2016/01/v8_01_05_16.pdf)
+* [DroneKit-Python Documentation](http://python.dronekit.io)
 
 #### 7.2.1 Communication between RPi and Drone
 
-[API Documentation for PyMAVLink](https://www.samba.org/tridge/UAV/pymavlink/apidocs/index.html)
-[Python MAVLink interface and utilities](https://github.com/ArduPilot/pymavlink)
-[Communicating with Raspberry Pi via MAVLink](http://ardupilot.org/dev/docs/raspberry-pi-via-mavlink.html#communicating-with-raspberry-pi-via-mavlink)
-[Companion Computers](http://python.dronekit.io/1.5.0/guide/companion-computers.html)
-[Solo Development Guide](https://dev.3dr.com)
-[Mavlink (developer page)](https://www.pixhawk.org/dev/mavlink?s[]=mavlink#mavlink_developer_page)
-[MAVLINK Common Message Set](http://mavlink.org/messages/common)
-[MAVLink Mission Command Messages (MAV_CMD)](http://ardupilot.org/copter/docs/common-mavlink-mission-command-messages-mav_cmd.html#mavlink-mission-command-messages-mav-cmd)
-[MavLink Tutorial for Absolute Dummies (Part I)](http://api.ning.com/files/i*tFWQTF2R*7Mmw7hksAU-u9IABKNDO9apguOiSOCfvi2znk1tXhur0Bt00jTOldFvob-Sczg3*lDcgChG26QaHZpzEcISM5/MAVLINK_FOR_DUMMIESPart1_v.1.1.pdf)
-[MAVlink Message Definitions](https://github.com/mavlink/mavlink/blob/master/message_definitions/v1.0/common.xml)
-[MAVProxy Landing Page](http://qgroundcontrol.org/mavlink/mavproxy_startpage)
-[MAVProxy Ardupilot Documentation](http://ardupilot.github.io/MAVProxy/html/index.html#mavproxy)
-[MAVProxy Cheetsheet](http://ardupilot.github.io/MAVProxy/html/_static/files/MAVProxyCheetsheet.pdf)
-[Operating Arducopter without GPS over MAVLink](http://diydrones.com/group/arducopterusergroup/forum/topics/operating-arducopter-without-gps-over-mavlink?page=1&commentId=705844%3AComment%3A1962580&x=1#705844Comment1962580)
-[3DR Solo Breakout Board Specs](https://github.com/3drobotics/Pixhawk_OS_Hardware/tree/master/Accessory_Breakout_X1)
-[Vehicle State and Settings](http://python.dronekit.io/guide/vehicle_state_and_parameters.html)
-[Which MAVLink commands can fly a copter without GPS?](https://discuss.ardupilot.org/t/which-mavlink-commands-can-fly-a-copter-without-gps/9353/1)
+* [API Documentation for PyMAVLink](https://www.samba.org/tridge/UAV/pymavlink/apidocs/index.html)
+* [Python MAVLink interface and utilities](https://github.com/ArduPilot/pymavlink)
+* [Communicating with Raspberry Pi via MAVLink](http://ardupilot.org/dev/docs/raspberry-pi-via-mavlink.html#communicating-with-raspberry-pi-via-mavlink)
+* [Companion Computers](http://python.dronekit.io/1.5.0/guide/companion-computers.html)
+* [Solo Development Guide](https://dev.3dr.com)
+* [Mavlink (developer page)](https://www.pixhawk.org/dev/mavlink?s[]=mavlink#mavlink_developer_page)
+* [MAVLINK Common Message Set](http://mavlink.org/messages/common)
+* [MAVLink Mission Command Messages (MAV_CMD)](http://ardupilot.org/copter/docs/common-mavlink-mission-command-messages-mav_cmd.html#mavlink-mission-command-messages-mav-cmd)
+* [MavLink Tutorial for Absolute Dummies (Part I)](http://api.ning.com/files/i*tFWQTF2R*7Mmw7hksAU-u9IABKNDO9apguOiSOCfvi2znk1tXhur0Bt00jTOldFvob-Sczg3*lDcgChG26QaHZpzEcISM5/MAVLINK_FOR_DUMMIESPart1_v.1.1.pdf)
+* [MAVlink Message Definitions](https://github.com/mavlink/mavlink/blob/master/message_definitions/v1.0/common.xml)
+* [MAVProxy Landing Page](http://qgroundcontrol.org/mavlink/mavproxy_startpage)
+* [MAVProxy Ardupilot Documentation](http://ardupilot.github.io/MAVProxy/html/index.html#mavproxy)
+* [MAVProxy Cheetsheet](http://ardupilot.github.io/MAVProxy/html/_static/files/MAVProxyCheetsheet.pdf)
+* [Operating Arducopter without GPS over MAVLink](http://diydrones.com/group/arducopterusergroup/forum/topics/operating-arducopter-without-gps-over-mavlink?page=1&commentId=705844%3AComment%3A1962580&x=1#705844Comment1962580)
+* [3DR Solo Breakout Board Specs](https://github.com/3drobotics/Pixhawk_OS_Hardware/tree/master/Accessory_Breakout_X1)
+* [Vehicle State and Settings](http://python.dronekit.io/guide/vehicle_state_and_parameters.html)
+* [Which MAVLink commands can fly a copter without GPS?](https://discuss.ardupilot.org/t/which-mavlink-commands-can-fly-a-copter-without-gps/9353/1)
 
 ### 7.3 Image Processing
 
-[Basic Recipes](http://picamera.readthedocs.io/en/release-1.10/recipes1.html#basic-recipes)
-[Accessing the Raspberry Pi Camera with OpenCV and Python](https://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/)
-[applyColorMap for pseudocoloring in OpenCV ( C++ / Python )](https://www.learnopencv.com/applycolormap-for-pseudocoloring-in-opencv-c-python/)
-[Camera Module](https://www.raspberrypi.org/documentation/hardware/camera/)
-[FLIR Lepton Hookup Guide](https://learn.sparkfun.com/tutorials/flir-lepton-hookup-guide)
-[Quick and dirty pure python library for interfacing with FLIR lepton](https://github.com/groupgets/pylepton)
-[How to install/use the Raspberry Pi Camera](https://thepihut.com/blogs/raspberry-pi-tutorials/16021420-how-to-install-use-the-raspberry-pi-camera)
-[Image size (Python, OpenCV)](https://stackoverflow.com/questions/13033278/image-size-python-opencv)
-[OpenCV - Saving images to a particular folder of choice](https://stackoverflow.com/questions/41586429/opencv-saving-images-to-a-particular-folder-of-choice)
-[python OpenCV - add alpha channel to RGB image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
+* [Basic Recipes](http://picamera.readthedocs.io/en/release-1.10/recipes1.html#basic-recipes)
+* [Accessing the Raspberry Pi Camera with OpenCV and Python](https://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/)
+* [applyColorMap for pseudocoloring in OpenCV ( C++ / Python )](https://www.learnopencv.com/applycolormap-for-pseudocoloring-in-opencv-c-python/)
+* [Camera Module](https://www.raspberrypi.org/documentation/hardware/camera/)
+* [FLIR Lepton Hookup Guide](https://learn.sparkfun.com/tutorials/flir-lepton-hookup-guide)
+* [Quick and dirty pure python library for interfacing with FLIR lepton](https://github.com/groupgets/pylepton)
+* [How to install/use the Raspberry Pi Camera](https://thepihut.com/blogs/raspberry-pi-tutorials/16021420-how-to-install-use-the-raspberry-pi-camera)
+* [Image size (Python, OpenCV)](https://stackoverflow.com/questions/13033278/image-size-python-opencv)
+* [OpenCV - Saving images to a particular folder of choice](https://stackoverflow.com/questions/41586429/opencv-saving-images-to-a-particular-folder-of-choice)
+* [python OpenCV - add alpha channel to RGB image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
 
 ### 7.4 Data Logging
 
-[File Handling Cheat Sheet in Python](http://www.pythonforbeginners.com/cheatsheet/python-file-handling)
-[Reading and Writing Files in Python](http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python)
+* [File Handling Cheat Sheet in Python](http://www.pythonforbeginners.com/cheatsheet/python-file-handling)
+* [Reading and Writing Files in Python](http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python)
 
 ### 7.5 Multiprocessing
 
-[Multiprocessing — Process-based parallelism](https://docs.python.org/3/library/multiprocessing.html)
-[An introduction to parallel programming using Python's multiprocessing module](http://sebastianraschka.com/Articles/2014_multiprocessing.html)
-[Communication Between Processes](https://pymotw.com/2/multiprocessing/communication.html)
-[Multiprocessing with Python](https://www.raspberrypi.org/magpi/multiprocessing-with-python/)
-[Multiprocessing vs Threading Python](https://stackoverflow.com/questions/3044580/multiprocessing-vs-threading-python)
-[What does if __name__ == “__main__”: do?](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
-[Python 201: A multiprocessing tutorial](https://www.blog.pythonlibrary.org/2016/08/02/python-201-a-multiprocessing-tutorial/)
+* [Multiprocessing — Process-based parallelism](https://docs.python.org/3/library/multiprocessing.html)
+* [An introduction to parallel programming using Python's multiprocessing module](http://sebastianraschka.com/Articles/2014_multiprocessing.html)
+* [Communication Between Processes](https://pymotw.com/2/multiprocessing/communication.html)
+* [Multiprocessing with Python](https://www.raspberrypi.org/magpi/multiprocessing-with-python/)
+* [Multiprocessing vs Threading Python](https://stackoverflow.com/questions/3044580/multiprocessing-vs-threading-python)
+* [What does if __name__ == “__main__”: do?](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
+* [Python 201: A multiprocessing tutorial](https://www.blog.pythonlibrary.org/2016/08/02/python-201-a-multiprocessing-tutorial/)
 
 ### 7.6 Object Avoidance and Rangefinding
 
-[LIDAR-Lite Rangefinder](http://ardupilot.org/copter/docs/common-rangefinder-lidarlite.html#lidar-lite-rangefinder)
-[Script to Read SR-04](https://github.com/feranick/Pi-bot/blob/master/Utilities/sonar/sonar_distance.py)
-[PX4FLOW Optical Flow Camera Board Overview](http://ardupilot.org/copter/docs/common-px4flow-overview.html#px4flow-optical-flow-camera-board-overview)
-[PX4FLOW V1.3.1 OPTICAL FLOW Camera](http://www.hobbywow.com/en-px4flow-v1-3-1-optical-flow-camera-and-mb1043-sonar-sensor-for-px4-pixhawk-pix-flight-control-p240168.htm)
+* [LIDAR-Lite Rangefinder](http://ardupilot.org/copter/docs/common-rangefinder-lidarlite.html#lidar-lite-rangefinder)
+* [Script to Read SR-04](https://github.com/feranick/Pi-bot/blob/master/Utilities/sonar/sonar_distance.py)
+* [PX4FLOW Optical Flow Camera Board Overview](http://ardupilot.org/copter/docs/common-px4flow-overview.html#px4flow-optical-flow-camera-board-overview)
+* [PX4FLOW V1.3.1 OPTICAL FLOW Camera](http://www.hobbywow.com/en-px4flow-v1-3-1-optical-flow-camera-and-mb1043-sonar-sensor-for-px4-pixhawk-pix-flight-control-p240168.htm)
 
 ### 7.7 Raspberry Pi
 
-[Raspbian Installation](https://www.raspberrypi.org/downloads/raspbian/)
-[Installing the SciPy Stack](https://www.scipy.org/install.html)
-[Raspberry Pi Power Requirements](https://www.raspberrypi.org/help/faqs/#topPower)
-[Raspberry Pi Pinout](https://pinout.xyz)
+* [Raspbian Installation](https://www.raspberrypi.org/downloads/raspbian/)
+* [Installing the SciPy Stack](https://www.scipy.org/install.html)
+* [Raspberry Pi Power Requirements](https://www.raspberrypi.org/help/faqs/#topPower)
+* [Raspberry Pi Pinout](https://pinout.xyz)
 
 
 
