@@ -15,18 +15,18 @@
 
 ### 1.1 Questions & Goals
 
-The questions fundemental to this project are as follows: How can we automate indoor thermal imaging? How can we predict thermodynamic changes to an enclosed space resulting from changes made to a building?
+⋅⋅⋅The questions fundemental to this project are as follows: How can we automate indoor thermal imaging? How can we predict thermodynamic changes to an enclosed space resulting from changes made to a building?
 
-The ultimate purpose of this project is to create an UAV capable capable of collecting and analyzing large data sets. Specifcally, the drone should be able to take distance measurements in various directions for navigation and localization. Also, the drone must be able to capture ambient air-temperature readings and wall-temperature readings. Finally, the drone must collect visual images for 3D-modeling and thermal composite imaging.
+⋅⋅⋅The ultimate purpose of this project is to create an UAV capable capable of collecting and analyzing large data sets. Specifcally, the drone should be able to take distance measurements in various directions for navigation and localization. Also, the drone must be able to capture ambient air-temperature readings and wall-temperature readings. Finally, the drone must collect visual images for 3D-modeling and thermal composite imaging.⋅⋅
 
-Once all data collection tools are fully-functional, the UAV will collect differentiated data sets for wall temperatures and air temperature. Furthermore, data would be collected before and after thermal modifications were made to a room. This will allow a machine learning model to predict thermal changes to a room based on deliberate modification to the room's physical structure. These predictions would likely be displayed through a 3-D model of the room comprised of visual and thermal images collected by the UAV.
+⋅⋅⋅Once all data collection tools are fully-functional, the UAV will collect differentiated data sets for wall temperatures and air temperature. Furthermore, data would be collected before and after thermal modifications were made to a room. This will allow a machine learning model to predict thermal changes to a room based on deliberate modification to the room's physical structure. These predictions would likely be displayed through a 3-D model of the room comprised of visual and thermal images collected by the UAV.⋅⋅
 
 
 ### 1.2 Applications
 
-So far, there are two primary applications for this technology. First, the UAV could become an essential tool for improving the thermal efficiency of industrial-sized factories. Currently, companies typically heat or cool factories through large heating units which are bolted to the ceiling and simply expected to heat a specific surrounding volume. This is not a scientific approach and often results in significant air-temperature fluxuations throughout the factory. Our technology will assist companies in optimizing selection and placement of heating and cooling units in factories through data collection and predictive modeling.
+⋅⋅⋅So far, there are two primary applications for this technology. First, the UAV could become an essential tool for improving the thermal efficiency of industrial-sized factories. Currently, companies typically heat or cool factories through large heating units which are bolted to the ceiling and simply expected to heat a specific surrounding volume. This is not a scientific approach and often results in significant air-temperature fluxuations throughout the factory. Our technology will assist companies in optimizing selection and placement of heating and cooling units in factories through data collection and predictive modeling.
 
-This technology could also provide homeowners with an affordable tool to improve the thermal efficiency of their home. Similar to in a factory setting, the UAV would help homeowners place heating systems to optimize their coverage. Furthermore, systematic thermal imaging would easily detect individual weaknesses in thermal insultation.
+⋅⋅⋅This technology could also provide homeowners with an affordable tool to improve the thermal efficiency of their home. Similar to in a factory setting, the UAV would help homeowners place heating systems to optimize their coverage. Furthermore, systematic thermal imaging would easily detect individual weaknesses in thermal insultation.⋅⋅
 
 
 ### 1.3 Sponsorship & Contacts
@@ -61,7 +61,7 @@ This research project is conducted through the MIT Research Laboratory of Electr
 
 ### 3.1 Selecting the Drone
 
-We considered five primary criteria when choosing which drone to purchase: assembly/configuration time, payload capacity, size, price, and programmability. Based on these criteria, we selected the 3DR Solo for this project. The 3DR Solo was the best choice mostly because it features a MAVlink Python library called "DroneKit-Python".
+⋅⋅⋅We considered five primary criteria when choosing which drone to purchase: assembly/configuration time, payload capacity, size, price, and programmability. Based on these criteria, we selected the 3DR Solo for this project. The 3DR Solo was the best choice mostly because it features a MAVlink Python library called "DroneKit-Python".
 
 ### 3.2 Communication
 
@@ -72,12 +72,11 @@ We considered five primary criteria when choosing which drone to purchase: assem
 
 
 
-
 ## 4.0 Obstacles
 
 ### 4.1 Upgrading 3DR Solo Firmware from 1.3.1 to 1.5.2
 
-**DO NOT ATTEMPT THIS!** DroneKit-Python is not yet compatible with the latest firmware release, so programming the drone in 1.5.2 is effectively useless. Hopefully, compatibility issues will be resolved in the future.
+⋅⋅⋅DO NOT ATTEMPT THIS! DroneKit-Python is not yet compatible with the latest firmware release, so programming the drone in 1.5.2 is effectively useless. Hopefully, compatibility issues will be resolved in the future.
 
 ### 4.2 Taking off in GPS-denied environment
 
@@ -109,9 +108,10 @@ We considered five primary criteria when choosing which drone to purchase: assem
 ## 7.0 Resources
 
 
+
 ### 7.1 BME280 Temperature Sensor
 
-[Using BME280 temperature/humidity/pressure sensor with Raspberry Pi](https://xdevs.com/guide/thp_rpi/)
+* [Using BME280 temperature/humidity/pressure sensor with Raspberry Pi](https://xdevs.com/guide/thp_rpi/)
 
 
 ### 7.2 Flight
@@ -175,7 +175,7 @@ We considered five primary criteria when choosing which drone to purchase: assem
 * [Communication Between Processes](https://pymotw.com/2/multiprocessing/communication.html)
 * [Multiprocessing with Python](https://www.raspberrypi.org/magpi/multiprocessing-with-python/)
 * [Multiprocessing vs Threading Python](https://stackoverflow.com/questions/3044580/multiprocessing-vs-threading-python)
-* [What does if __name__ == “__main__”: do?](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
+* [What does if name == “main”: do?](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
 * [Python 201: A multiprocessing tutorial](https://www.blog.pythonlibrary.org/2016/08/02/python-201-a-multiprocessing-tutorial/)
 
 ### 7.6 Object Avoidance and Rangefinding
