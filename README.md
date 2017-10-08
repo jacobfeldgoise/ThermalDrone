@@ -5,7 +5,7 @@
 ## Table of Contents:
 1. [Introduction](#10-introduction)
 2. [Progress](#20-progress)
-3. [Current Design](30-current-design)
+3. [Current Design](#30-current-design)
 4. [Obstacles](#40-obstacles)
 5. [Improvements](#50-improvements)
 6. [Setup](#60-setup)
@@ -128,12 +128,19 @@ The most recently-updated sensor reading scripts for this project utilize multip
 
 The RPi Zero is an incredibly useful device for its size, but it is limited by its single-core processor and less-than-optimal processing power. A RPi 3 Model B will ultimately be worth the extra weight because it will be capable of taking sonar readings -- essential input for navigation -- at far greater speeds.
 
+### 5.5 Localization
+
+While sonars can be accurate, they are effectively useless beyond 1-1.5 meters. A potentially better localization system would include use of Ultra-wideband (UWB) beacons or a similar beacon-based technology.
+
 ## 6.0 Setup
 
 
 ### 6.1 Configuring the Raspberry Pi
 
 
+#### 6.1.1 Raspberry Pi Pinout
+
+![raspberry-pi-pinout](https://raw.githubusercontent.com/ArathornII/ThermalDrone/master/pinout.png)
 
 ### 6.2 Configuring your Computer
 
