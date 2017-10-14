@@ -84,7 +84,7 @@ The following sensors were used in this project:
 
 ![multiprocessing](https://raw.githubusercontent.com/ArathornII/ThermalDrone/master/multiprocessing.jpg)
 
-The most recently-updated sensor reading scripts for this project utilize multiprocessing. Implementation of multiprocessing, despite the RPi Zero's single core, has improved the read speed for all six sonars (SR-04)  by over 10 times.
+  The most recently-updated sensor reading scripts for this project utilize multiprocessing. Implementation of multiprocessing, despite the RPi Zero's single core, has improved the read speed for all six sonars (SR-04)  by over 10 times.
 
 ## 4.0 Obstacles
 
@@ -100,17 +100,19 @@ The most recently-updated sensor reading scripts for this project utilize multip
 
 #### 4.2.1 GUIDED_NOGPS Mode
 
+  GUIDED_NOGPS mode should theoretically allow the UAV to recieved GUIDED commands in a GPS-denied environment. However, tests using this mode have not yet succeded in controlled takeoff. I have not been able to determine the reason for failure.
 
 #### 4.2.2 STABILIZE Mode
 
+  STABILIZE mode is one of the most promising modes for flight in a GPS-denied environment because it holds the pitch and yaw such that the UAV remains level but allows for easy modification of the altitude. Also, STABILIZE mode does not require a GPS lock to initiate flight. However, STABILIZE mode does require that the thrust joystick is set to the lowest postion (not equilibirum) before initiating takeoff. This presents a seemingly insurmountable challenge for autonomous flight where the user should not need to touch let alone manipulate the controller.
 
 #### 4.2.3 RC Overrides
 
-   RC overrides essentially involve sending MAVlink commands to the drone that act like transmissions from the controller. This is incredibly dangerous because it inpairs the controller's function as a failsafe in case of a severe drone malfunction. So far, we have not tested this option for navigation in a GPS-denied environment.
+  RC overrides essentially involve sending MAVlink commands to the drone that act like transmissions from the controller. This is incredibly dangerous because it inpairs the controller's function as a failsafe in case of a severe drone malfunction. So far, we have not tested this option for navigation in a GPS-denied environment.
 
 ### 4.3 Optical Camera
 
-   The viusal camera can malfunction when there is a faulty connection between the camera module and the RPi's camera port. This could be the result of a broken cable, but more likely, the camera module itself or the camera port are broken.
+  The viusal camera can malfunction when there is a faulty connection between the camera module and the RPi's camera port. This could be the result of a broken cable, but more likely, the camera module itself or the camera port are broken.
 
 ## 5.0 Improvements
 
@@ -120,9 +122,11 @@ The most recently-updated sensor reading scripts for this project utilize multip
 
 ### 5.2 Wired MAVlink Connection (via Accessory Bay)
 
-
+A wired serial MAVlink connection between the onboard computer (Raspberry Pi) and the 3DR Solo drone would massively decrease communication latency and resulting issues. Such a connection would be routed through the [3DR Solo's Accessory Bay](https://dev.3dr.com/hardware-accessorybay.html). This improvement would require manufactoring a custom breakout board for the Accessory Bay, which would then serve as the connection between the Raspberry Pi and the drone's Pixhawk autopilot hardware.
 
 ### 5.3 Optical Flow Rangefinder
+
+An Optical Flow Rangefinder is a module that points towards the ground and calculates distance through use of a high resoultion camera and 3-axis gyroscope. Therefore, Optical Flow ranges will be much more accurate than readings from $5 SR-04 sonars. Also, an Optical Flow Rangefinder can be used in calculations performed by the UAV's Extended Kalman Filter (EKF) if it is connected to the Pixhawk via the 3DR Solo's Accessory Bay.
 
 ### 5.4 Raspberry Pi 3B for Image Processing
 
@@ -151,6 +155,7 @@ While sonars can be accurate, they are effectively useless beyond 1-1.5 meters. 
 
 #### 6.3.1 Sonars
 
+SR-04
 
 #### 6.3.2 Optical Camera
 
