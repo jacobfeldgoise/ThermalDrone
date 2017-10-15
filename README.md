@@ -63,7 +63,11 @@ This research project is conducted through the MIT Research Laboratory of Electr
 
    We considered five primary criteria when choosing which drone to purchase: assembly/configuration time, payload capacity, size, price, and programmability. Based on these criteria, we selected the 3DR Solo for this project. The 3DR Solo was the best choice mostly because it features a MAVlink Python library called "DroneKit-Python".
 
-### 3.2 Sensors
+### 3.2 Onboard Computer
+
+  We used the Raspberry Pi Zero W as the onboard computer for this project. It is extremely light but still has the 40 GPIO pins of a full-sized Raspberry Pi. Also, the "W" model comes with intergrated wifi and bluetooth which is exteremly useful. Finally, the price of a Raspberry Pi Zero W is only $10. The only downside is that the Raspberry Pi Zero models lacks the processing power of the Raspberry Pi 3 Model B. Future projects should test the Raspberry Pi 3 to see if the additional proccessing power is worth its weight, literally.
+
+### 3.3 Sensors
 
 The following sensors were used in this project:
 * 6 Sonars (SR-04)
@@ -72,7 +76,7 @@ The following sensors were used in this project:
 * 1 Thermal Camera (Lepton FLiR)
 
 
-### 3.3 Communication
+### 3.4 Communication
 
 ![communication](https://raw.githubusercontent.com/ArathornII/ThermalDrone/master/communication.jpg)
 
@@ -80,7 +84,7 @@ The following sensors were used in this project:
   
   The RPi inputs and processes the data from the 9 sensors, and then instructs the drone to take specific actions. These commands are sent from the RPi to the drone as MAVlink messages. These messages are transmitted via a wifi network broadcasted by the 3DR Solo's controller.
 
-### 3.4 Multiprocessing
+### 3.5 Multiprocessing
 
 ![multiprocessing](https://raw.githubusercontent.com/ArathornII/ThermalDrone/master/multiprocessing.jpg)
 
@@ -141,8 +145,24 @@ The following sensors were used in this project:
 
 ### 6.1 Configuring the Raspberry Pi
 
+  Configuring the Raspberry Pi is fairly simple. Please follow the directions below:
 
-#### 6.1.1 Raspberry Pi Pinout
+#### 6.1.1 Install Operating System
+
+  We will install **Raspbian Stretch Lite**, which means the Raspberry Pi will not use a GUI. Instead, you will communicate with the devie through the linux command line. To begin, [download](https://www.raspberrypi.org/downloads/raspbian/) the software and follow the [instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) on the Raspberry Pi website for your operating system.
+
+Then, insert your MicroSD card into the Raspberry Pi and boot-up the device with a **display, mouse, and keyboard attached**. The default username and password are "pi" and "raspberry" respectively. You should change the password, but the leave the username alone.  To change the password, use the command ```passwd```. You will need to authenticate the device, then enter your custom password as prompted.
+
+#### 6.1.2 Connect to Wifi
+
+Next, we will connect the Raspberry Pi to the internet. Please note that this step assumes you have a Raspberry Pi with an intergrated wifi module. Follow these [directions](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) and then restart the wifi interface with:
+```sudo wpa_cli reconfigure```
+
+#### 6.1.3 Enable Interfaces and Set the Timezone
+
+#### 6.1.4 Install Python Packages
+
+#### 6.1.5 Raspberry Pi Pinout
 
 ![raspberry-pi-pinout](https://raw.githubusercontent.com/ArathornII/ThermalDrone/master/pinout.png)
 
@@ -169,15 +189,15 @@ The current design uses a single Raspberry Pi Camera v2 to capture images in the
 
   The current design includes a single BME280 Temperature, Humidity, and Pressure sensor. The device is mounted on the bottom of the UAV, however, future experiments should be conducted to determine the optimal location for such a sensor considering the decrease in local temperature caused by the UAV's propellers.
   
-  * We will only connect four of the BME280's pins to the Raspberry Pi. Please reference the following list and the pinout in section 6.1.1:
+  We will only connect four of the BME280's pins to the Raspberry Pi. Please reference the following list and the pinout in section 6.1.1:
   * The 5V pin on the BME should connect to a 5V GPIO pin on the Raspberry Pi
   * The SDI pin on the BME should connect to a SDA GPIO pin on the Raspberry Pi
-  * The SCK pin on the BME should connect to a SCL GPIO pin on the Raspberry Pi.
+  * The SCK pin on the BME should connect to a **SCL** GPIO pin on the Raspberry Pi.
   * The Ground pin on the BME should connect to a Ground pin on the Raspberry Pi.
 
 #### 6.3.4 Thermal Camera
 
-The FLiR is mounted on the front of the UAV in close proximity to the Optical Camera in order to minimize the transformations needed to achieve thermal composite imaging.
+  The current design uses a Lepton FLiR to take thermal images of the UAV's surroundings and determine relative temperatures. The FLiR is mounted on the front of the UAV in close proximity to the Optical Camera in order to minimize the transformations needed to achieve thermal composite imaging. The camera itself is very small and incredibly delicate, so please be very careful when touching it. The camera module must be mounted in a breakout board which can then be connected to the Raspberry Pi. The FLiR module must be fully in the breakout board or it will not work properly. All 8 pins on the breakout board must connect to corresponding pins on the Raspberry Pi. The SDA and SCL pins should be wired in parallel to those from the BME280 and then connected to Raspberry Pi pins 3 and 5 respectively (see pinout).
 
 ## 7.0 Resources
 
