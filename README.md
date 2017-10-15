@@ -122,19 +122,19 @@ The following sensors were used in this project:
 
 ### 5.2 Wired MAVlink Connection (via Accessory Bay)
 
-A wired serial MAVlink connection between the onboard computer (Raspberry Pi) and the 3DR Solo drone would massively decrease communication latency and resulting issues. Such a connection would be routed through the [3DR Solo's Accessory Bay](https://dev.3dr.com/hardware-accessorybay.html). This improvement would require manufactoring a custom breakout board for the Accessory Bay, which would then serve as the connection between the Raspberry Pi and the drone's Pixhawk autopilot hardware.
+  A wired serial MAVlink connection between the onboard computer (Raspberry Pi) and the 3DR Solo drone would massively decrease communication latency and resulting issues. Such a connection would be routed through the [3DR Solo's Accessory Bay](https://dev.3dr.com/hardware-accessorybay.html). This improvement would require manufactoring a custom breakout board for the Accessory Bay, which would then serve as the connection between the Raspberry Pi and the drone's Pixhawk autopilot hardware.
 
 ### 5.3 Optical Flow Rangefinder
 
-An Optical Flow Rangefinder is a module that points towards the ground and calculates distance through use of a high resoultion camera and 3-axis gyroscope. Therefore, Optical Flow ranges will be much more accurate than readings from $5 SR-04 sonars. Also, an Optical Flow Rangefinder can be used in calculations performed by the UAV's Extended Kalman Filter (EKF) if it is connected to the Pixhawk via the 3DR Solo's Accessory Bay.
+  An Optical Flow Rangefinder is a module that points towards the ground and calculates distance through use of a high resoultion camera and 3-axis gyroscope. Therefore, Optical Flow ranges will be much more accurate than readings from $5 SR-04 sonars. Also, an Optical Flow Rangefinder can be used in calculations performed by the UAV's Extended Kalman Filter (EKF) if it is connected to the Pixhawk via the 3DR Solo's Accessory Bay.
 
 ### 5.4 Raspberry Pi 3B for Image Processing
 
-The RPi Zero is an incredibly useful device for its size, but it is limited by its single-core processor and less-than-optimal processing power. A RPi 3 Model B will ultimately be worth the extra weight because it will be capable of taking sonar readings -- essential input for navigation -- at far greater speeds.
+  The RPi Zero is an incredibly useful device for its size, but it is limited by its single-core processor and less-than-optimal processing power. A RPi 3 Model B will ultimately be worth the extra weight because it will be capable of taking sonar readings -- essential input for navigation -- at far greater speeds.
 
 ### 5.5 Localization
 
-While sonars can be accurate, they are effectively useless beyond 1-1.5 meters. A potentially better localization system would include use of Ultra-wideband (UWB) beacons or a similar beacon-based technology.
+  While sonars can be accurate, they are effectively useless beyond 1-1.5 meters. A potentially better localization system would include use of Ultra-wideband (UWB) beacons or a similar beacon-based technology.
 
 ## 6.0 Setup
 
@@ -155,17 +155,29 @@ While sonars can be accurate, they are effectively useless beyond 1-1.5 meters. 
 
 #### 6.3.1 Sonars
 
-SR-04
+  The current design uses six SR-04 sonars arranged to provided distance readings for the top, bottom, left, right, front, and back of UAV. The 5v pins of all six sonars can be wired together in parallel and connected to a single 5v GPIO pin on the Raspberry Pi. Similarly, ground pins of all six sonars can be wired together in parallel and connected to a single ground GPIO pin on the Raspberry Pi.
+
+  However, please pay close attention to the following diagram which converts the echo pin voltage for use with a Raspberry Pi. If you follow the pinout shown above than all sonars should work properly upon first use. If you modify the pinout in any way, the GPIO pin numbers will need to be adjusted in the script.
+
+![hc-sr04-wiring](https://raw.githubusercontent.com/ArathornII/ThermalDrone/master/hc-sr04-wiring.png)
 
 #### 6.3.2 Optical Camera
 
+The current design uses a single Raspberry Pi Camera v2 to capture images in the visual spectrum. A 15cm ribbon cable connects the camera module to the Raspberry Pi. Please note that the camera module requires a special ribbon cable to work with the Raspberry Pi Zero models.
 
 #### 6.3.3 Temperature Sensor
 
+  The current design includes a single BME280 Temperature, Humidity, and Pressure sensor. The device is mounted on the bottom of the UAV, however, future experiments should be conducted to determine the optimal location for such a sensor considering the decrease in local temperature caused by the UAV's propellers.
+  
+  * We will only connect four of the BME280's pins to the Raspberry Pi. Please reference the following list and the pinout in section 6.1.1:
+  * The 5V pin on the BME should connect to a 5V GPIO pin on the Raspberry Pi
+  * The SDI pin on the BME should connect to a SDA GPIO pin on the Raspberry Pi
+  * The SCK pin on the BME should connect to a SCL GPIO pin on the Raspberry Pi.
+  * The Ground pin on the BME should connect to a Ground pin on the Raspberry Pi.
 
 #### 6.3.4 Thermal Camera
 
-
+The FLiR is mounted on the front of the UAV in close proximity to the Optical Camera in order to minimize the transformations needed to achieve thermal composite imaging.
 
 ## 7.0 Resources
 
