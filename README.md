@@ -151,11 +151,12 @@ The following sensors were used in this project:
 
   We will install **Raspbian Stretch Lite**, which means the Raspberry Pi will not use a GUI. Instead, you will communicate with the devie through the linux command line. To begin, [download](https://www.raspberrypi.org/downloads/raspbian/) the software and follow the [instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) on the Raspberry Pi website for your operating system.
 
-Then, insert your MicroSD card into the Raspberry Pi and boot-up the device with a **display, mouse, and keyboard attached**. The default username and password are "pi" and "raspberry" respectively. You should change the password, but the leave the username alone.  To change the password, use the command ```passwd```. You will need to authenticate the device, then enter your custom password as prompted.
+  Then, insert your MicroSD card into the Raspberry Pi and boot-up the device with a **display, mouse, and keyboard attached**. The default username and password are "pi" and "raspberry" respectively. You should change the password, but the leave the username alone.  To change the password, use the command ```passwd```. You will need to authenticate the device, then enter your custom password as prompted.
 
 #### 6.1.2 Connect to Wifi
 
-Next, we will connect the Raspberry Pi to the internet. Please note that this step assumes you have a Raspberry Pi with an intergrated wifi module. Follow these [directions](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) and then restart the wifi interface with:
+  Next, we will connect the Raspberry Pi to the internet. Please note that this step assumes you have a Raspberry Pi with an intergrated wifi module. Follow these [directions](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) and then restart the wifi interface with:
+
 ```sudo wpa_cli reconfigure```
 
 #### 6.1.3 Enable Interfaces and Set the Timezone
