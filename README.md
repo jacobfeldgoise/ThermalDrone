@@ -145,13 +145,13 @@ The following sensors were used in this project:
 
 ### 6.1 Configuring the Raspberry Pi
 
-  Configuring the Raspberry Pi is fairly simple. Please follow the directions below:
+  Configuring the Raspberry Pi is fairly simple. We recommend using a MicroSD card of at least 16 GB. Please follow the directions below:
 
 #### 6.1.1 Install Operating System
 
   We will install **Raspbian Stretch Lite**, which means the Raspberry Pi will not use a GUI. Instead, you will communicate with the devie through the linux command line. To begin, [download](https://www.raspberrypi.org/downloads/raspbian/) the software and follow the [instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) on the Raspberry Pi website for your operating system.
 
-  Then, insert your MicroSD card into the Raspberry Pi and boot-up the device with a **display, mouse, and keyboard attached**. The default username and password are "pi" and "raspberry" respectively. You should change the password, but the leave the username alone.  To change the password, use the command ```passwd```. You will need to authenticate the device, then enter your custom password as prompted.
+  Then, insert your MicroSD card into the Raspberry Pi and boot-up the device with a **display, mouse, and keyboard attached**. You should connect your Raspberry Pi to a display through a Mini HDMI cable (RPi Zero W) or regular HDMI cable (All other RPi's). The default username and password are "pi" and "raspberry" respectively. You should change the password, but the leave the username alone.  To change the password, use the command ```passwd```. You will need to authenticate the device, then enter your custom password as prompted.
 
 #### 6.1.2 Connect to Wifi
 
@@ -161,18 +161,173 @@ The following sensors were used in this project:
 
 #### 6.1.3 Enable Interfaces and Set the Timezone
 
-#### 6.1.4 Install Python Packages
+  Next, we will enable the following interfaces: SSH, SPI, IC2, Camera.
 
-#### 6.1.5 Raspberry Pi Pinout
+  First, run the command: `sudo raspi-config`
+
+  Select "Interfacing Options", then go there enable SSH, SPI, and IC2, Camera. Then, exit out of the configuration tool and restart your Raspberry Pi. It is possbile that the computer will do so automatically. We will use SSH to connect to the Raspberry Pi during field tests. The SPI and IC2 interfaces must be enabled for the BME280 temperature sensor and FLiR camera to function. The Camera interface allows the visual camera to function.
+
+#### 6.1.4 Install Python Packages and Dependencies
+
+  We need to install a large number of python packages for the various aspects of this project towork. Please copy and paste the following commands into your Raspberry Pi's CLI, and hit "return" after each one.
+
+  First, we ensure all pre-installed packages and installers are up-to-date
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo python -m pip install --upgrade pip
+sudo apt-get install build-essential python-pip python-dev python-smbus git
+```
+
+  Then, we install the SciPy stack:
+
+```
+pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+```
+
+  Next, we install a library to provide a cross-platform GPIO interface on the Raspberry Pi:
+
+```
+cd ~
+git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
+cd Adafruit_Python_GPIO
+sudo python setup.py install
+```
+
+  Then, we install packages and software neccesary to run the BME280:
+
+```cd ~
+git clone https://github.com/adafruit/Adafruit_Python_BME280.git
+cd Adafruit_Python_BME280
+sudo python setup.py install
+```
+
+ Then, we install packages for the Raspberry Pi visual camera:
+
+```sudo apt-get install python-picamera python3-picamera
+pip install "picamera[array]"
+```
+
+Next, we install packages to support image processing (OpenCV) on the Raspberry Pi:
+
+```
+sudo apt-get install build-essential cmake pkg-config
+sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+sudo apt-get install libxvidcore-dev libx264-dev
+sudo apt-get install libgtk2.0-dev libgtk-3-dev
+sudo apt-get install libatlas-base-dev gfortran
+sudo apt-get install python2.7-dev python3-dev
+```
+
+```cd ~
+wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.3.0.zip
+unzip opencv.zip
+wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.3.0.zip
+unzip opencv_contrib.zip
+pip install numpy
+```
+
+```cd ~/opencv-3.3.0/
+mkdir build
+cd build
+```
+
+```
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D INSTALL_PYTHON_EXAMPLES=ON \
+-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.3.0/modules \
+-D BUILD_EXAMPLES=ON ..
+```
+
+Now, before we move on to the actual compilation step, make sure you examine the output of CMake! Scroll down the section titled Python 2. Then make sure your Python 2 section includes valid paths to the `Interpreter` , `Libraries` , `numpy` and `packages path`. Now, we will compile OpenCV. This process could take up to 4 hours to complete:
+
+```
+make
+```
+
+Once the compilation process has completed, run:
+
+```
+sudo make install
+sudo ldconfig
+```
+
+Confirm that OpenCV has compiled correctly by running the following command:
+
+```
+ls -l /usr/local/lib/python2.7/site-packages/
+```
+
+You should see an output similar to the following:
+
+```
+total 1852
+-rw-r--r-- 1 root staff 1895772 Mar 20 20:00 cv2.so
+```
+
+Next, we're going to install packages to run the FLiR Lepton:
+
+```
+sudo apt-get install python-opencv python-numpy
+git clone https://github.com/groupgets/pylepton.git
+cd pylepton
+sudo python setup.py install
+```
+
+Finally, install the Dronekit-python package which will allow the Raspberry Pi to communicate with the 3DR Solo:
+
+```
+pip install dronekit
+```
+
+#### 6.1.5 Connecting the Raspberry Pi to the 3DR Solo
+
+The last step is to connect the Raspberry Pi to the 3DR Solo drone. We do this by simply modifying the Raspberry Pi's wifi settings to connect to the controller's network.
+
+#### 6.1.6 Raspberry Pi Pinout
 
 ![raspberry-pi-pinout](https://raw.githubusercontent.com/ArathornII/ThermalDrone/master/pinout.png)
 
+
 ### 6.2 Configuring your Computer
 
+  The main purpose of your computer in the project is as a tool to edit, upload, and run python files on the onboard computer (Raspberry Pi). There are two steps to setting up your computer: installing a text editor and configuring SSH.
+
+
+#### 6.2.1 Installing a Text Editor
+
+##### Windows:
+
+  For Windows, we recommend using [Notepad++](http://csc.ucdavis.edu/~chaos/courses/nlp/Software/Windows/npp.html)
+  
+##### Mac:
+
+  For Mac, we recommend using [Atom](https://atom.io)
+
+##### Linux:
+
+  For Linux, we recommend using [Atom](https://atom.io)
+  
+  
+#### 6.2.2 Configuring SSH
+
+##### Windows:
+
+For Windows, we recommend using [PuTTY](http://www.putty.org).
+
+##### Mac:
+
+For Mac, we recommend using the built-in UNIX [command line](http://accc.uic.edu/answer/how-do-i-use-ssh-and-sftp-mac-os-x)
+
+##### Linux:
+
+For Linux, we recommend using the built-in [command line](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server-in-ubuntu)
 
 
 ### 6.3 Setting up the sensors
-
 
 #### 6.3.1 Sonars
 
@@ -196,9 +351,26 @@ The current design uses a single Raspberry Pi Camera v2 to capture images in the
   * The SCK pin on the BME should connect to a **SCL** GPIO pin on the Raspberry Pi.
   * The Ground pin on the BME should connect to a Ground pin on the Raspberry Pi.
 
+
 #### 6.3.4 Thermal Camera
 
   The current design uses a Lepton FLiR to take thermal images of the UAV's surroundings and determine relative temperatures. The FLiR is mounted on the front of the UAV in close proximity to the Optical Camera in order to minimize the transformations needed to achieve thermal composite imaging. The camera itself is very small and incredibly delicate, so please be very careful when touching it. The camera module must be mounted in a breakout board which can then be connected to the Raspberry Pi. The FLiR module must be fully in the breakout board or it will not work properly. All 8 pins on the breakout board must connect to corresponding pins on the Raspberry Pi. The SDA and SCL pins should be wired in parallel to those from the BME280 and then connected to Raspberry Pi pins 3 and 5 respectively (see pinout).
+
+### 6.4 Running a program
+
+Now that everything is configured, you can run a python program!
+
+1. Turn on the 3DR Solo controller and wait for it to boot up before continuing.
+2. Turn on the Raspberry Pi and ensure that it has been set to connect to the controller's wifi network. The Raspberry Pi should be connected to a portable power supply which is ideally attached to the 3DR Solo drone.
+3. Connect your computer to the controller's wifi network.
+4. Connect your computer to the Raspberry Pi via SSH. If you don't know the Raspberry Pi's IP address, use a tool like "Fing" to find it.
+5. Upload whichever python file you wish to run to the Raspberry Pi.
+6. Run the python program `filename.py` using the following command:
+  ```
+  python filename.py
+ ```
+
+**Please be extremely careful while conducting field tests with untested code! Be sure to attach a rope to the drone to guide it in case of a software failure. Also, always be prepared to use the "land" button on the controller**
 
 ## 7.0 Resources
 
@@ -256,6 +428,7 @@ The current design uses a single Raspberry Pi Camera v2 to capture images in the
 * [Image size (Python, OpenCV)](https://stackoverflow.com/questions/13033278/image-size-python-opencv)
 * [OpenCV - Saving images to a particular folder of choice](https://stackoverflow.com/questions/41586429/opencv-saving-images-to-a-particular-folder-of-choice)
 * [python OpenCV - add alpha channel to RGB image](https://stackoverflow.com/questions/32290096/python-opencv-add-alpha-channel-to-rgb-image)
+* [Install OpenCV 3 + Python on your Raspberry Pi](https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/)
 
 ### 7.4 Data Logging
 
