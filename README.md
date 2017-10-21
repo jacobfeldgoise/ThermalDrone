@@ -165,7 +165,7 @@ The following sensors were used in this project:
 
   First, run the command: `sudo raspi-config`
 
-  Select "Interfacing Options", then go there enable SSH, SPI, and IC2, Camera. Then, exit out of the configuration tool and restart your Raspberry Pi. It is possbile that the computer will do so automatically. We will use SSH to connect to the Raspberry Pi during field tests. The SPI and IC2 interfaces must be enabled for the BME280 temperature sensor and FLiR camera to function. The Camera interface allows the visual camera to function.
+  Select "Interfacing Options", then go there enable SSH, SPI, and IC2, Camera. Then, exit out of the configuration tool and restart your Raspberry Pi. It is possbile that the computer will do so automatically. We will use SSH to connect to the Raspberry Pi during field tests. The SPI and IC2 interfaces must be enabled for the BME280 temperature sensor and FLiR camera to function. The Camera interface allows the optical camera to function.
 
 #### 6.1.4 Install Python Packages and Dependencies
 
@@ -180,11 +180,13 @@ sudo python -m pip install --upgrade pip
 sudo apt-get install build-essential python-pip python-dev python-smbus git
 ```
 
+
   Then, we install the SciPy stack:
 
 ```
 pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
 ```
+
 
   Next, we install a library to provide a cross-platform GPIO interface on the Raspberry Pi:
 
@@ -195,6 +197,7 @@ cd Adafruit_Python_GPIO
 sudo python setup.py install
 ```
 
+
   Then, we install packages and software neccesary to run the BME280:
 
 ```cd ~
@@ -203,11 +206,13 @@ cd Adafruit_Python_BME280
 sudo python setup.py install
 ```
 
- Then, we install packages for the Raspberry Pi visual camera:
+
+ Then, we install packages for the Raspberry Pi optical camera:
 
 ```sudo apt-get install python-picamera python3-picamera
 pip install "picamera[array]"
 ```
+
 
 Next, we install packages to support image processing (OpenCV) on the Raspberry Pi:
 
@@ -242,7 +247,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D BUILD_EXAMPLES=ON ..
 ```
 
-Now, before we move on to the actual compilation step, make sure you examine the output of CMake! Scroll down the section titled Python 2. Then make sure your Python 2 section includes valid paths to the `Interpreter` , `Libraries` , `numpy` and `packages path`. Now, we will compile OpenCV. This process could take up to 4 hours to complete:
+Now, before we move on to the actual compilation step, make sure you examine the output of CMake! Scroll down the section titled Python 2. Then make sure your Python 2 section includes valid paths to the `Interpreter` , `Libraries` , `numpy` and `packages path`. Now we will compile OpenCV. Please be aware that this process could take up to 4 hours to complete:
 
 ```
 make
@@ -268,6 +273,7 @@ total 1852
 -rw-r--r-- 1 root staff 1895772 Mar 20 20:00 cv2.so
 ```
 
+
 Next, we're going to install packages to run the FLiR Lepton:
 
 ```
@@ -276,6 +282,7 @@ git clone https://github.com/groupgets/pylepton.git
 cd pylepton
 sudo python setup.py install
 ```
+
 
 Finally, install the Dronekit-python package which will allow the Raspberry Pi to communicate with the 3DR Solo:
 
@@ -299,33 +306,11 @@ The last step is to connect the Raspberry Pi to the 3DR Solo drone. We do this b
 
 #### 6.2.1 Installing a Text Editor
 
-##### Windows:
-
-  For Windows, we recommend using [Notepad++](http://csc.ucdavis.edu/~chaos/courses/nlp/Software/Windows/npp.html)
-  
-##### Mac:
-
-  For Mac, we recommend using [Atom](https://atom.io)
-
-##### Linux:
-
-  For Linux, we recommend using [Atom](https://atom.io)
-  
+  For Windows, we recommend using [Notepad++](http://csc.ucdavis.edu/~chaos/courses/nlp/Software/Windows/npp.html). For Mac and Linux, we recommend using [Atom](https://atom.io).
   
 #### 6.2.2 Configuring SSH
 
-##### Windows:
-
-For Windows, we recommend using [PuTTY](http://www.putty.org).
-
-##### Mac:
-
-For Mac, we recommend using the built-in UNIX [command line](http://accc.uic.edu/answer/how-do-i-use-ssh-and-sftp-mac-os-x)
-
-##### Linux:
-
-For Linux, we recommend using the built-in [command line](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server-in-ubuntu)
-
+For Windows, we recommend using [PuTTY](http://www.putty.org). For Mac, we recommend using the built-in UNIX [command line](http://accc.uic.edu/answer/how-do-i-use-ssh-and-sftp-mac-os-x). For Linux, we recommend using the built-in [command line](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server-in-ubuntu).
 
 ### 6.3 Setting up the sensors
 
@@ -370,7 +355,9 @@ Now that everything is configured, you can run a python program!
   python filename.py
  ```
 
-**Please be extremely careful while conducting field tests with untested code! Be sure to attach a rope to the drone to guide it in case of a software failure. Also, always be prepared to use the "land" button on the controller**
+*Please be extremely careful while conducting field tests with untested code! Be sure to attach a rope to the drone to guide it in case of a software failure. Also, always be prepared to use the "land" button on the controller*
+
+
 
 ## 7.0 Resources
 
