@@ -207,14 +207,14 @@ sudo python setup.py install
 ```
 
 
- Then, we install packages for the Raspberry Pi optical camera:
+  Then, we install packages for the Raspberry Pi optical camera:
 
 ```sudo apt-get install python-picamera python3-picamera
 pip install "picamera[array]"
 ```
 
 
-Next, we install packages to support image processing (OpenCV) on the Raspberry Pi:
+  Next, we install packages to support image processing (OpenCV) on the Raspberry Pi:
 
 ```
 sudo apt-get install build-essential cmake pkg-config
@@ -247,26 +247,26 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D BUILD_EXAMPLES=ON ..
 ```
 
-Now, before we move on to the actual compilation step, make sure you examine the output of CMake! Scroll down the section titled Python 2. Then make sure your Python 2 section includes valid paths to the `Interpreter` , `Libraries` , `numpy` and `packages path`. Now we will compile OpenCV. Please be aware that this process could take up to 4 hours to complete:
+  Now, before we move on to the actual compilation step, make sure you examine the output of CMake! Scroll down the section titled Python 2. Then make sure your Python 2 section includes valid paths to the `Interpreter` , `Libraries` , `numpy` and `packages path`. Now we will compile OpenCV. Please be aware that this process could take up to 4 hours to complete:
 
 ```
 make
 ```
 
-Once the compilation process has completed, run:
+  Once the compilation process has completed, run:
 
 ```
 sudo make install
 sudo ldconfig
 ```
 
-Confirm that OpenCV has compiled correctly by running the following command:
+  Confirm that OpenCV has compiled correctly by running the following command:
 
 ```
 ls -l /usr/local/lib/python2.7/site-packages/
 ```
 
-You should see an output similar to the following:
+  You should see an output similar to the following:
 
 ```
 total 1852
@@ -274,7 +274,7 @@ total 1852
 ```
 
 
-Next, we're going to install packages to run the FLiR Lepton:
+  Next, we're going to install packages to run the FLiR Lepton:
 
 ```
 sudo apt-get install python-opencv python-numpy
@@ -284,7 +284,7 @@ sudo python setup.py install
 ```
 
 
-Finally, install the Dronekit-python package which will allow the Raspberry Pi to communicate with the 3DR Solo:
+  Finally, install the Dronekit-python package which will allow the Raspberry Pi to communicate with the 3DR Solo:
 
 ```
 pip install dronekit
@@ -355,7 +355,7 @@ Now that everything is configured, you can run a python program!
   python filename.py
  ```
 
-*Please be extremely careful while conducting field tests with untested code! Be sure to attach a rope to the drone to guide it in case of a software failure. Also, always be prepared to use the "land" button on the controller*
+*Please be extremely careful while conducting field tests with untested code! Be sure to attach a rope to the drone to guide it in the event of a software failure. Also, always be prepared to use the "land" button on the controller.*
 
 
 
