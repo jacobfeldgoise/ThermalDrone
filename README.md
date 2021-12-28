@@ -15,9 +15,9 @@
 
 ### 1.1 Questions & Goals
 
-   The questions fundemental to this project are as follows: How can we automate indoor thermal imaging? How can we predict thermodynamic changes to an enclosed space resulting from changes made to a building?
+   The questions fundamental to this project are as follows: How can we automate indoor thermal imaging? How can we predict thermodynamic changes to an enclosed space resulting from changes made to a building?
 
-   The ultimate purpose of this project is to create an UAV capable capable of collecting and analyzing large data sets. Specifcally, the drone should be able to take distance measurements in various directions for navigation and localization. Also, the drone must be able to capture ambient air-temperature readings and wall-temperature readings. Finally, the drone must collect visual images for 3D-modeling and thermal composite imaging.
+   The ultimate purpose of this project is to create an UAV capable capable of collecting and analyzing large data sets. Specfically, the drone should be able to take distance measurements in various directions for navigation and localization. Also, the drone must be able to capture ambient air-temperature readings and wall-temperature readings. Finally, the drone must collect visual images for 3D-modeling and thermal composite imaging.
 
    Once all data collection tools are fully-functional, the UAV will collect differentiated data sets for wall temperatures and air temperature. Furthermore, data would be collected before and after thermal modifications were made to a room. This will allow a machine learning model to predict thermal changes to a room based on deliberate modification to the room's physical structure. These predictions would likely be displayed through a 3-D model of the room comprised of visual and thermal images collected by the UAV.
 
